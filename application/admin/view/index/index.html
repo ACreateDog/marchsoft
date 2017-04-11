@@ -1,0 +1,18 @@
+<extend name="base/base"/>
+
+<block name="content">
+    <p style="color: black">index Controller UI</p>
+    <div>
+        <div id="editor" style="width:900px;height:500px;" ></div>
+    </div>
+    <button onclick="f();">显示内容</button>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        var ue = UE.getEditor('editor');
+        function f() {
+            var content = ue.getContent();
+            alert(content);
+        }
+    </script>
+</block>
