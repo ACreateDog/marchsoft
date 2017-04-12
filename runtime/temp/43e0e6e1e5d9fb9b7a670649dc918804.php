@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/index/index.html";i:1491897478;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1491895827;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/index/index.html";i:1491974932;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1491975056;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -101,6 +101,7 @@
 
         'enable-cookies'                                enables cookies for remembering active color theme when changed from the sidebar links (You can add it along with any other class)
     -->
+    
     <div id="page-container" class="header-fixed-top sidebar-visible-lg-full">
         <!-- Alternative Sidebar -->
         <div id="sidebar-alt" tabindex="-1" aria-hidden="true">
@@ -196,12 +197,15 @@
                             <i class="fa fa-ellipsis-h"></i>
                         </li>
                         <li>
-                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">User Interface</span></a>
+                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">前台功能</span></a>
                             <ul>
                                 <li>
-                                    <a href="page_ui_widgets.html">Widgets</a>
+                                    <a href="">导航栏</a>
                                 </li>
                                 <li>
+                                    <a href="">banner</a>
+                                </li>
+<!--                                 <li>
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Elements</a>
                                     <ul>
                                         <li>
@@ -248,16 +252,46 @@
                                             <a href="page_ui_icons_glyphicons_pro.html">Glyphicons Pro</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                         <li>
-                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-airplane sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Components</span></a>
+                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-airplane sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">小组事务</span></a>
                             <ul>
                                 <li>
-                                    <a href="page_comp_todo.html">To-do List</a>
+                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">新课程</a>
+                                        </li>
+                                        <li>
+                                            <a href="">以往课程</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
+                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>项目管理</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">添加项目</a>
+                                        </li>
+                                        <li>
+                                            <a href="">所有项目</a>
+                                        </li>
+                                    </ul>
+                                </li>                                
+                                <li>
+                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>新闻管理</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">添加新闻</a>
+                                        </li>
+                                        <li>
+                                            <a href="">所有新闻</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                               <!--  <li>
                                     <a href="page_comp_gallery.html">Gallery</a>
                                 </li>
                                 <li>
@@ -277,11 +311,11 @@
                                 </li>
                                 <li>
                                     <a href="page_comp_nestable.html">Nestable &amp; Sortable Lists</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                         <li>
-                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-more_items sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">UI Layouts</span></a>
+                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-more_items sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">小组wiki</span></a>
                             <ul>
                                 <li>
                                     <a href="page_layout_static.html">Static</a>
@@ -307,7 +341,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-gift sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Extra Pages</span></a>
+                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-gift sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">现有项目进度</span></a>
                             <ul>
                                 <li>
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Base</a>
@@ -512,7 +546,7 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <p style="color: black">index Controller UI</p>
+    <p style="color: black">index Controller UIs我的分支小测试</p>
     <div>
         <div id="editor" style="width:900px;height:500px;" ></div>
     </div>
