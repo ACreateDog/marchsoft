@@ -1,0 +1,25 @@
+<extend name="base/base"/>
+<block name="content">
+<div style="width: 80%;margin: auto;">
+    <form action="/marchsoft/admin/banner/upload" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="state-normal">链接地址:</label>
+            <div class="col-md-6">
+                <input type="text" id="state-normal" name="imgLink" required maxlength="200" class="form-control" placeholder="请输入一个合法的链接地址">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="example-file-multiple-input">上传图片:</label>
+            <div class="col-md-9">
+                <input required type="file" id="example-file-multiple-input" name="image">
+            </div>
+        </div>
+        <div class="form-group form-actions" style="background: #ebeef2;"> 
+        <div class="col-md-9 col-md-offset-3">
+            <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">Submit</button>
+            <button type="reset" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">Reset</button>
+        </div>
+    </div>
+    </form>
+</div>
+</block>

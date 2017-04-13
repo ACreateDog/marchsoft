@@ -45,6 +45,7 @@
     <script src="__JS__/pages/readyDashboard.js"></script>
     <script src="__JS__/plugins.js"></script>
     <script src="__JS__/app.js"></script>
+    <script type="text/javascript" src="__JS__/banner/banner.js"></script>
 
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.all.min.js"> </script>
@@ -100,6 +101,7 @@
 
         'enable-cookies'                                enables cookies for remembering active color theme when changed from the sidebar links (You can add it along with any other class)
     -->
+    
     <div id="page-container" class="header-fixed-top sidebar-visible-lg-full">
         <!-- Alternative Sidebar -->
         <div id="sidebar-alt" tabindex="-1" aria-hidden="true">
@@ -189,7 +191,7 @@
                     <!-- Sidebar Navigation -->
                     <ul class="sidebar-nav">
                         <li>
-                            <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">功能菜单</span></a>
+                            <a href="index.html" class="active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">功能菜单</span></a>
                         </li>
                         <li class="sidebar-separator">
                             <i class="fa fa-ellipsis-h"></i>
@@ -201,7 +203,15 @@
                                     <a href="">导航栏</a>
                                 </li>
                                 <li>
-                                    <a href="">banner</a>
+                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>banner</a>
+                                    <ul>
+                                        <li>
+                                            <a id="level-add" href="/marchsoft/admin/banner/add">添加</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-change" href="/marchsoft/admin/banner/change">管理</a>
+                                        </li>
+                                    </ul>
                                 </li>
 <!--                                 <li>
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Elements</a>
@@ -555,9 +565,18 @@
 </div>
 <block name="js">
     <script type="text/javascript">
-
     </script>
 </block>
+<script type="text/javascript">
+    $url = window.location.href;
+    $names = $url.split('/');
+    $name = $names[$names.length - 1].split('.');
+    $("#level-"+$name[0]).addClass('active');
+    $("#"+$name[0]).addClass('active');
+    $("#"+$name[0]).parent().parent().prev().addClass('open');
+    $("#level-"+$name[0]).parent().parent().prev().addClass('open');
+    $("#level-"+$name[0]).parent().parent().parent().parent().prev().addClass('open');
+</script>
 
 <!-- END Page Wrapper -->
 
