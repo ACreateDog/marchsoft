@@ -1,3 +1,8 @@
+<<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/index/index.html";i:1491974932;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1491975056;}*/ ?>
+=======
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:88:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/marchclass.html";i:1492525300;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
+>>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb:runtime/temp/7ff932af3286e315d773a7165608aea6.php
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -36,7 +41,6 @@
 
     <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
     <link rel="stylesheet" href="__CSS__/themes.css">
-    <link rel="stylesheet" href="__ADMIN_CSS__">
     <!-- END Stylesheets -->
 
     <!-- Modernizr (browser feature detection library) -->
@@ -46,25 +50,17 @@
     <script src="__JS__/pages/readyDashboard.js"></script>
     <script src="__JS__/plugins.js"></script>
     <script src="__JS__/app.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <script src="__LAYER__/layer.js"></script>
-=======
-    <script src="__JS__/jquery.form.js"></script>
->>>>>>> a6a17a1d634ced077c2ad1a51ea759dd39912358
-=======
     <script type="text/javascript" src="__JS__/banner/banner.js"></script>
->>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb
 
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.all.min.js"> </script>
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
-    <block name="css">
-    </block>
+    
+    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
+
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -210,7 +206,9 @@
                                     <a href="">导航栏</a>
                                 </li>
                                 <li>
-
+<<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
+                                    <a href="">banner</a>
+=======
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>banner</a>
                                     <ul>
                                         <li>
@@ -220,6 +218,7 @@
                                             <a id="level-change" href="/marchsoft/admin/banner/change">管理</a>
                                         </li>
                                     </ul>
+>>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb:runtime/temp/7ff932af3286e315d773a7165608aea6.php
                                 </li>
 <!--                                 <li>
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Elements</a>
@@ -278,6 +277,12 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
                                     <ul>
                                         <li>
+<<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
+                                            <a href="">新课程</a>
+                                        </li>
+                                        <li>
+                                            <a href="">以往课程</a>
+=======
                                             <a id="level-addclass" href="/marchsoft/admin/marchClass/addclass">新课程</a>
                                         </li>
                                         <li>
@@ -288,6 +293,7 @@
                                         </li>
                                         <li>
                                             <a id="level-classType" href="/marchsoft/admin/marchClass/classType">类型管理</a>
+>>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb:runtime/temp/7ff932af3286e315d773a7165608aea6.php
                                         </li>
                                     </ul>
                                 </li>
@@ -303,27 +309,13 @@
                                     </ul>
                                 </li>                                
                                 <li>
-                                    <a id="news" href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>新闻管理</a>
+                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>新闻管理</a>
                                     <ul>
                                         <li>
-                                            <a id="level-addnews" href="__ROOT__/admin/news/addnews">添加新闻</a>
+                                            <a href="">添加新闻</a>
                                         </li>
                                         <li>
-                                            <a id="level-allnews" href="__ROOT__/admin/news/allnews">所有新闻</a>
-                                        </li>
-                                        <li>
-                                            <a id="level-alreadydown" href="__ROOT__/admin/news/alreadydown">已下架</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" id="manager" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>管理员</a>
-                                    <ul>
-                                        <li>
-                                            <a id="level-addmanager" href="__ROOT__/admin/manager/addmanager">添加管理员</a>
-                                        </li>
-                                        <li>
-                                            <a id="level-allmanager" href="__ROOT__/admin/manager/allmanager">所有管理员</a>
+                                            <a href="">所有新闻</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -581,9 +573,91 @@
             </header>
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
-                <block name="content">
+                
+<<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
+    <p style="color: black">index Controller UIs我的分支小测试</p>
+    <div>
+        <div id="editor" style="width:900px;height:500px;" ></div>
+=======
+    <div class="block full">
+        <div class="table-responsive">
+            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-5"></div>
+                    <div class="col-sm-6 col-xs-7">
+                        <div id="example-datatable_filter" class="dataTables_filter">
+                            <label><div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search" aria-controls="example-datatable">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer">
+                    <thead>
+                        <tr role="row">
+                            <th class="text-center" style="width: 49px;" tabindex="0">ID</th>
+                            <th tabindex="0" style="width: 100px;">课程题目</th>
+                            <th tabindex="0" style="width: 60px;">封面</th>
+                            <th tabindex="0" style="width: 147px;">授课人</th>
+                            <th tabindex="0" style="width: 170px;">课程类型</th>
+                            <th tabindex="0" style="width: 200px;">上传时间</th>
+                            <th tabindex="0" style="width: 200px;">更新时间</th>
+                            <th style="width: 70px;" tabindex="0">Status</th>
+                            <th class="text-center sorting_disabled" style="width: 74px;" rowspan="1" colspan="1" aria-label=""><i class="fa fa-flash"></i></th></tr>
+                    </thead>
+                    <tbody>
+                        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$class): $mod = ($i % 2 );++$i;?>
+                            <tr role="row" class="odd">
+                                <td class="text-center sorting_1"><?php echo $class['id']; ?></td>
+                                <td><?php echo $class['title']; ?></td>
+                                <td>
+                                    <div style="width: 150px;height: 80px;" class="gallery-image-container animation-fadeInQuick2" data-category="travel">
+                                        <img src="<?php echo $class['url']; ?>" alt="" style="width: 100%;height: 100%;">
+                                        <a href="<?php echo $class['url']; ?>" class="gallery-image-options" data-toggle="lightbox-image" title="">
+                                            <i class="fa fa-search-plus fa-3x text-light"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><strong><?php echo $class['lecturer']; ?></strong></td>
+                                <td><?php echo $class['type']; ?></td>
+                                <td><?php echo $class['created_at']; ?></td>
+                                <td><?php echo $class['updated_at']; ?></td>
+                                <td>
+                                    <span class="label label-info">已启用</span>
+                                </td>
+                                <td class="text-center">
+                                    <a href="/marchsoft/admin/marchClass/addclass?changeId=<?php echo $class['id']; ?>" data-toggle="tooltip" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="Edit Class"><i class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data="<?php echo $class['id']; ?>" data-toggle="tooltip" class="btn btn-effect-ripple btn-xs btn-danger delete-class" style="overflow: hidden; position: relative;" data-original-title="Delete Class"><i class="fa fa-times"></i></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </tbody>
+                </table>
+                <div><?php echo $list->render(); ?></div>
+            </div>
+        </div>
+    </div>
+    <div id="cover-box"></div>
+    <div id="tip-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>提示</strong></h4>
+            <p>将删除课程<span id="class-title-tip"></span>,被删除的课程可<a href="/marchsoft/admin/marchClass/deletedClass">前往旧课程篓</a>查看,是否要删除?</p>
+            <div>
+                <a href="javascript:void(0)" id="cance-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-btn" class="btn btn-primary btn-sm">确定</a>
+            </div>
 
-                </block>
+        </div>
+        <!-- END Info Alert -->
+>>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb:runtime/temp/7ff932af3286e315d773a7165608aea6.php
+    </div>
+
             </div>
 
         </div>
@@ -591,10 +665,9 @@
     </div>
     <!-- END Page Container -->
 </div>
-<block name="js">
-    <script type="text/javascript">
-    </script>
-</block>
+
+    <script type="text/javascript" src="__JS__/class/marchClass.js"></script>
+
 <script type="text/javascript">
     $url = window.location.href;
     $names = $url.split('/');

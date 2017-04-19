@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/index/index.html";i:1491974932;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1491975056;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/all.html";i:1492607381;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492607913;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -37,6 +37,7 @@
 
     <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
     <link rel="stylesheet" href="__CSS__/themes.css">
+    <link rel="stylesheet" href="__ADMIN_CSS__">
     <!-- END Stylesheets -->
 
     <!-- Modernizr (browser feature detection library) -->
@@ -46,18 +47,33 @@
     <script src="__JS__/pages/readyDashboard.js"></script>
     <script src="__JS__/plugins.js"></script>
     <script src="__JS__/app.js"></script>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <script src="__LAYER__/layer.js"></script>
+=======
+    <script src="__JS__/jquery.form.js"></script>
+>>>>>>> a6a17a1d634ced077c2ad1a51ea759dd39912358
+=======
+    <script type="text/javascript" src="__JS__/banner/banner.js"></script>
+>>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb
 
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.all.min.js"> </script>
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-        <style type="text/css">
+    <style type="text/css">
+        .img_cover{
+            margin: 0px;
+            padding: 0px;
+            max-height: 50px;
+            max-width: 100px;
+        }
+    </style>
 
-        </style>
-    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -191,7 +207,7 @@
                     <!-- Sidebar Navigation -->
                     <ul class="sidebar-nav">
                         <li>
-                            <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">功能菜单</span></a>
+                            <a href="index.html" class="active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">功能菜单</span></a>
                         </li>
                         <li class="sidebar-separator">
                             <i class="fa fa-ellipsis-h"></i>
@@ -203,7 +219,16 @@
                                     <a href="">导航栏</a>
                                 </li>
                                 <li>
-                                    <a href="">banner</a>
+
+                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>banner</a>
+                                    <ul>
+                                        <li>
+                                            <a id="level-add" href="/marchsoft/admin/banner/add">添加</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-change" href="/marchsoft/admin/banner/change">管理</a>
+                                        </li>
+                                    </ul>
                                 </li>
 <!--                                 <li>
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Elements</a>
@@ -262,10 +287,16 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
                                     <ul>
                                         <li>
-                                            <a href="">新课程</a>
+                                            <a id="level-addclass" href="/marchsoft/admin/marchClass/addclass">新课程</a>
                                         </li>
                                         <li>
-                                            <a href="">以往课程</a>
+                                            <a id="level-marchclass" href="/marchsoft/admin/marchClass/marchclass">课程表</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-deletedClass" href="/marchsoft/admin/marchClass/deletedClass">旧课程篓</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-classType" href="/marchsoft/admin/marchClass/classType">类型管理</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -281,13 +312,27 @@
                                     </ul>
                                 </li>                                
                                 <li>
-                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>新闻管理</a>
+                                    <a id="news" href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>新闻管理</a>
                                     <ul>
                                         <li>
-                                            <a href="">添加新闻</a>
+                                            <a id="level-addnews" href="__ROOT__/admin/news/addnews">添加新闻</a>
                                         </li>
                                         <li>
-                                            <a href="">所有新闻</a>
+                                            <a id="level-allnews" href="__ROOT__/admin/news/allnews">所有新闻</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-alreadydown" href="__ROOT__/admin/news/alreadydown">已下架</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="manager" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>管理员</a>
+                                    <ul>
+                                        <li>
+                                            <a id="level-addmanager" href="__ROOT__/admin/manager/addmanager">添加管理员</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-allmanager" href="__ROOT__/admin/manager/allmanager">所有管理员</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -546,11 +591,95 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <p style="color: black">index Controller UIs我的分支小测试</p>
-    <div>
-        <div id="editor" style="width:900px;height:500px;" ></div>
+    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
+        <h4><strong>提示</strong></h4>
+        <p></p>
     </div>
-    <button onclick="f();">显示内容</button>
+    <div id="success_alert" class="all-alert">
+        <h4><strong>成功！</strong></h4>
+        <p></p>
+    </div>
+    <div id="error_alert" class="all-alert" style="background-color: #de815c">
+        <h4><strong>出错了！</strong></h4>
+        <p></p>
+    </div>
+    <div class="block full">
+        <div class="block-title">
+            <h2>全部新闻</h2>
+        </div>
+        <div class="table-responsive">
+            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <!--<div class="row">-->
+                    <!--<div class="col-sm-6 col-xs-5">-->
+                        <!--div class="dataTables_length" id="example-datatable_length">-->
+                        <!--<label>-->
+                            <!--&lt;!&ndash;<select name="example-datatable_length" aria-controls="example-datatable" class="form-control">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="5">5</option>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="10">10</option>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="20">20</option>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</select>&ndash;&gt;-->
+                        <!--</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 col-xs-7">-->
+                    <!--<div id="example-datatable_filter" class="dataTables_filter">-->
+                        <!--<label>-->
+                            <!--<div class="input-group">-->
+                            <!--<input type="search" class="form-control" placeholder="Search" aria-controls="example-datatable">-->
+                                <!--<span class="input-group-addon"><i class="fa fa-search"></i></span>-->
+                            <!--</div>-->
+                        <!--</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer" role="grid" aria-describedby="example-datatable_info">
+                <thead>
+                    <tr role="row">
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 100px;">封面</th>
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 399px;">标题</th>
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 178px;">作者</th>
+                        <th class="text-center" style="width: 100px;" tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="ID: activate to sort column descending" aria-sort="ascending">时间</th>
+                        <th style="width: 40px;"  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">状态</th>
+                        <th class="text-center sorting_disabled" style="width: 100px;" rowspan="1" colspan="1" aria-label=""><i class="fa fa-flash"><strong>操作</strong></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php if(is_array($content) || $content instanceof \think\Collection || $content instanceof \think\Paginator): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$line): $mod = ($i % 2 );++$i;?>
+                    <tr role="row" class="odd">
+                        <td><img class="img_cover" id="img_<?php echo $line['id']; ?>" src="" alt="<?php echo $line['title']; ?>"></td>
+                        <td class="text-center sorting_1"><strong><?php echo $line['title']; ?></strong></td>
+                        <td><?php echo $line['writer']; ?></td>
+                        <td><?php echo date("Y-m-d",$line['created_at'] ); ?></td>
+                        <td>
+                            <?php if($line->status == '1'): ?>
+                                <span class="label label-success">正常</span>
+                            <?php endif; if($line->status == '0'): ?>
+                                <span class="label label-warning">已禁用</span>
+                            <?php endif; ?>
+                        </td>
+                        <td class="text-center">
+
+                            <a href="__ROOT__/admin/news/editor?id=<?php echo $line['id']; ?>" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="编辑"><i class="fa fa-pencil">编辑</i></a>
+                            <a id="<?php echo $line['id']; ?>" onclick="putDown(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="下架"><i class="fa fa-times">下架</i></a>
+                        </td>
+                    </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+
+                </tbody>
+            </table>
+                <div class="row">
+
+                    <div class="col-sm-7 col-xs-12 clearfix">
+                        <div class="dataTables_paginate paging_bootstrap" id="example-datatable_paginate">
+                            <ul class="pagination pagination-sm remove-margin">
+                                <?php echo $page; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
             </div>
 
@@ -561,13 +690,59 @@
 </div>
 
     <script type="text/javascript">
-        var ue = UE.getEditor('editor');
-        function f() {
-            var content = ue.getContent();
-            alert(content);
+//        window.onload(setImage());
+        function putDown(ele) {
+            var putDownId = ele.id;
+
+            sendGetAjax("__ROOT__/admin/news/putdown?id="+putDownId,function (response) {
+                var jsObj = JSON.parse(response);
+                console.log(jsObj.data)
+                if (jsObj.code == 1){
+                    var tbody = ele.parentNode.parentNode.parentNode;
+                    var tr = ele.parentNode.parentNode;
+                    tr.style.backgroundColor = "#5cafde";
+                    setTimeout(function () {
+                        tbody.removeChild(tr);
+                        showInfo(jsObj);
+                    },500);
+                }else {
+                    showInfo(jsObj);
+                }
+            });
+        }
+        setImage();
+        function setImage() {
+           var page = getQueryString("page");
+           if (page == null){
+                page = 1;
+           }
+           sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=1&rand='+((new Date()).valueOf())+Math.random(),function (response) {
+                var jsObj = JSON.parse(response);
+
+                var imgUrlarr = jsObj.data.data;
+
+                for (var i = 0;i<imgUrlarr.length;i++){
+
+                    var id = 'img_'+imgUrlarr[i].id;
+                    var imgURL = imgUrlarr[i].url;
+//                    console.log(imgURL +" "+id);
+                    document.getElementById(id).src=imgURL;
+                }
+           });
         }
     </script>
 
+<script type="text/javascript">
+    $url = window.location.href;
+    $names = $url.split('/');
+    $name = $names[$names.length - 1].split('.');
+    $urlName = $name[0].split('?');
+    $("#level-"+$urlName[0]).addClass('active');
+    $("#"+$urlName[0]).addClass('active');
+    $("#"+$urlName[0]).parent().parent().prev().addClass('open');
+    $("#level-"+$urlName[0]).parent().parent().prev().addClass('open');
+    $("#level-"+$urlName[0]).parent().parent().parent().parent().prev().addClass('open');
+</script>
 
 <!-- END Page Wrapper -->
 

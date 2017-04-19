@@ -1,0 +1,91 @@
+<extend name="base/base"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS__/banner/banner.css">
+</block>
+<block name="content">
+    <div class="block full">
+        <div class="table-responsive">
+            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer">
+                    <thead>
+                    <tr role="row">
+                        <th class="text-center" style="width: 49px;" tabindex="0">ID</th>
+                        <th class="" tabindex="0" style="width: 147px;">图片</th>
+                        <th class="" tabindex="0" style="width: 150px;">创建时间</th>
+                        <th style="width: 80px;">Status</th>
+                        <th class="text-center" style="width: 100px;"><i class="fa fa-flash"></i></th></tr>
+                    </thead>
+                    <tbody>
+                    <volist name="list" id="banner">
+                        <tr role="row" class="odd">
+                            <td class="text-center sorting_1">{$banner.id}</td>
+                            <td>
+                                <div style="width: 150px;height: 80px;" class="gallery-image-container animation-fadeInQuick2" data-category="travel">
+                                    <img src="{$banner.url}" alt="" style="width: 100%;height: 100%;">
+                                    <a href="{$banner.url}" class="gallery-image-options" data-toggle="lightbox-image" title="">
+                                        <i class="fa fa-search-plus fa-3x text-light"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>{$banner.created_at}</td>
+                            <td>
+                                <if condition="$banner.status == 1">
+                                    <span class="label label-info">已启用</span>
+                                    <else/><span class="label label-danger">已禁用</span>
+                                </if>
+                                <if condition="$banner.is_top == 1">
+                                    <span class="label label-success">已置顶</span>
+                                </if>
+                            </td>
+                            <td class="text-center">
+                                <if condition="$banner.status == 1">
+                                    <a data="{$banner.img_link}" data-id="{$banner.id}" data-imgid="{$banner.img_id}" data-toggle="modal" data-target="#mymodal-data" title="编辑图片和链接" class="btn btn-effect-ripple btn-xs btn-success edit-banner" style="overflow: hidden; position: relative;padding: 5px 10px;">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                    <a href="/marchsoft/admin/banner/changeStatus?id={$banner.id}&bannerStatus=1" type="button" class="btn btn-effect-ripple btn-danger btn-sm" style="overflow: hidden; position: relative;">
+                                        <span class="btn-ripple animate" style="height: 71px; width: 71px; top: -10.5px; left: 9.5px;"></span>
+                                        禁用
+                                    </a>
+                                    <if condition="$banner.is_top neq 1">
+                                        <a href="/marchsoft/admin/banner/setTop?id={$banner.id}" class="btn btn-primary btn-sm set-top">置顶</a>
+                                    </if>
+                                    <else/><a href="/marchsoft/admin/banner/changeStatus?id={$banner.id}&bannerStatus=0" class="btn btn-info btn-sm">启用</a>
+                                </if>
+                                <!--<a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="Delete User"><i class="fa fa-times"></i></a>-->
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+                <div>{$list->render()}</div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态弹出窗内容 -->
+    <div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">修改banner信息</h4>
+                </div>
+                <form action="/marchsoft/admin/banner/upload" enctype="multipart/form-data" method="post">
+                    <div class="modal-body">
+                        <div id="mymodel-form">
+                            <input id="temp-input-bannerid" type="text" name="bannerId">
+                            <input id="temp-input-imgid" type="text" name="imgId">
+                            <span>修改链接:</span>
+                            <input required id="img-link-input" name="imgLink" type="text">
+                            <span>上传新图片:</span>
+                            <input required type="file" id="example-file-multiple-input" style="cursor: pointer;" name="image">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</block>

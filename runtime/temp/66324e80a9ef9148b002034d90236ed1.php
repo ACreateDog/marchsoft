@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:86:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/banner/add.html";i:1492607779;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492607913;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,8 +64,8 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
-    <block name="css">
-    </block>
+    
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -581,9 +582,30 @@
             </header>
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
-                <block name="content">
+                
+<div style="width: 80%;margin: auto;">
+    <form action="/marchsoft/admin/banner/upload" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
+        <div class="form-group">
+            <label class="col-md-3 control-label">链接地址:</label>
+            <div class="col-md-6">
+                <input type="text" name="imgLink" required maxlength="200" class="form-control" placeholder="请输入一个合法的链接地址">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="example-file-multiple-input">上传图片:</label>
+            <div class="col-md-9">
+                <input required type="file" id="example-file-multiple-input" name="image">
+            </div>
+        </div>
+        <div class="form-group form-actions" style="background: #ebeef2;"> 
+        <div class="col-md-9 col-md-offset-3">
+            <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">Submit</button>
+            <button type="reset" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">Reset</button>
+        </div>
+    </div>
+    </form>
+</div>
 
-                </block>
             </div>
 
         </div>
@@ -591,10 +613,10 @@
     </div>
     <!-- END Page Container -->
 </div>
-<block name="js">
+
     <script type="text/javascript">
     </script>
-</block>
+
 <script type="text/javascript">
     $url = window.location.href;
     $names = $url.split('/');

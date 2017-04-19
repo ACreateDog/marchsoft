@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/down.html";i:1492607381;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492607913;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,8 +64,16 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
-    <block name="css">
-    </block>
+    
+    <style type="text/css">
+        .img_cover{
+            margin: 0px;
+            padding: 0px;
+            max-height: 50px;
+            max-width: 100px;
+        }
+    </style>
+
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -581,9 +590,79 @@
             </header>
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
-                <block name="content">
+                
+    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
+        <h4><strong>提示</strong></h4>
+        <p></p>
+    </div>
+    <div id="success_alert" class="all-alert">
+        <h4><strong>成功！</strong></h4>
+        <p></p>
+    </div>
+    <div id="error_alert" class="all-alert" style="background-color: #de815c">
+        <h4><strong>出错了！</strong></h4>
+        <p></p>
+    </div>
+    <div class="block full">
+        <div class="block-title">
+            <h2>全部新闻</h2>
+        </div>
+        <div class="table-responsive">
+            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+            </div>
+            <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer" role="grid" aria-describedby="example-datatable_info">
+                <thead>
+                <tr role="row">
+                    <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 100px;">封面</th>
+                    <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 399px;">标题</th>
+                    <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 178px;">作者</th>
+                    <th class="text-center" style="width: 100px;" tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="ID: activate to sort column descending" aria-sort="ascending">时间</th>
+                    <th style="width: 40px;"  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">状态</th>
+                    <th class="text-center sorting_disabled" style="width: 100px;" rowspan="1" colspan="1" aria-label=""><i class="fa fa-flash"><strong>操作</strong></i></th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if(is_array($content) || $content instanceof \think\Collection || $content instanceof \think\Paginator): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$line): $mod = ($i % 2 );++$i;?>
+                    <tr role="row" class="odd">
+                        <td><img class="img_cover" id="img_<?php echo $line['id']; ?>" src="" alt="<?php echo $line['title']; ?>"></td>
+                        <td class="text-center sorting_1"><strong><?php echo $line['title']; ?></strong></td>
+                        <td><?php echo $line['writer']; ?></td>
+                        <td><?php echo date("Y-m-d",$line['created_at'] ); ?></td>
+                        <td>
+                            <?php if($line->status == '1'): ?>
+                                <span class="label label-success">正常</span>
+                            <?php endif; if($line->status == '0'): ?>
+                                <span class="label label-warning">已禁用</span>
+                            <?php endif; ?>
+                        </td>
+                        <td class="text-center">
 
-                </block>
+                            <a href="__ROOT__/admin/news/editor?id=<?php echo $line['id']; ?>" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="编辑">
+                                <i class="fa fa-pencil">编辑</i>
+                            </a>
+                            <a id="<?php echo $line['id']; ?>" onclick="setUp(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="下架">
+                                <i class="fa fa-times">上架</i>
+                            </a>
+                        </td>
+                    </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+
+                </tbody>
+            </table>
+            <div class="row">
+
+                <div class="col-sm-7 col-xs-12 clearfix">
+                    <div class="dataTables_paginate paging_bootstrap" id="example-datatable_paginate">
+                        <ul class="pagination pagination-sm remove-margin">
+                            <?php echo $page; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
             </div>
 
         </div>
@@ -591,10 +670,45 @@
     </div>
     <!-- END Page Container -->
 </div>
-<block name="js">
+
     <script type="text/javascript">
+        function setUp(ele) {
+            var putDownId = ele.id;
+
+            sendGetAjax("__ROOT__/admin/news/setup?id="+putDownId,function (response) {
+                var jsObj = JSON.parse(response);
+                console.log(jsObj.data)
+                if (jsObj.code == 1){
+                    var tbody = ele.parentNode.parentNode.parentNode;
+                    var tr = ele.parentNode.parentNode;
+                    tbody.removeChild(tr);
+                    showInfo(jsObj);
+                }else {
+                    showInfo(jsObj);
+                }
+            });
+        }
+        setImage();
+        function setImage() {
+            var page = getQueryString("page");
+            if (page == null){
+                page = 1;
+            }
+            sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=0',function (response) {
+                var jsObj = JSON.parse(response);
+                var imgUrlarr = jsObj.data.data;
+
+                for (var i = 0;i<imgUrlarr.length;i++){
+
+                    var id = 'img_'+imgUrlarr[i].id;
+                    var imgURL = imgUrlarr[i].url;
+                    console.log(imgURL+"  "+id);
+                    document.getElementById(id).src=imgURL;
+                }
+            });
+        }
     </script>
-</block>
+
 <script type="text/javascript">
     $url = window.location.href;
     $names = $url.split('/');
