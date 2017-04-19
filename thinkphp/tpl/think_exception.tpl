@@ -487,7 +487,7 @@
 
             // 设置出错行
             var err_line = $('.line-' + LINE, ol[0])[0];
-            err_line.className = err_line.className + ' line-error';
+            err_line.className = err_line.className + ' line-errorpage';
 
             $.getScript('//cdn.bootcss.com/prettify/r298/prettify.min.js', function(){
                 prettyPrint();
