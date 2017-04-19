@@ -20,7 +20,12 @@
                         <tr role="row" class="odd">
                             <td class="text-center sorting_1">{$banner.id}</td>
                             <td>
-                                <img src="{$banner.url}" alt="" style="width: 150px;height: 70px;">
+                                <div style="width: 150px;height: 80px;" class="gallery-image-container animation-fadeInQuick2" data-category="travel">
+                                    <img src="{$banner.url}" alt="" style="width: 100%;height: 100%;">
+                                    <a href="{$banner.url}" class="gallery-image-options" data-toggle="lightbox-image" title="">
+                                        <i class="fa fa-search-plus fa-3x text-light"></i>
+                                    </a>
+                                </div>
                             </td>
                             <td>{$banner.created_at}</td>
                             <td>
@@ -52,7 +57,7 @@
                     </volist>
                     </tbody>
                 </table>
-                {$list->render()}
+                <div>{$list->render()}</div>
             </div>
         </div>
     </div>

@@ -54,9 +54,6 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
 
     <block name="css">
-        <style type="text/css">
-
-        </style>
     </block>
 </head>
 <body>
@@ -270,10 +267,16 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
                                     <ul>
                                         <li>
-                                            <a href="">新课程</a>
+                                            <a id="level-addclass" href="/marchsoft/admin/marchClass/addclass">新课程</a>
                                         </li>
                                         <li>
-                                            <a href="">以往课程</a>
+                                            <a id="level-marchclass" href="/marchsoft/admin/marchClass/marchclass">课程表</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-deletedClass" href="/marchsoft/admin/marchClass/deletedClass">旧课程篓</a>
+                                        </li>
+                                        <li>
+                                            <a id="level-classType" href="/marchsoft/admin/marchClass/classType">类型管理</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -571,11 +574,12 @@
     $url = window.location.href;
     $names = $url.split('/');
     $name = $names[$names.length - 1].split('.');
-    $("#level-"+$name[0]).addClass('active');
-    $("#"+$name[0]).addClass('active');
-    $("#"+$name[0]).parent().parent().prev().addClass('open');
-    $("#level-"+$name[0]).parent().parent().prev().addClass('open');
-    $("#level-"+$name[0]).parent().parent().parent().parent().prev().addClass('open');
+    $urlName = $name[0].split('?');
+    $("#level-"+$urlName[0]).addClass('active');
+    $("#"+$urlName[0]).addClass('active');
+    $("#"+$urlName[0]).parent().parent().prev().addClass('open');
+    $("#level-"+$urlName[0]).parent().parent().prev().addClass('open');
+    $("#level-"+$urlName[0]).parent().parent().parent().parent().prev().addClass('open');
 </script>
 
 <!-- END Page Wrapper -->
