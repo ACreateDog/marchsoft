@@ -1,6 +1,11 @@
 <extend name="base/base"/>
 <block name="content">
-    类型管理
+    <volist name="allType" id="type">
+        <if condition="$type.class_id eq ''">
+            <span class="label label-warning">{$type.type}(未使用)</span>
+            <else/><span class="label label-success">{$type.type}</span>
+        </if>
+    </volist>
 </block>
 <block name="js">
     <script type="text/javascript" src="__JS__/class/classType.js"></script>

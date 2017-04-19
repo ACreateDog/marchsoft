@@ -1,8 +1,12 @@
+<<<<<<< HEAD:runtime/temp/7ff932af3286e315d773a7165608aea6.php
 <<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
 <?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/index/index.html";i:1491974932;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1491975056;}*/ ?>
 =======
 <?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:88:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/marchclass.html";i:1492525300;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
 >>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb:runtime/temp/7ff932af3286e315d773a7165608aea6.php
+=======
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html";i:1492606101;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
+>>>>>>> e8c34815b5851e374c6ace654f309059b4b55637:runtime/temp/4ddc8249ea0e576745a2241ae64869f3.php
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -59,8 +63,7 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
 
     
-    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
-
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -574,6 +577,7 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
+<<<<<<< HEAD:runtime/temp/7ff932af3286e315d773a7165608aea6.php
 <<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
     <p style="color: black">index Controller UIs我的分支小测试</p>
     <div>
@@ -657,6 +661,12 @@
         <!-- END Info Alert -->
 >>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb:runtime/temp/7ff932af3286e315d773a7165608aea6.php
     </div>
+=======
+    <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
+            <span class="label label-warning"><?php echo $type['type']; ?>(未使用)</span>
+            <?php else: ?><span class="label label-success"><?php echo $type['type']; ?></span>
+        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+>>>>>>> e8c34815b5851e374c6ace654f309059b4b55637:runtime/temp/4ddc8249ea0e576745a2241ae64869f3.php
 
             </div>
 
@@ -666,7 +676,7 @@
     <!-- END Page Container -->
 </div>
 
-    <script type="text/javascript" src="__JS__/class/marchClass.js"></script>
+    <script type="text/javascript" src="__JS__/class/classType.js"></script>
 
 <script type="text/javascript">
     $url = window.location.href;
