@@ -1,0 +1,207 @@
+<extend name="base/base"/>
+<block name="css">
+
+    <style type="text/css">
+
+        .all{
+            border-top: none;
+            border-left: none ;
+            border-right: none;
+            border-bottom:1px solid #5ccdde;
+            height: 45px;
+            font-size: 15px;
+            padding-left: 10px;
+            border-radius: 3px;
+            text-align: center;
+            z-index: 10;
+        }
+        .title{
+
+            width: 400px;
+        }
+        .author{
+            margin-left: 250px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 150px;
+        }
+        .submit-btn{
+            margin-left: 851px;
+            margin-top: 20px;
+            background-color: #5ccdde;
+            border: none;
+            margin-bottom: 34px;
+            width: 80px;
+            height: 34px;
+            border-radius: 3px;
+            color: white;
+            outline: none;
+        }
+
+        #file{
+            margin: 0px;
+            z-index:100;
+
+            font-size:60px;opacity:0;
+            filter:alpha(opacity=10);
+
+            width: 100px;
+            height: 100px;
+        }
+        .uploda_img{
+            position: absolute;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: #ffffff;
+            border:1px #5ccdde solid;
+            margin-left: -240px;
+            margin-top: 0px;
+            border-radius: 3px;
+            background-size: auto 100px;
+            background-repeat: no-repeat;
+
+        }
+        .uploda_img span{
+            position: absolute;
+            display: inline-block;
+            font-size: 15px;
+            text-align: center;
+            width: 100px;
+            margin-left: -51px;
+            margin-top: 36px;
+            color: gray;
+        }
+    </style>
+</block>
+<block name="content">
+    
+    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
+        <h4><strong>提示</strong></h4>
+        <p></p>
+    </div>
+    <div id="success_alert" class="all-alert">
+        <h4><strong>成功！</strong></h4>
+        <p></p>
+    </div>
+    <div id="error_alert" class="all-alert" style="background-color: #de815c">
+        <h4><strong>出错了！</strong></h4>
+        <p></p>
+    </div>
+
+    <div>
+        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
+
+            <div style="width: 880px;margin-left:50px;text-align: center" >
+                    <div id="file_div" class="uploda_img">
+                        <span>上传封面</span>
+                        <input id="file" type="file" name="photo">
+                    </div>
+
+                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
+                <input id="author" class="all author" placeholder="作者" type="text" name="author">
+                <input type="hidden" value="{$id}" name="id">
+                <input id="path" type="hidden" name="path" value="">
+                <input id="content" type="hidden" name="content">
+            </div>
+
+            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
+        </form>
+        <button class="submit-btn" id="sbm" >发布</button>
+    </div>
+</block>
+<block name="js">
+    <script type="text/javascript">
+
+        var ue = UE.getEditor('editor');
+        var infoData =  {
+            "code":2,
+            "msg":"success",
+            "data":{
+
+            }
+        };
+
+        /**
+         * 调用获取要编辑的新闻，
+         **/
+        getEditorNews() ;
+
+        /**
+         * 异步获取新闻
+         **/
+        function getEditorNews() {
+            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId={$id}',function (response) {
+                var jsObj = JSON.parse(response);
+
+                if (jsObj.code == 1){
+
+                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
+                    document.getElementById('file_div').children[0].innerHTML = "";
+                    $("#title").val(jsObj.data.title);
+                    $("#author").val(jsObj.data.writer);
+                    $("#path").val(jsObj.data.url);
+
+                    ue.setContent(jsObj.data.content);
+                }
+            })
+        }
+        
+        $(function(){
+            $("#file").change(function(e){
+                var div = document.getElementById('file_div');
+                if ($("#file").val()){
+                    div.children[0].innerHTML="";
+                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
+                }else {
+                    div.style.backgroundImage = "";
+                }
+            });
+        });
+
+
+        $("#sbm").click(function () {
+            $("#content").val(ue.getContent());
+            if (check()){
+                $("#f").submit();
+            }
+        });
+
+
+        /**
+         * 检查输入是否为空
+         * @returns {boolean}
+         */
+        function check() {
+            var file = $("#file").val();
+            var author = $("#author").val();
+            var title = $("#title").val();
+            var content = $("#content").val();
+            console.log(file);
+            var div = document.getElementById('file_div');
+            if (!file && div.style.backgroundImage==null){
+                infoData.msg = "请封面上传哦";
+                showInfo(infoData);
+                return false;
+            }
+            if (author == undefined){
+
+                infoData.msg = "要记得填写作者哦";
+                showInfo(infoData);
+                return false;
+            }
+            if (title == undefined){
+                infoData.msg = "为啥不写标题";
+                showInfo(infoData);
+                return false;
+            }
+            if (content == ""){
+                infoData.msg = "特么文章没有文字";
+                showInfo(infoData);
+                return false;
+            }
+            return true;
+
+        }
+    </script>
+</block>

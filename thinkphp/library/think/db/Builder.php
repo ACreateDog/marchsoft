@@ -313,7 +313,7 @@ abstract class Builder
             if (isset($this->exp[$exp])) {
                 $exp = $this->exp[$exp];
             } else {
-                throw new Exception('where express error:' . $exp);
+                throw new Exception('where express errorpage:' . $exp);
             }
         }
         $bindName = $bindName ?: 'where_' . str_replace(['.', '-'], '_', $field);

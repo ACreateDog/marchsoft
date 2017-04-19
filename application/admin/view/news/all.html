@@ -1,0 +1,147 @@
+<extend name="base/base" />
+<block name="css">
+    <style type="text/css">
+        .img_cover{
+            margin: 0px;
+            padding: 0px;
+            max-height: 50px;
+            max-width: 100px;
+        }
+    </style>
+</block>
+<block name="content">
+    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
+        <h4><strong>提示</strong></h4>
+        <p></p>
+    </div>
+    <div id="success_alert" class="all-alert">
+        <h4><strong>成功！</strong></h4>
+        <p></p>
+    </div>
+    <div id="error_alert" class="all-alert" style="background-color: #de815c">
+        <h4><strong>出错了！</strong></h4>
+        <p></p>
+    </div>
+    <div class="block full">
+        <div class="block-title">
+            <h2>全部新闻</h2>
+        </div>
+        <div class="table-responsive">
+            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <!--<div class="row">-->
+                    <!--<div class="col-sm-6 col-xs-5">-->
+                        <!--div class="dataTables_length" id="example-datatable_length">-->
+                        <!--<label>-->
+                            <!--&lt;!&ndash;<select name="example-datatable_length" aria-controls="example-datatable" class="form-control">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="5">5</option>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="10">10</option>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="20">20</option>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</select>&ndash;&gt;-->
+                        <!--</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 col-xs-7">-->
+                    <!--<div id="example-datatable_filter" class="dataTables_filter">-->
+                        <!--<label>-->
+                            <!--<div class="input-group">-->
+                            <!--<input type="search" class="form-control" placeholder="Search" aria-controls="example-datatable">-->
+                                <!--<span class="input-group-addon"><i class="fa fa-search"></i></span>-->
+                            <!--</div>-->
+                        <!--</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer" role="grid" aria-describedby="example-datatable_info">
+                <thead>
+                    <tr role="row">
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 100px;">封面</th>
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 399px;">标题</th>
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 178px;">作者</th>
+                        <th class="text-center" style="width: 100px;" tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="ID: activate to sort column descending" aria-sort="ascending">时间</th>
+                        <th style="width: 40px;"  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">状态</th>
+                        <th class="text-center sorting_disabled" style="width: 100px;" rowspan="1" colspan="1" aria-label=""><i class="fa fa-flash"><strong>操作</strong></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <volist name="content" id="line">
+                    <tr role="row" class="odd">
+                        <td><img class="img_cover" id="img_{$line.id}" src="" alt="{$line.title}"></td>
+                        <td class="text-center sorting_1"><strong>{$line.title}</strong></td>
+                        <td>{$line.writer}</td>
+                        <td>{$line.created_at | date="Y-m-d",###}</td>
+                        <td>
+                            <eq  name="line:status" value="1">
+                                <span class="label label-success">正常</span>
+                            </eq>
+                            <eq  name="line:status" value="0">
+                                <span class="label label-warning">已禁用</span>
+                            </eq>
+                        </td>
+                        <td class="text-center">
+
+                            <a href="__ROOT__/admin/news/editor?id={$line.id}" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="编辑"><i class="fa fa-pencil">编辑</i></a>
+                            <a id="{$line.id}" onclick="putDown(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="下架"><i class="fa fa-times">下架</i></a>
+                        </td>
+                    </tr>
+                </volist>
+
+                </tbody>
+            </table>
+                <div class="row">
+
+                    <div class="col-sm-7 col-xs-12 clearfix">
+                        <div class="dataTables_paginate paging_bootstrap" id="example-datatable_paginate">
+                            <ul class="pagination pagination-sm remove-margin">
+                                {$page}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script type="text/javascript">
+//        window.onload(setImage());
+        function putDown(ele) {
+            var putDownId = ele.id;
+
+            sendGetAjax("__ROOT__/admin/news/putdown?id="+putDownId,function (response) {
+                var jsObj = JSON.parse(response);
+                console.log(jsObj.data)
+                if (jsObj.code == 1){
+                    var tbody = ele.parentNode.parentNode.parentNode;
+                    var tr = ele.parentNode.parentNode;
+                    tr.style.backgroundColor = "#5cafde";
+                    setTimeout(function () {
+                        tbody.removeChild(tr);
+                        showInfo(jsObj);
+                    },500);
+                }else {
+                    showInfo(jsObj);
+                }
+            });
+        }
+        setImage();
+        function setImage() {
+           var page = getQueryString("page");
+           if (page == null){
+                page = 1;
+           }
+           sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=1&rand='+((new Date()).valueOf())+Math.random(),function (response) {
+                var jsObj = JSON.parse(response);
+
+                var imgUrlarr = jsObj.data.data;
+
+                for (var i = 0;i<imgUrlarr.length;i++){
+
+                    var id = 'img_'+imgUrlarr[i].id;
+                    var imgURL = imgUrlarr[i].url;
+//                    console.log(imgURL +" "+id);
+                    document.getElementById(id).src=imgURL;
+                }
+           });
+        }
+    </script>
+</block>

@@ -138,8 +138,8 @@ class Request
         $this->input = file_get_contents('php://input');
     }
 
-    public function __call($method, $args)
-    {
+    public function __call($method, $args){
+
         if (array_key_exists($method, self::$hook)) {
             array_unshift($args, $this);
             return call_user_func_array(self::$hook[$method], $args);
@@ -1105,7 +1105,7 @@ class Request
                 if (is_scalar($data)) {
                     $data = (string) $data;
                 } else {
-                    throw new \InvalidArgumentException('variable type error：' . gettype($data));
+                    throw new \InvalidArgumentException('variable type errorpage：' . gettype($data));
                 }
         }
     }
