@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:88:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/marchclass.html";i:1492525300;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html";i:1492606101;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -55,8 +55,7 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
 
     
-    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
-
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -559,83 +558,10 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <div class="block full">
-        <div class="table-responsive">
-            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-5"></div>
-                    <div class="col-sm-6 col-xs-7">
-                        <div id="example-datatable_filter" class="dataTables_filter">
-                            <label><div class="input-group">
-                                <input type="search" class="form-control" placeholder="Search" aria-controls="example-datatable">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-search"></i>
-                                </span>
-                            </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer">
-                    <thead>
-                        <tr role="row">
-                            <th class="text-center" style="width: 49px;" tabindex="0">ID</th>
-                            <th tabindex="0" style="width: 100px;">课程题目</th>
-                            <th tabindex="0" style="width: 60px;">封面</th>
-                            <th tabindex="0" style="width: 147px;">授课人</th>
-                            <th tabindex="0" style="width: 170px;">课程类型</th>
-                            <th tabindex="0" style="width: 200px;">上传时间</th>
-                            <th tabindex="0" style="width: 200px;">更新时间</th>
-                            <th style="width: 70px;" tabindex="0">Status</th>
-                            <th class="text-center sorting_disabled" style="width: 74px;" rowspan="1" colspan="1" aria-label=""><i class="fa fa-flash"></i></th></tr>
-                    </thead>
-                    <tbody>
-                        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$class): $mod = ($i % 2 );++$i;?>
-                            <tr role="row" class="odd">
-                                <td class="text-center sorting_1"><?php echo $class['id']; ?></td>
-                                <td><?php echo $class['title']; ?></td>
-                                <td>
-                                    <div style="width: 150px;height: 80px;" class="gallery-image-container animation-fadeInQuick2" data-category="travel">
-                                        <img src="<?php echo $class['url']; ?>" alt="" style="width: 100%;height: 100%;">
-                                        <a href="<?php echo $class['url']; ?>" class="gallery-image-options" data-toggle="lightbox-image" title="">
-                                            <i class="fa fa-search-plus fa-3x text-light"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                                <td><strong><?php echo $class['lecturer']; ?></strong></td>
-                                <td><?php echo $class['type']; ?></td>
-                                <td><?php echo $class['created_at']; ?></td>
-                                <td><?php echo $class['updated_at']; ?></td>
-                                <td>
-                                    <span class="label label-info">已启用</span>
-                                </td>
-                                <td class="text-center">
-                                    <a href="/marchsoft/admin/marchClass/addclass?changeId=<?php echo $class['id']; ?>" data-toggle="tooltip" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="Edit Class"><i class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data="<?php echo $class['id']; ?>" data-toggle="tooltip" class="btn btn-effect-ripple btn-xs btn-danger delete-class" style="overflow: hidden; position: relative;" data-original-title="Delete Class"><i class="fa fa-times"></i></a>
-                                </td>
-                            </tr>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                    </tbody>
-                </table>
-                <div><?php echo $list->render(); ?></div>
-            </div>
-        </div>
-    </div>
-    <div id="cover-box"></div>
-    <div id="tip-box" class="col-sm-6 col-lg-3">
-        <!-- Info Alert -->
-        <div class="alert alert-info">
-            <span class="cance-btn">×</span>
-            <h4><strong>提示</strong></h4>
-            <p>将删除课程<span id="class-title-tip"></span>,被删除的课程可<a href="/marchsoft/admin/marchClass/deletedClass">前往旧课程篓</a>查看,是否要删除?</p>
-            <div>
-                <a href="javascript:void(0)" id="cance-btn" class="btn btn-primary btn-sm">取消</a>
-                <a href="javascript:void(0)" id="sure-btn" class="btn btn-primary btn-sm">确定</a>
-            </div>
-
-        </div>
-        <!-- END Info Alert -->
-    </div>
+    <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
+            <span class="label label-warning"><?php echo $type['type']; ?>(未使用)</span>
+            <?php else: ?><span class="label label-success"><?php echo $type['type']; ?></span>
+        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
             </div>
 
@@ -645,7 +571,7 @@
     <!-- END Page Container -->
 </div>
 
-    <script type="text/javascript" src="__JS__/class/marchClass.js"></script>
+    <script type="text/javascript" src="__JS__/class/classType.js"></script>
 
 <script type="text/javascript">
     $url = window.location.href;

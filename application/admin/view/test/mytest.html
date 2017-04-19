@@ -63,9 +63,12 @@
 $.ajax({
     'type':'post',
     'url':'/marchsoft/admin/marchClass/screenInterface',
-    'data':{'year':'2017','month':'04'},
+    'data':{'year':'2017','month':'04','lecturer':'测试员','type':'PHP'},
     success:function (data) {
         $mydata = JSON.parse(data);
+        if($mydata.data.length==0){
+            $("#one").append("<p>aaaaaa</p>");
+        }else
         for ($i=0;$i<$mydata.data.length;$i++){
             $("#one").append("封面图片:<img style='width: 50px' src='"+$mydata.data[$i]['url']+"'alt=''>");
             $("#one").append("<p>授课人:"+$mydata.data[$i]['title']+"~~~课程名:"+$mydata.data[$i]['lecturer']+"</p>");

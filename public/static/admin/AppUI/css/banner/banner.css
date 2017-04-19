@@ -1,0 +1,12 @@
+#mymodel-form{
+    width: 70%;
+    margin: auto;
+}
+
+#mymodel-form>input{
+    width: 100%;
+}
+
+#temp-input-bannerid,#temp-input-imgid{
+    display: none;
+}
