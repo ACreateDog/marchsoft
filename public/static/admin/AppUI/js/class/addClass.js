@@ -41,7 +41,7 @@ $(function () {
             }
         });
     }else{
-        $("#class-have-type,#change-action-group,#upload-newimg,#new-type-input,#old-img").remove();
+        $("#class-have-type,#change-action-group,#upload-newimg,#old-img").remove();
     }
     $("#none-type").click(function () {
         if($none){

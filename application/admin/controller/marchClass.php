@@ -65,7 +65,7 @@ class marchClass extends Controller {
     }
 
     public function classType(){
-        $allType = TypeModel::field('march_type.type,march_class_type.class_id')->join('march_class_type','march_type.type_id=march_class_type.type_id','left')
+        $allType = TypeModel::field('march_type.id,march_type.type,march_class_type.class_id')->join('march_class_type','march_type.type_id=march_class_type.type_id','left')
             ->group('march_type.type')
             ->select();
         $this->assign('allType',$allType);

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html";i:1492606101;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html";i:1492669289;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -55,7 +55,8 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
 
     
-    
+    <link rel="stylesheet" href="__CSS__/class/classType.css">
+
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -558,10 +559,33 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
-            <span class="label label-warning"><?php echo $type['type']; ?>(未使用)</span>
-            <?php else: ?><span class="label label-success"><?php echo $type['type']; ?></span>
-        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+    <div id="type-content">
+        <form class="form-horizontal form-bordered">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="state-normal">添加一个新类型:</label>
+                <div class="col-md-8">
+                    <input type="text" id="state-normal" name="state-normal" class="form-control" placeholder="输入一个新的课程类型">
+                </div>
+            </div>
+            <div class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="button" class="btn btn-effect-ripple btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                </div>
+            </div>
+        </form>
+        <div id="all-types-label">
+            <label class="col-md-3 control-label block-label">已有类型:</label>
+            <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
+                    <span class=" btn-warning btn-sm unuse-type">
+                        <?php echo $type['type']; ?>(未使用)
+                    </span>
+                    <span data="<?php echo $type['id']; ?>" class="delete-type">×</span>
+                    <?php else: ?><span class="btn-effect-ripple btn-success btn-sm"><?php echo $type['type']; ?></span>
+                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+        </div>
+    </div>
+
 
             </div>
 
