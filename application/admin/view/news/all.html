@@ -103,7 +103,7 @@
 </block>
 <block name="js">
     <script type="text/javascript">
-//        window.onload(setImage());
+
         function putDown(ele) {
             var putDownId = ele.id;
 
@@ -126,11 +126,13 @@
         setImage();
         function setImage() {
            var page = getQueryString("page");
+
            if (page == null){
                 page = 1;
            }
-           sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=1&rand='+((new Date()).valueOf())+Math.random(),function (response) {
-                var jsObj = JSON.parse(response);
+
+           sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=1',function (response) {
+               var jsObj = JSON.parse(response);
 
                 var imgUrlarr = jsObj.data.data;
 
@@ -138,7 +140,6 @@
 
                     var id = 'img_'+imgUrlarr[i].id;
                     var imgURL = imgUrlarr[i].url;
-//                    console.log(imgURL +" "+id);
                     document.getElementById(id).src=imgURL;
                 }
            });

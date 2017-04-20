@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/down.html";i:1492607381;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492607913;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/down.html";i:1492655873;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492656039;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -47,15 +47,13 @@
     <script src="__JS__/pages/readyDashboard.js"></script>
     <script src="__JS__/plugins.js"></script>
     <script src="__JS__/app.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     <script src="__LAYER__/layer.js"></script>
-=======
-    <script src="__JS__/jquery.form.js"></script>
->>>>>>> a6a17a1d634ced077c2ad1a51ea759dd39912358
-=======
+
+    <!--<script src="__JS__/jquery.form.js"></script>-->
+
     <script type="text/javascript" src="__JS__/banner/banner.js"></script>
->>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb
+
 
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.all.min.js"> </script>
@@ -672,6 +670,9 @@
 </div>
 
     <script type="text/javascript">
+
+        
+
         function setUp(ele) {
             var putDownId = ele.id;
 

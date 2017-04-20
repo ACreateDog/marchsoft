@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492607381;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492607913;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492673379;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492656039;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -47,15 +47,13 @@
     <script src="__JS__/pages/readyDashboard.js"></script>
     <script src="__JS__/plugins.js"></script>
     <script src="__JS__/app.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     <script src="__LAYER__/layer.js"></script>
-=======
-    <script src="__JS__/jquery.form.js"></script>
->>>>>>> a6a17a1d634ced077c2ad1a51ea759dd39912358
-=======
+
+    <!--<script src="__JS__/jquery.form.js"></script>-->
+
     <script type="text/javascript" src="__JS__/banner/banner.js"></script>
->>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb
+
 
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.all.min.js"> </script>
@@ -767,29 +765,29 @@
             var content = $("#content").val();
             console.log(file);
             var div = document.getElementById('file_div');
-            if (!file && div.style.backgroundImage==null){
+
+            if (!file && div.style.backgroundImage == ""){
                 infoData.msg = "请封面上传哦";
                 showInfo(infoData);
                 return false;
             }
-            if (author == undefined){
+            if (author == undefined || author == ""){
 
                 infoData.msg = "要记得填写作者哦";
                 showInfo(infoData);
                 return false;
             }
-            if (title == undefined){
+            if (title == undefined || title == ""){
                 infoData.msg = "为啥不写标题";
                 showInfo(infoData);
                 return false;
             }
-            if (content == ""){
+            if (content == "" || content == undefined){
                 infoData.msg = "特么文章没有文字";
                 showInfo(infoData);
                 return false;
             }
             return true;
-
         }
     </script>
 

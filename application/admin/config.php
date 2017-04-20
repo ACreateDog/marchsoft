@@ -16,8 +16,6 @@ return [
 
     ],
 
-
-
     'template'   => [
         // 模板引擎类型 支持 php think 支持扩展
         'type'         => 'Think',
@@ -45,6 +43,6 @@ return [
     'email_host'=>'smtp.qq.com',
     //发送者姓名
     'from_name' => '三月软件',
-    
+    'app_trace' => false,
     'upload_path'=>'/marchsoft/public/upload/image'
 ];
