@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/all.html";i:1492675986;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492675468;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/all.html";i:1492676629;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492675468;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
