@@ -10,10 +10,11 @@ return [
         '__IMG__'=>'/marchsoft/public/static/admin/AppUI/img',
         '__APP_IMG__'=>'/marchsoft/public/static/admin/img',
         '__UEDITOR__'=>'/marchsoft/public/static/admin/UEditor',
+        '__LAYER__'=>'/marchsoft/public/static/admin/layer',
         '__ADMIN_CSS__'=>'/marchsoft/public/static/admin/css/admin.css',
         '__ADMIN_JS__'=>'/marchsoft/public/static/admin/js/admin.js',
-    ],
 
+    ],
 
     'template'   => [
         // 模板引擎类型 支持 php think 支持扩展
@@ -42,7 +43,6 @@ return [
     'email_host'=>'smtp.qq.com',
     //发送者姓名
     'from_name' => '三月软件',
-
-
+    'app_trace' => false,
     'upload_path'=>'/marchsoft/public/upload/image'
 ];

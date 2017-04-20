@@ -179,29 +179,29 @@
             var content = $("#content").val();
             console.log(file);
             var div = document.getElementById('file_div');
-            if (!file && div.style.backgroundImage==null){
+
+            if (!file && div.style.backgroundImage == ""){
                 infoData.msg = "请封面上传哦";
                 showInfo(infoData);
                 return false;
             }
-            if (author == undefined){
+            if (author == undefined || author == ""){
 
                 infoData.msg = "要记得填写作者哦";
                 showInfo(infoData);
                 return false;
             }
-            if (title == undefined){
+            if (title == undefined || title == ""){
                 infoData.msg = "为啥不写标题";
                 showInfo(infoData);
                 return false;
             }
-            if (content == ""){
+            if (content == "" || content == undefined){
                 infoData.msg = "特么文章没有文字";
                 showInfo(infoData);
                 return false;
             }
             return true;
-
         }
     </script>
 </block>

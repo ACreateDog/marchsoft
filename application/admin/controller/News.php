@@ -390,10 +390,12 @@ class News{
     public function getImage(){
         $news = new NewsModel();
         $status =  intval(\request()->get('status'));
+
         $list = $news->field('march_news.id,status,url')
             ->where('status',$status)
             ->join('march_imgs','cover_img_id = march_imgs.img_id')
             ->paginate(10)->toArray();
+
         return json_encode(array(
             'code'=>1,
             'msg'=>'success',
