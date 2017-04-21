@@ -100,7 +100,6 @@ class News{
 
         $dataList = $list['data'];
         foreach ($dataList as $key => $value){
-//            echo mb_substr(strip_tags($value['content']) ,0,10,"utf-8");
 
             $returnData[] = [
                 'id'=>$value['id'],

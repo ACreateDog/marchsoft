@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\marchclass\classtype.html";i:1492746644;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,79 +63,8 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-
-    <style type="text/css">
-
-        .all{
-            border-top: none;
-            border-left: none ;
-            border-right: none;
-            border-bottom:1px solid #5ccdde;
-            height: 45px;
-            font-size: 15px;
-            padding-left: 10px;
-            border-radius: 3px;
-            text-align: center;
-            z-index: 10;
-        }
-        .title{
-
-            width: 400px;
-        }
-        .author{
-            margin-left: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 150px;
-        }
-        .submit-btn{
-            margin-left: 851px;
-            margin-top: 20px;
-            background-color: #5ccdde;
-            border: none;
-            margin-bottom: 34px;
-            width: 80px;
-            height: 34px;
-            border-radius: 3px;
-            color: white;
-            outline: none;
-        }
-
-        #file{
-            margin: 0px;
-            z-index:100;
-
-            font-size:60px;opacity:0;
-            filter:alpha(opacity=10);
-
-            width: 100px;
-            height: 100px;
-        }
-        .uploda_img{
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-            background-color: #ffffff;
-            border:1px #5ccdde solid;
-            margin-left: -240px;
-            margin-top: 0px;
-            border-radius: 3px;
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-
-        }
-        .uploda_img span{
-            position: absolute;
-            display: inline-block;
-            font-size: 15px;
-            text-align: center;
-            width: 100px;
-            margin-left: -51px;
-            margin-top: 36px;
-            color: gray;
-        }
-    </style>
+    <link rel="stylesheet" href="__CSS__/class/classType.css">
+    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
 
 </head>
 <body>
@@ -654,40 +583,64 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    
-    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
-        <h4><strong>提示</strong></h4>
-        <p></p>
+    <div id="type-content">
+        <form class="form-horizontal form-bordered" onsubmit="return check()">
+            <div class="form-group">
+                <label class="col-md-4 control-label">添加一个新类型:</label>
+                <div class="col-md-8">
+                    <input type="text" id="add-type" required class="form-control" placeholder="输入一个新的课程类型">
+                </div>
+            </div>
+            <div class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="submit" id="submitnew-type" class="btn btn-effect-ripple btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                </div>
+            </div>
+        </form>
+        <div id="all-types-label">
+            <label class="col-md-3 control-label block-label">已有类型:</label>
+            <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
+                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-warning btn-sm unuse-type">
+                        <?php echo $type['type']; ?>
+                    </span>
+                    <strong data="<?php echo $type['id']; ?>" class="delete-type">×</strong>
+                    <?php else: ?>
+                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-success btn-sm use-type"><?php echo $type['type']; ?></span>
+                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+        </div>
     </div>
-    <div id="success_alert" class="all-alert">
-        <h4><strong>成功！</strong></h4>
-        <p></p>
-    </div>
-    <div id="error_alert" class="all-alert" style="background-color: #de815c">
-        <h4><strong>出错了！</strong></h4>
-        <p></p>
-    </div>
-
-    <div>
-        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
-
-            <div style="width: 880px;margin-left:50px;text-align: center" >
-                    <div id="file_div" class="uploda_img">
-                        <span>上传封面</span>
-                        <input id="file" type="file" name="photo">
-                    </div>
-
-                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
-                <input id="author" class="all author" placeholder="作者" type="text" name="author">
-                <input type="hidden" value="<?php echo $id; ?>" name="id">
-                <input id="path" type="hidden" name="path" value="">
-                <input id="content" type="hidden" name="content">
+    <div id="cover-box"></div>
+    <div id="tip-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>编辑类型</strong></h4>
+            <input id="change-type-input" type="text" class="form-control" placeholder="输入一个新的课程类型">
+            <p id="warning-tip"></p>
+            <div>
+                <a href="javascript:void(0)" id="cance-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-btn" class="btn btn-primary btn-sm">确定</a>
             </div>
 
-            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
-        </form>
-        <button class="submit-btn" id="sbm" >发布</button>
+        </div>
+        <!-- END Info Alert -->
     </div>
+    <div id="warning-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>删除类型</strong></h4>
+            <h4>是否确定删除<span id="delete-type-name"></span>类型标签?</h4>
+            <div>
+                <a href="javascript:void(0)" id="cance-delete-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-delete-btn" class="btn btn-primary btn-sm">确定</a>
+            </div>
+
+        </div>
+        <!-- END Info Alert -->
+    </div>
+
 
             </div>
 
@@ -697,99 +650,7 @@
     <!-- END Page Container -->
 </div>
 
-    <script type="text/javascript">
-
-        var ue = UE.getEditor('editor');
-        var infoData =  {
-            "code":2,
-            "msg":"success",
-            "data":{
-
-            }
-        };
-
-        /**
-         * 调用获取要编辑的新闻，
-         **/
-        getEditorNews() ;
-
-        /**
-         * 异步获取新闻
-         **/
-        function getEditorNews() {
-            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId=<?php echo $id; ?>',function (response) {
-                var jsObj = JSON.parse(response);
-
-                if (jsObj.code == 1){
-
-                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
-                    document.getElementById('file_div').children[0].innerHTML = "";
-                    $("#title").val(jsObj.data.title);
-                    $("#author").val(jsObj.data.writer);
-                    $("#path").val(jsObj.data.url);
-
-                    ue.setContent(jsObj.data.content);
-                }
-            })
-        }
-        
-        $(function(){
-            $("#file").change(function(e){
-                var div = document.getElementById('file_div');
-                if ($("#file").val()){
-                    div.children[0].innerHTML="";
-                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
-                }else {
-                    div.style.backgroundImage = "";
-                }
-            });
-        });
-
-
-        $("#sbm").click(function () {
-            $("#content").val(ue.getContent());
-            if (check()){
-                $("#f").submit();
-            }
-        });
-
-
-        /**
-         * 检查输入是否为空
-         * @returns {boolean}
-         */
-        function check() {
-            var file = $("#file").val();
-            var author = $("#author").val();
-            var title = $("#title").val();
-            var content = $("#content").val();
-            console.log(file);
-            var div = document.getElementById('file_div');
-
-            if (!file && div.style.backgroundImage == ""){
-                infoData.msg = "请封面上传哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (author == undefined || author == ""){
-
-                infoData.msg = "要记得填写作者哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (title == undefined || title == ""){
-                infoData.msg = "为啥不写标题";
-                showInfo(infoData);
-                return false;
-            }
-            if (content == "" || content == undefined){
-                infoData.msg = "特么文章没有文字";
-                showInfo(infoData);
-                return false;
-            }
-            return true;
-        }
-    </script>
+    <script type="text/javascript" src="__JS__/class/classType.js"></script>
 
 <script type="text/javascript">
     $url = window.location.href;

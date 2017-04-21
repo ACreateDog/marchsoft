@@ -43,7 +43,11 @@
                 <tbody>
                 <volist name="content" id="line">
                     <tr role="row" class="odd">
-                        <td><img class="img_cover" id="img_{$line.id}" src="" alt="{$line.title}"></td>
+                        <td>
+                            <a href="" id="a_{$line.id}" data-toggle="lightbox-image" title="Image Info">
+                                <img src="" id="img_{$line.id}" alt="{$line.title}">
+                            </a>
+                        </td>
                         <td class="text-center sorting_1"><strong>{$line.title}</strong></td>
                         <td>{$line.writer}</td>
                         <td>{$line.created_at | date="Y-m-d",###}</td>
@@ -60,7 +64,7 @@
                             <a href="__ROOT__/admin/news/editor?id={$line.id}" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="编辑">
                                 <i class="fa fa-pencil">编辑</i>
                             </a>
-                            <a id="{$line.id}" onclick="setUp(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="下架">
+                            <a id="{$line.id}" onclick="setUp(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="上架">
                                 <i class="fa fa-times">上架</i>
                             </a>
                         </td>
@@ -104,22 +108,27 @@
                 }
             });
         }
+
+
         setImage();
+
         function setImage() {
             var page = getQueryString("page");
             if (page == null){
                 page = 1;
             }
             sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=0',function (response) {
+
                 var jsObj = JSON.parse(response);
                 var imgUrlarr = jsObj.data.data;
 
                 for (var i = 0;i<imgUrlarr.length;i++){
-
+                    var aid = 'a_' + imgUrlarr[i].id;
                     var id = 'img_'+imgUrlarr[i].id;
                     var imgURL = imgUrlarr[i].url;
                     console.log(imgURL+"  "+id);
                     document.getElementById(id).src=imgURL;
+                    document.getElementById(aid).href = imgURL;
                 }
             });
         }

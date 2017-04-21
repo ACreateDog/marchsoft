@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\project\index.html";i:1492579946;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,80 +63,7 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-
-    <style type="text/css">
-
-        .all{
-            border-top: none;
-            border-left: none ;
-            border-right: none;
-            border-bottom:1px solid #5ccdde;
-            height: 45px;
-            font-size: 15px;
-            padding-left: 10px;
-            border-radius: 3px;
-            text-align: center;
-            z-index: 10;
-        }
-        .title{
-
-            width: 400px;
-        }
-        .author{
-            margin-left: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 150px;
-        }
-        .submit-btn{
-            margin-left: 851px;
-            margin-top: 20px;
-            background-color: #5ccdde;
-            border: none;
-            margin-bottom: 34px;
-            width: 80px;
-            height: 34px;
-            border-radius: 3px;
-            color: white;
-            outline: none;
-        }
-
-        #file{
-            margin: 0px;
-            z-index:100;
-
-            font-size:60px;opacity:0;
-            filter:alpha(opacity=10);
-
-            width: 100px;
-            height: 100px;
-        }
-        .uploda_img{
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-            background-color: #ffffff;
-            border:1px #5ccdde solid;
-            margin-left: -240px;
-            margin-top: 0px;
-            border-radius: 3px;
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-
-        }
-        .uploda_img span{
-            position: absolute;
-            display: inline-block;
-            font-size: 15px;
-            text-align: center;
-            width: 100px;
-            margin-left: -51px;
-            margin-top: 36px;
-            color: gray;
-        }
-    </style>
-
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -654,40 +581,85 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    
-    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
-        <h4><strong>提示</strong></h4>
-        <p></p>
-    </div>
-    <div id="success_alert" class="all-alert">
-        <h4><strong>成功！</strong></h4>
-        <p></p>
-    </div>
-    <div id="error_alert" class="all-alert" style="background-color: #de815c">
-        <h4><strong>出错了！</strong></h4>
-        <p></p>
-    </div>
+<script type="text/javascript">
 
-    <div>
-        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
+	function setImagePreview(input,img) {
+	    var docObj=document.getElementById(input);
+	    var imgObjPreview=document.getElementById(img);
+	    imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+	};
 
-            <div style="width: 880px;margin-left:50px;text-align: center" >
-                    <div id="file_div" class="uploda_img">
-                        <span>上传封面</span>
-                        <input id="file" type="file" name="photo">
-                    </div>
+	function upload(){
+		$.ajax({
+		    url: "<?php echo url('upload'); ?>",
+		    type: 'POST',
+		    cache: false,
+		    data: new FormData($('#uploadForm')[0]),
+		    processData: false,
+		    contentType: false,
+		    success : function(info){
+		    	if(info.code==0)
+		    		layer.msg(info.msg,{icon: 2,time:1000});
+		    	else
+		    		layer.msg('保存成功', {icon: 1},function(){ window.location.reload();});  
+		    },	
+		});
+	};
 
-                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
-                <input id="author" class="all author" placeholder="作者" type="text" name="author">
-                <input type="hidden" value="<?php echo $id; ?>" name="id">
-                <input id="path" type="hidden" name="path" value="">
-                <input id="content" type="hidden" name="content">
-            </div>
+</script>
+	<div class="block" style="margin: 0 auto;width: 70%;">
+	    <!-- Input States Title -->
+	    <div class="block-title">
+	        <div class="block-options pull-right">
+	        </div>
+	        <h2>添加项目</h2>
+	    </div>
+	    <!-- END Input States Title -->
 
-            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
-        </form>
-        <button class="submit-btn" id="sbm" >发布</button>
-    </div>
+	    <!-- Input States Content -->
+	    <form action="page_forms_components.html" method="post" class="form-horizontal form-bordered" id="uploadForm" onsubmit="return false;">
+
+	        <div class="form-group">
+	            <label class="col-md-3 control-label" for="state-normal">项目名称：</label>
+	            <div class="col-md-6">
+	                <input type="text" id="title" name="title" class="form-control" placeholder="...">
+	            </div>
+	        </div>
+
+	        <div class="form-group">
+	            <label class="col-md-3 control-label" for="state-normal">缩略图：</label>
+	            <div class="col-md-9">
+	                
+	                <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview('example-file-input','inp-img');" type="file" id="example-file-input" name="image[]" >
+	                <img id="inp-img" src="" style="max-height: 200px;max-width: 350px;margin-top: 10px;">
+	            </div>
+	        </div>
+
+	        <div class="form-group">
+	            <label class="col-md-3 control-label" for="state-normal">详情图：</label>
+	            <div class="col-md-9">
+	                <img id="inp-img" src="">
+	                <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview('example-file-input1','inp-img1');" type="file" id="example-file-input1" name="image[]" >
+	                <img id="inp-img1" src="" style="max-width: 320px;min-height: 400px ;margin-top: 10px;">
+	            </div>
+	        </div>
+
+	        <div class="form-group form-actions">
+	            <div class="col-md-9 col-md-offset-3">
+	                <button type="submit" class="btn btn-effect-ripple btn-primary" onclick="upload()">Submit</button>
+	                <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+	            </div>
+	        </div>
+
+
+	    </form>
+	    <!-- END Input States Content -->
+	</div>
+
+
+
+
+ 
 
             </div>
 
@@ -698,97 +670,6 @@
 </div>
 
     <script type="text/javascript">
-
-        var ue = UE.getEditor('editor');
-        var infoData =  {
-            "code":2,
-            "msg":"success",
-            "data":{
-
-            }
-        };
-
-        /**
-         * 调用获取要编辑的新闻，
-         **/
-        getEditorNews() ;
-
-        /**
-         * 异步获取新闻
-         **/
-        function getEditorNews() {
-            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId=<?php echo $id; ?>',function (response) {
-                var jsObj = JSON.parse(response);
-
-                if (jsObj.code == 1){
-
-                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
-                    document.getElementById('file_div').children[0].innerHTML = "";
-                    $("#title").val(jsObj.data.title);
-                    $("#author").val(jsObj.data.writer);
-                    $("#path").val(jsObj.data.url);
-
-                    ue.setContent(jsObj.data.content);
-                }
-            })
-        }
-        
-        $(function(){
-            $("#file").change(function(e){
-                var div = document.getElementById('file_div');
-                if ($("#file").val()){
-                    div.children[0].innerHTML="";
-                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
-                }else {
-                    div.style.backgroundImage = "";
-                }
-            });
-        });
-
-
-        $("#sbm").click(function () {
-            $("#content").val(ue.getContent());
-            if (check()){
-                $("#f").submit();
-            }
-        });
-
-
-        /**
-         * 检查输入是否为空
-         * @returns {boolean}
-         */
-        function check() {
-            var file = $("#file").val();
-            var author = $("#author").val();
-            var title = $("#title").val();
-            var content = $("#content").val();
-            console.log(file);
-            var div = document.getElementById('file_div');
-
-            if (!file && div.style.backgroundImage == ""){
-                infoData.msg = "请封面上传哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (author == undefined || author == ""){
-
-                infoData.msg = "要记得填写作者哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (title == undefined || title == ""){
-                infoData.msg = "为啥不写标题";
-                showInfo(infoData);
-                return false;
-            }
-            if (content == "" || content == undefined){
-                infoData.msg = "特么文章没有文字";
-                showInfo(infoData);
-                return false;
-            }
-            return true;
-        }
     </script>
 
 <script type="text/javascript">

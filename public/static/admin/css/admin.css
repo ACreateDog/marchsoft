@@ -5,9 +5,9 @@
     position: fixed;
     right: 5px;
     height: 101px;
-    width: 141px;
+    width: 201px;
     z-index: 99999;
-    background-color: #00a0e9;
+    background-color: #5ccdde;
     text-align: center;
     display: none;
 }

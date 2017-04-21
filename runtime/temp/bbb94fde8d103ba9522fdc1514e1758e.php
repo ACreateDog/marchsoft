@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"/Library/WebServer/Documents/marchsoft/application/admin/view/test/mytest.html";i:1492740425;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:89:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/banner/change.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,79 +63,7 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-
-    <style type="text/css">
-
-        .all{
-            border-top: none;
-            border-left: none ;
-            border-right: none;
-            border-bottom:1px solid #5ccdde;
-            height: 45px;
-            font-size: 15px;
-            padding-left: 10px;
-            border-radius: 3px;
-            text-align: center;
-            z-index: 10;
-        }
-        .title{
-
-            width: 400px;
-        }
-        .author{
-            margin-left: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 150px;
-        }
-        .submit-btn{
-            margin-left: 851px;
-            margin-top: 20px;
-            background-color: #5ccdde;
-            border: none;
-            margin-bottom: 34px;
-            width: 80px;
-            height: 34px;
-            border-radius: 3px;
-            color: white;
-            outline: none;
-        }
-
-        #file{
-            margin: 0px;
-            z-index:100;
-
-            font-size:60px;opacity:0;
-            filter:alpha(opacity=10);
-
-            width: 100px;
-            height: 100px;
-        }
-        .uploda_img{
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-            background-color: #ffffff;
-            border:1px #5ccdde solid;
-            margin-left: -240px;
-            margin-top: 0px;
-            border-radius: 3px;
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-
-        }
-        .uploda_img span{
-            position: absolute;
-            display: inline-block;
-            font-size: 15px;
-            text-align: center;
-            width: 100px;
-            margin-left: -51px;
-            margin-top: 36px;
-            color: gray;
-        }
-    </style>
+    <link rel="stylesheet" href="__CSS__/banner/banner.css">
 
 </head>
 <body>
@@ -654,39 +582,88 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    
-    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
-        <h4><strong>提示</strong></h4>
-        <p></p>
-    </div>
-    <div id="success_alert" class="all-alert">
-        <h4><strong>成功！</strong></h4>
-        <p></p>
-    </div>
-    <div id="error_alert" class="all-alert" style="background-color: #de815c">
-        <h4><strong>出错了！</strong></h4>
-        <p></p>
-    </div>
-
-    <div>
-        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
-
-            <div style="width: 880px;margin-left:50px;text-align: center" >
-                    <div id="file_div" class="uploda_img">
-                        <span>上传封面</span>
-                        <input id="file" type="file" name="photo">
-                    </div>
-
-                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
-                <input id="author" class="all author" placeholder="作者" type="text" name="author">
-                <input type="hidden" value="<?php echo $id; ?>" name="id">
-                <input id="path" type="hidden" name="path" value="">
-                <input id="content" type="hidden" name="content">
+    <div class="block full">
+        <div class="table-responsive">
+            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer">
+                    <thead>
+                    <tr role="row">
+                        <th class="text-center" style="width: 49px;" tabindex="0">ID</th>
+                        <th class="" tabindex="0" style="width: 147px;">图片</th>
+                        <th class="" tabindex="0" style="width: 150px;">创建时间</th>
+                        <th style="width: 80px;">Status</th>
+                        <th class="text-center" style="width: 100px;"><i class="fa fa-flash"></i></th></tr>
+                    </thead>
+                    <tbody>
+                    <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$banner): $mod = ($i % 2 );++$i;?>
+                        <tr role="row" class="odd">
+                            <td class="text-center sorting_1"><?php echo $banner['id']; ?></td>
+                            <td>
+                                <div style="width: 150px;height: 80px;" class="gallery-image-container animation-fadeInQuick2" data-category="travel">
+                                    <img src="<?php echo $banner['url']; ?>" alt="" style="width: 100%;height: 100%;">
+                                    <a href="<?php echo $banner['url']; ?>" class="gallery-image-options" data-toggle="lightbox-image" title="">
+                                        <i class="fa fa-search-plus fa-3x text-light"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td><?php echo $banner['created_at']; ?></td>
+                            <td>
+                                <?php if($banner['status'] == 1): ?>
+                                    <span class="label label-info">已启用</span>
+                                    <?php else: ?><span class="label label-danger">已禁用</span>
+                                <?php endif; if($banner['is_top'] == 1): ?>
+                                    <span class="label label-success">已置顶</span>
+                                <?php endif; ?>
+                            </td>
+                            <td class="text-center">
+                                <?php if($banner['status'] == 1): ?>
+                                    <a data="<?php echo $banner['img_link']; ?>" data-id="<?php echo $banner['id']; ?>" data-imgid="<?php echo $banner['img_id']; ?>" data-toggle="modal" data-target="#mymodal-data" title="编辑图片和链接" class="btn btn-effect-ripple btn-xs btn-success edit-banner" style="overflow: hidden; position: relative;padding: 5px 10px;">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                    <a href="/marchsoft/admin/banner/changeStatus?id=<?php echo $banner['id']; ?>&bannerStatus=1" type="button" class="btn btn-effect-ripple btn-danger btn-sm" style="overflow: hidden; position: relative;">
+                                        <span class="btn-ripple animate" style="height: 71px; width: 71px; top: -10.5px; left: 9.5px;"></span>
+                                        禁用
+                                    </a>
+                                    <?php if($banner['is_top'] != 1): ?>
+                                        <a href="/marchsoft/admin/banner/setTop?id=<?php echo $banner['id']; ?>" class="btn btn-primary btn-sm set-top">置顶</a>
+                                    <?php endif; else: ?><a href="/marchsoft/admin/banner/changeStatus?id=<?php echo $banner['id']; ?>&bannerStatus=0" class="btn btn-info btn-sm">启用</a>
+                                <?php endif; ?>
+                                <!--<a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="Delete User"><i class="fa fa-times"></i></a>-->
+                            </td>
+                        </tr>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </tbody>
+                </table>
+                <div><?php echo $list->render(); ?></div>
             </div>
-
-            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
-        </form>
-        <button class="submit-btn" id="sbm" >发布</button>
+        </div>
+    </div>
+    <!-- 模态弹出窗内容 -->
+    <div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">修改banner信息</h4>
+                </div>
+                <form action="/marchsoft/admin/banner/upload" enctype="multipart/form-data" method="post">
+                    <div class="modal-body">
+                        <div id="mymodel-form">
+                            <input id="temp-input-bannerid" type="text" name="bannerId">
+                            <input id="temp-input-imgid" type="text" name="imgId">
+                            <span>修改链接:</span>
+                            <input required id="img-link-input" name="imgLink" type="text">
+                            <span>上传新图片:</span>
+                            <input required type="file" id="example-file-multiple-input" style="cursor: pointer;" name="image">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
             </div>
@@ -698,97 +675,6 @@
 </div>
 
     <script type="text/javascript">
-
-        var ue = UE.getEditor('editor');
-        var infoData =  {
-            "code":2,
-            "msg":"success",
-            "data":{
-
-            }
-        };
-
-        /**
-         * 调用获取要编辑的新闻，
-         **/
-        getEditorNews() ;
-
-        /**
-         * 异步获取新闻
-         **/
-        function getEditorNews() {
-            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId=<?php echo $id; ?>',function (response) {
-                var jsObj = JSON.parse(response);
-
-                if (jsObj.code == 1){
-
-                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
-                    document.getElementById('file_div').children[0].innerHTML = "";
-                    $("#title").val(jsObj.data.title);
-                    $("#author").val(jsObj.data.writer);
-                    $("#path").val(jsObj.data.url);
-
-                    ue.setContent(jsObj.data.content);
-                }
-            })
-        }
-        
-        $(function(){
-            $("#file").change(function(e){
-                var div = document.getElementById('file_div');
-                if ($("#file").val()){
-                    div.children[0].innerHTML="";
-                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
-                }else {
-                    div.style.backgroundImage = "";
-                }
-            });
-        });
-
-
-        $("#sbm").click(function () {
-            $("#content").val(ue.getContent());
-            if (check()){
-                $("#f").submit();
-            }
-        });
-
-
-        /**
-         * 检查输入是否为空
-         * @returns {boolean}
-         */
-        function check() {
-            var file = $("#file").val();
-            var author = $("#author").val();
-            var title = $("#title").val();
-            var content = $("#content").val();
-            console.log(file);
-            var div = document.getElementById('file_div');
-
-            if (!file && div.style.backgroundImage == ""){
-                infoData.msg = "请封面上传哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (author == undefined || author == ""){
-
-                infoData.msg = "要记得填写作者哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (title == undefined || title == ""){
-                infoData.msg = "为啥不写标题";
-                showInfo(infoData);
-                return false;
-            }
-            if (content == "" || content == undefined){
-                infoData.msg = "特么文章没有文字";
-                showInfo(infoData);
-                return false;
-            }
-            return true;
-        }
     </script>
 
 <script type="text/javascript">

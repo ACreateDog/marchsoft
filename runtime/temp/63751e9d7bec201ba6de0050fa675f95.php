@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/down.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492675468;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/down.html";i:1492753413;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -214,7 +214,7 @@
                             <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">前台功能</span></a>
                             <ul>
                                 <li>
-                                    <a href="">导航栏</a>
+                                    <a id="show" href="<?php echo url('nav/show'); ?>">导航栏</a>
                                 </li>
                                 <li>
 
@@ -285,16 +285,16 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
                                     <ul>
                                         <li>
-                                            <a id="level-addclass" href="/marchsoft/admin/marchClass/addclass">新课程</a>
+                                            <a id="level-addclass" href="<?php echo url('Marchclass/addclass'); ?>">新课程</a>
                                         </li>
                                         <li>
-                                            <a id="level-marchclass" href="/marchsoft/admin/marchClass/marchclass">课程表</a>
+                                            <a id="level-marchclass" href="<?php echo url('Marchclass/marchclass'); ?>">课程表</a>
                                         </li>
                                         <li>
-                                            <a id="level-deletedClass" href="/marchsoft/admin/marchClass/deletedClass">旧课程篓</a>
+                                            <a id="level-deletedClass" href="<?php echo url('Marchclass/deletedClass'); ?>">旧课程篓</a>
                                         </li>
                                         <li>
-                                            <a id="level-classType" href="/marchsoft/admin/marchClass/classType">类型管理</a>
+                                            <a id="level-classType" href="<?php echo url('Marchclass/classType'); ?>">类型管理</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -302,10 +302,10 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>项目管理</a>
                                     <ul>
                                         <li>
-                                            <a href="">添加项目</a>
+                                            <a id="level-index" href="<?php echo url('project/index'); ?>">添加项目</a>
                                         </li>
                                         <li>
-                                            <a href="">所有项目</a>
+                                            <a id="level-all" href="<?php echo url('project/all'); ?>">所有项目</a>
                                         </li>
                                     </ul>
                                 </li>                                
@@ -622,7 +622,11 @@
                 <tbody>
                 <?php if(is_array($content) || $content instanceof \think\Collection || $content instanceof \think\Paginator): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$line): $mod = ($i % 2 );++$i;?>
                     <tr role="row" class="odd">
-                        <td><img class="img_cover" id="img_<?php echo $line['id']; ?>" src="" alt="<?php echo $line['title']; ?>"></td>
+                        <td>
+                            <a href="" id="a_<?php echo $line['id']; ?>" data-toggle="lightbox-image" title="Image Info">
+                                <img src="" id="img_<?php echo $line['id']; ?>" alt="<?php echo $line['title']; ?>">
+                            </a>
+                        </td>
                         <td class="text-center sorting_1"><strong><?php echo $line['title']; ?></strong></td>
                         <td><?php echo $line['writer']; ?></td>
                         <td><?php echo date("Y-m-d",$line['created_at'] ); ?></td>
@@ -638,7 +642,7 @@
                             <a href="__ROOT__/admin/news/editor?id=<?php echo $line['id']; ?>" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="编辑">
                                 <i class="fa fa-pencil">编辑</i>
                             </a>
-                            <a id="<?php echo $line['id']; ?>" onclick="setUp(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="下架">
+                            <a id="<?php echo $line['id']; ?>" onclick="setUp(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="上架">
                                 <i class="fa fa-times">上架</i>
                             </a>
                         </td>
@@ -689,22 +693,27 @@
                 }
             });
         }
+
+
         setImage();
+
         function setImage() {
             var page = getQueryString("page");
             if (page == null){
                 page = 1;
             }
             sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=0',function (response) {
+
                 var jsObj = JSON.parse(response);
                 var imgUrlarr = jsObj.data.data;
 
                 for (var i = 0;i<imgUrlarr.length;i++){
-
+                    var aid = 'a_' + imgUrlarr[i].id;
                     var id = 'img_'+imgUrlarr[i].id;
                     var imgURL = imgUrlarr[i].url;
                     console.log(imgURL+"  "+id);
                     document.getElementById(id).src=imgURL;
+                    document.getElementById(aid).href = imgURL;
                 }
             });
         }

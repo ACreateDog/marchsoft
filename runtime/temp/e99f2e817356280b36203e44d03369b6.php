@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:69:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\nav\show.html";i:1492746465;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,80 +63,7 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-
-    <style type="text/css">
-
-        .all{
-            border-top: none;
-            border-left: none ;
-            border-right: none;
-            border-bottom:1px solid #5ccdde;
-            height: 45px;
-            font-size: 15px;
-            padding-left: 10px;
-            border-radius: 3px;
-            text-align: center;
-            z-index: 10;
-        }
-        .title{
-
-            width: 400px;
-        }
-        .author{
-            margin-left: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 150px;
-        }
-        .submit-btn{
-            margin-left: 851px;
-            margin-top: 20px;
-            background-color: #5ccdde;
-            border: none;
-            margin-bottom: 34px;
-            width: 80px;
-            height: 34px;
-            border-radius: 3px;
-            color: white;
-            outline: none;
-        }
-
-        #file{
-            margin: 0px;
-            z-index:100;
-
-            font-size:60px;opacity:0;
-            filter:alpha(opacity=10);
-
-            width: 100px;
-            height: 100px;
-        }
-        .uploda_img{
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-            background-color: #ffffff;
-            border:1px #5ccdde solid;
-            margin-left: -240px;
-            margin-top: 0px;
-            border-radius: 3px;
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-
-        }
-        .uploda_img span{
-            position: absolute;
-            display: inline-block;
-            font-size: 15px;
-            text-align: center;
-            width: 100px;
-            margin-left: -51px;
-            margin-top: 36px;
-            color: gray;
-        }
-    </style>
-
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -654,40 +581,182 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    
-    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
-        <h4><strong>提示</strong></h4>
-        <p></p>
-    </div>
-    <div id="success_alert" class="all-alert">
-        <h4><strong>成功！</strong></h4>
-        <p></p>
-    </div>
-    <div id="error_alert" class="all-alert" style="background-color: #de815c">
-        <h4><strong>出错了！</strong></h4>
-        <p></p>
-    </div>
+<script type="text/javascript">
 
-    <div>
-        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
+    var nav_id; //判断是添加还是修改。
+    var img_change = false; //是否替换导航图片
+    function s(id,title,link,icon,status){
+        img_change = false;
+        nav_id = id;
+        console.log(nav_id);
+        $('#inp-title').val(title);
+        $('#inp-link').val(link);
+        $('#inp-img').attr('src',icon); 
+        $('#myModalLabel').html("修改 导航");
+        if(status==1){
+            $('#radio1').prop('checked', 'true');
+        }
+        else{
+            $('#radio2').prop('checked', 'true');
+        }
+        $('#button').click();
+    };
+    function add(){
+        img_change = false;
+        nav_id = 0;
+        $('#inp-title').val("");
+        $('#inp-link').val("");
 
-            <div style="width: 880px;margin-left:50px;text-align: center" >
-                    <div id="file_div" class="uploda_img">
-                        <span>上传封面</span>
-                        <input id="file" type="file" name="photo">
-                    </div>
+        $('#myModalLabel').html("添加 导航");
+        $('#radio1').prop('checked', 'true');
+        $('#button').click();
+    };
+    function save(){
+        //判断是否上传图片
+            $s=nav_id;
+            $.ajax({
+                url: "<?php echo url('myUpload'); ?>",
+                type: 'POST',
+                cache: false,
+                data: new FormData($('#uploadForm')[0]),
+                processData: false,
+                contentType: false,
+                success : function(info){
+                    $.ajax({
+                        type:"POST",
+                        url:"<?php echo url('nav/change'); ?>",
+                        dataType: "json",
+                        data:{
+                            "id": nav_id,
+                            "title": $('#inp-title').val(),
+                            "nav_link": $('#inp-link').val(),
+                            "icon_id" : info.msg.id,
+                            "icon_url" : info.msg.url,
+                            "status": ($('#radio1:checked').val()=='option1')?1:0
+                        },
+                        success: function(info){
+                             if(info.code==0){
+                              layer.msg(info.msg, {icon: 2});
+                             }else{  
+                                layer.msg('保存成功', {icon: 1},function(){ window.location.reload();});  
+                             }
+                        },
+                        error: function(){
+                          layer.msg('出错了！');
+                        }
+                     });
+                },
+                error : function(){
+                }
+            })
 
-                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
-                <input id="author" class="all author" placeholder="作者" type="text" name="author">
-                <input type="hidden" value="<?php echo $id; ?>" name="id">
-                <input id="path" type="hidden" name="path" value="">
-                <input id="content" type="hidden" name="content">
+    };
+
+    function ss(){
+        $.ajax({
+            url: "<?php echo url('navInterface'); ?>",
+            type: 'POST',
+
+        }).done(function(res) {
+            console.log(res);
+        }).fail(function(res) {});
+
+    };
+
+    function setImagePreview(avalue) {
+        img_change = true;
+        var docObj=document.getElementById("example-file-input");
+        var imgObjPreview=document.getElementById("inp-img");
+        imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+    };
+</script>
+
+    <button id="button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="display: none;"></button> 
+    <button onclick="add()" type="button" class="btn btn-primary" >添加导航</button>
+   <table class="table table-striped table-borderless table-vcenter">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="hidden-xs">Link</th>
+            <th class="hidden-sm hidden-xs">图标</th>
+            <th class="hidden-sm hidden-xs">Status</th>
+            <th style="width: 80px;" class="text-center"><i class="fa fa-flash"></i></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+            <tr>
+                <td><strong><?php echo $vo['title']; ?></strong></td>
+                <td class="hidden-xs"><?php echo $vo['nav_link']; ?></td>
+                <td class="hidden-xs"><img src="<?php echo $vo['url']; ?>" style="width:50px;height:50px;border-radius:50px;"></td>
+                <?php if(($vo['status'] == 1)): ?> 
+                    <td class="hidden-sm hidden-xs"><a href="javascript:void(0)" class="label label-success">启用</a></td>
+                <?php else: ?> 
+                    <td class="hidden-sm hidden-xs"><a href="javascript:void(0)" class="label label-danger">禁用</a></td>
+                <?php endif; ?>
+                
+                <td class="text-center">
+                    <a href="javascript:s('<?php echo $vo['nav_id']; ?>','<?php echo $vo['title']; ?>','<?php echo $vo['nav_link']; ?>','<?php echo $vo['url']; ?>',<?php echo $vo['status']; ?>);" data-toggle="modal" title="Edit User" class="btn btn-effect-ripple btn-xs btn-success" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                </td>
+            </tr>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+    </tbody>
+</table>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加 导航</h4>
+      </div>
+      <div class="modal-body">
+        <form action="page_forms_components.html"  id="uploadForm" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered" >
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="state-normal">名称：</label>
+                <div class="col-md-6">
+                    <input type="text" id="inp-title" name="state-normal" class="form-control" placeholder="..." required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="state-normal">地址：</label>
+                <div class="col-md-6">
+                    <input type="text" id="inp-link" name="state-normal" class="form-control" placeholder="..." required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="state-normal">启用：</label>
+                <div class="col-md-9">
+                    <label class="radio-inline" for="example-inline-radio1">
+                        <input type="radio" id="radio1" name="example-inline-radios" value="option1"> 启用
+                    </label>
+                    <label class="radio-inline" for="example-inline-radio2">
+                        <input type="radio" id="radio2" name="example-inline-radios" value="option2"> 禁用
+                    </label>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="state-normal">图标：</label>
+                <div class="col-md-9">
+                    <img id="inp-img" src="" style="display:inline-block;margin-right:10px;width:50px;height:50px;border-radius:50px;">
+                    <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview();" type="file" style="display: inline-block;" id="example-file-input" name="image" >
+                </div>
             </div>
 
-            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
         </form>
-        <button class="submit-btn" id="sbm" >发布</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="save()">Save changes</button>
+      </div>
     </div>
+  </div>
+</div> 
 
             </div>
 
@@ -698,97 +767,6 @@
 </div>
 
     <script type="text/javascript">
-
-        var ue = UE.getEditor('editor');
-        var infoData =  {
-            "code":2,
-            "msg":"success",
-            "data":{
-
-            }
-        };
-
-        /**
-         * 调用获取要编辑的新闻，
-         **/
-        getEditorNews() ;
-
-        /**
-         * 异步获取新闻
-         **/
-        function getEditorNews() {
-            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId=<?php echo $id; ?>',function (response) {
-                var jsObj = JSON.parse(response);
-
-                if (jsObj.code == 1){
-
-                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
-                    document.getElementById('file_div').children[0].innerHTML = "";
-                    $("#title").val(jsObj.data.title);
-                    $("#author").val(jsObj.data.writer);
-                    $("#path").val(jsObj.data.url);
-
-                    ue.setContent(jsObj.data.content);
-                }
-            })
-        }
-        
-        $(function(){
-            $("#file").change(function(e){
-                var div = document.getElementById('file_div');
-                if ($("#file").val()){
-                    div.children[0].innerHTML="";
-                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
-                }else {
-                    div.style.backgroundImage = "";
-                }
-            });
-        });
-
-
-        $("#sbm").click(function () {
-            $("#content").val(ue.getContent());
-            if (check()){
-                $("#f").submit();
-            }
-        });
-
-
-        /**
-         * 检查输入是否为空
-         * @returns {boolean}
-         */
-        function check() {
-            var file = $("#file").val();
-            var author = $("#author").val();
-            var title = $("#title").val();
-            var content = $("#content").val();
-            console.log(file);
-            var div = document.getElementById('file_div');
-
-            if (!file && div.style.backgroundImage == ""){
-                infoData.msg = "请封面上传哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (author == undefined || author == ""){
-
-                infoData.msg = "要记得填写作者哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (title == undefined || title == ""){
-                infoData.msg = "为啥不写标题";
-                showInfo(infoData);
-                return false;
-            }
-            if (content == "" || content == undefined){
-                infoData.msg = "特么文章没有文字";
-                showInfo(infoData);
-                return false;
-            }
-            return true;
-        }
     </script>
 
 <script type="text/javascript">

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:95:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/marchclass/addclass.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,79 +63,7 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-
-    <style type="text/css">
-
-        .all{
-            border-top: none;
-            border-left: none ;
-            border-right: none;
-            border-bottom:1px solid #5ccdde;
-            height: 45px;
-            font-size: 15px;
-            padding-left: 10px;
-            border-radius: 3px;
-            text-align: center;
-            z-index: 10;
-        }
-        .title{
-
-            width: 400px;
-        }
-        .author{
-            margin-left: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 150px;
-        }
-        .submit-btn{
-            margin-left: 851px;
-            margin-top: 20px;
-            background-color: #5ccdde;
-            border: none;
-            margin-bottom: 34px;
-            width: 80px;
-            height: 34px;
-            border-radius: 3px;
-            color: white;
-            outline: none;
-        }
-
-        #file{
-            margin: 0px;
-            z-index:100;
-
-            font-size:60px;opacity:0;
-            filter:alpha(opacity=10);
-
-            width: 100px;
-            height: 100px;
-        }
-        .uploda_img{
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-            background-color: #ffffff;
-            border:1px #5ccdde solid;
-            margin-left: -240px;
-            margin-top: 0px;
-            border-radius: 3px;
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-
-        }
-        .uploda_img span{
-            position: absolute;
-            display: inline-block;
-            font-size: 15px;
-            text-align: center;
-            width: 100px;
-            margin-left: -51px;
-            margin-top: 36px;
-            color: gray;
-        }
-    </style>
+    <link rel="stylesheet" href="__CSS__/class/addClass.css">
 
 </head>
 <body>
@@ -654,39 +582,96 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    
-    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
-        <h4><strong>提示</strong></h4>
-        <p></p>
-    </div>
-    <div id="success_alert" class="all-alert">
-        <h4><strong>成功！</strong></h4>
-        <p></p>
-    </div>
-    <div id="error_alert" class="all-alert" style="background-color: #de815c">
-        <h4><strong>出错了！</strong></h4>
-        <p></p>
-    </div>
-
-    <div>
-        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
-
-            <div style="width: 880px;margin-left:50px;text-align: center" >
-                    <div id="file_div" class="uploda_img">
-                        <span>上传封面</span>
-                        <input id="file" type="file" name="photo">
-                    </div>
-
-                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
-                <input id="author" class="all author" placeholder="作者" type="text" name="author">
-                <input type="hidden" value="<?php echo $id; ?>" name="id">
-                <input id="path" type="hidden" name="path" value="">
-                <input id="content" type="hidden" name="content">
+    <div id="addClass-content">
+        <form id="add-myForm" action="/marchsoft/admin/marchClass/upClass" onsubmit="return check()" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
+            <div class="form-group">
+                <label class="col-md-3 control-label">课程题目:</label>
+                <div class="col-md-6">
+                    <input type="text" name="title" id="class-title" required maxlength="200" class="form-control" placeholder="">
+                </div>
             </div>
-
-            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">授课人:</label>
+                <div class="col-md-6">
+                    <input type="text" name="lecturer" id="class-lecturer" required maxlength="300" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div id="old-img" class="form-group">
+                <label class="col-md-3 control-label">封面图片:</label>
+                <div class="col-md-6">
+                    <img src="" alt="">
+                    <input id="img-url" type="hidden" name="imgUrl">
+                </div>
+            </div>
+            <div id="upload-img" class="form-group">
+                <label class="col-md-3 control-label" for="example-file-multiple-input">上传图片:</label>
+                <div class="col-md-9">
+                    <input required type="file" id="example-file-multiple-input" name="image">
+                </div>
+            </div>
+            <div id="upload-newimg" class="form-group">
+                <label class="col-md-3 control-label" for="example-file-multiple-input">上传新图片(非必选):</label>
+                <div class="col-md-9">
+                    <input type="file" name="image">
+                </div>
+            </div>
+            <div id="class-type-list" class="form-group">
+                <label class="col-md-3 control-label">选择课程类型:</label>
+                <div class="col-md-5">
+                    <select class="select-chosen" data-placeholder="Choose a Type.." style="width: 250px; display: none;" multiple="">
+                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
+                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+                <a id="none-type">没有?</a>
+            </div>
+            <div id="class-have-type" class="form-group">
+                <label class="col-md-3 control-label">课程类型:</label>
+                <div class="col-md-5">
+                    <select class="select-chosen" data-placeholder="Choose" style="width: 250px; display: none;" multiple="">
+                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
+                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+            </div>
+            <div id="new-type-input" class="form-group">
+                <label class="col-md-3 control-label">新的类型:</label>
+                <div class="col-md-6">
+                    <input type="text" maxlength="100" class="form-control" placeholder="填写一个新的类型,回车键确认(可以为空)">
+                </div>
+            </div>
+            <div id="new-type-ul">
+                <ul></ul>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">视频链接:</label>
+                <div class="col-md-6">
+                    <input type="text" name="link" id="video-link" maxlength="1000" required class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">课程描述:</label>
+                <div class="col-md-9">
+                    <textarea id="classDesc" name="desc" required rows="7" class="form-control" placeholder="Description.."></textarea>
+                </div>
+            </div>
+            <input type="hidden" name="type" id="class-types">
+            <input type="hidden" name="newType" id="class-new-types">
+            <div id="add-action-group" class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="reset" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">Reset</button>
+                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">Submit</button>
+                </div>
+            </div>
+            <div id="change-action-group" class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button id="cance-return" type="button" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">取消</button>
+                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">提交</button>
+                </div>
+            </div>
         </form>
-        <button class="submit-btn" id="sbm" >发布</button>
     </div>
 
             </div>
@@ -697,99 +682,7 @@
     <!-- END Page Container -->
 </div>
 
-    <script type="text/javascript">
-
-        var ue = UE.getEditor('editor');
-        var infoData =  {
-            "code":2,
-            "msg":"success",
-            "data":{
-
-            }
-        };
-
-        /**
-         * 调用获取要编辑的新闻，
-         **/
-        getEditorNews() ;
-
-        /**
-         * 异步获取新闻
-         **/
-        function getEditorNews() {
-            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId=<?php echo $id; ?>',function (response) {
-                var jsObj = JSON.parse(response);
-
-                if (jsObj.code == 1){
-
-                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
-                    document.getElementById('file_div').children[0].innerHTML = "";
-                    $("#title").val(jsObj.data.title);
-                    $("#author").val(jsObj.data.writer);
-                    $("#path").val(jsObj.data.url);
-
-                    ue.setContent(jsObj.data.content);
-                }
-            })
-        }
-        
-        $(function(){
-            $("#file").change(function(e){
-                var div = document.getElementById('file_div');
-                if ($("#file").val()){
-                    div.children[0].innerHTML="";
-                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
-                }else {
-                    div.style.backgroundImage = "";
-                }
-            });
-        });
-
-
-        $("#sbm").click(function () {
-            $("#content").val(ue.getContent());
-            if (check()){
-                $("#f").submit();
-            }
-        });
-
-
-        /**
-         * 检查输入是否为空
-         * @returns {boolean}
-         */
-        function check() {
-            var file = $("#file").val();
-            var author = $("#author").val();
-            var title = $("#title").val();
-            var content = $("#content").val();
-            console.log(file);
-            var div = document.getElementById('file_div');
-
-            if (!file && div.style.backgroundImage == ""){
-                infoData.msg = "请封面上传哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (author == undefined || author == ""){
-
-                infoData.msg = "要记得填写作者哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (title == undefined || title == ""){
-                infoData.msg = "为啥不写标题";
-                showInfo(infoData);
-                return false;
-            }
-            if (content == "" || content == undefined){
-                infoData.msg = "特么文章没有文字";
-                showInfo(infoData);
-                return false;
-            }
-            return true;
-        }
-    </script>
+    <script type="text/javascript" src="__JS__/class/addClass.js"></script>
 
 <script type="text/javascript">
     $url = window.location.href;

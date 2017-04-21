@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\project\all.html";i:1492696543;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,80 +63,7 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-
-    <style type="text/css">
-
-        .all{
-            border-top: none;
-            border-left: none ;
-            border-right: none;
-            border-bottom:1px solid #5ccdde;
-            height: 45px;
-            font-size: 15px;
-            padding-left: 10px;
-            border-radius: 3px;
-            text-align: center;
-            z-index: 10;
-        }
-        .title{
-
-            width: 400px;
-        }
-        .author{
-            margin-left: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 150px;
-        }
-        .submit-btn{
-            margin-left: 851px;
-            margin-top: 20px;
-            background-color: #5ccdde;
-            border: none;
-            margin-bottom: 34px;
-            width: 80px;
-            height: 34px;
-            border-radius: 3px;
-            color: white;
-            outline: none;
-        }
-
-        #file{
-            margin: 0px;
-            z-index:100;
-
-            font-size:60px;opacity:0;
-            filter:alpha(opacity=10);
-
-            width: 100px;
-            height: 100px;
-        }
-        .uploda_img{
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-            background-color: #ffffff;
-            border:1px #5ccdde solid;
-            margin-left: -240px;
-            margin-top: 0px;
-            border-radius: 3px;
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-
-        }
-        .uploda_img span{
-            position: absolute;
-            display: inline-block;
-            font-size: 15px;
-            text-align: center;
-            width: 100px;
-            margin-left: -51px;
-            margin-top: 36px;
-            color: gray;
-        }
-    </style>
-
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -654,40 +581,210 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    
-    <div id="info_alert" class="all-alert" style="background-color: #5cafde">
-        <h4><strong>提示</strong></h4>
-        <p></p>
-    </div>
-    <div id="success_alert" class="all-alert">
-        <h4><strong>成功！</strong></h4>
-        <p></p>
-    </div>
-    <div id="error_alert" class="all-alert" style="background-color: #de815c">
-        <h4><strong>出错了！</strong></h4>
-        <p></p>
-    </div>
+ <script type="text/javascript">
 
-    <div>
-        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
+ 	function setImagePreview(input,img) {
+ 	    var docObj=document.getElementById(input);
+ 	    var imgObjPreview=document.getElementById(img);
+ 	    imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+ 	};
 
-            <div style="width: 880px;margin-left:50px;text-align: center" >
-                    <div id="file_div" class="uploda_img">
-                        <span>上传封面</span>
-                        <input id="file" type="file" name="photo">
-                    </div>
+	function img(src){
+		$('#big').attr('src',src);
+		$('#big').attr('height','100%'); 
+		$('#big').attr('width','100%');  
+		layer.open({
+		  type: 1,
+		  title: false,
+		  closeBtn: 0,
+		  area: ['350px', '200px'],
+		  skin: 'layui-layer-nobg', //没有背景色
+		  shadeClose: true,
+		  content: $('#big')
+		});
+	};
+	function img_detail(src){
+		$('#big').attr('src',src);
+		$('#big').attr('height','100%'); 
+		$('#big').attr('width','100%');  
+		layer.open({
+		  type: 1,
+		  title: false,
+		  closeBtn: 0,
+		  area: ['350px', '500px'],
+		  skin: 'layui-layer-nobg', //没有背景色
+		  shadeClose: true,
+		  content: $('#big')
+		});
+	};
+	function change(id,title,cover_img,detail_img,status){
+		$('#pro_id').val(id);
+        $('#title').val(title);
+        $('#inp-img').attr('src',cover_img); 
+        $('#inp-img1').attr('src',detail_img); 
+	    if(status==1){
+	        $('#radio1').prop('checked', 'true');
+	    }
+	    else{
+	        $('#radio2').prop('checked', 'true');
+	    }
+	    $('#button').click();
+	};
+	function save(){
+		$.ajax({
+		    url: "<?php echo url('change'); ?>",
+		    type: 'POST',
+		    cache: false,
+		    data: new FormData($('#uploadForm')[0]),
+		    processData: false,
+		    contentType: false,
+		    success : function(info){
+		    	if(info.code==0)
+		    		layer.msg(info.msg,{icon: 2,time:1000});
+		    	else{
+		    		layer.msg('修改成功', {icon: 1},function(){
+		    			window.location.reload();
+		    		});  
+		    	}
+		    		
+		    },	
+		 });
+		
+	};
 
-                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
-                <input id="author" class="all author" placeholder="作者" type="text" name="author">
-                <input type="hidden" value="<?php echo $id; ?>" name="id">
-                <input id="path" type="hidden" name="path" value="">
-                <input id="content" type="hidden" name="content">
-            </div>
+	function del(id){
+		layer.confirm('是否确认删除？', {
+		  btn: ['确认','取消'] //按钮
+		}, function(){
+			$.ajax({
+			    url: "<?php echo url('del'); ?>",
+			    type: 'POST',
+			    data: {
+			    	'id': id,
+			    },
+			    success : function(info){
+			    	if(info.code==0)
+			    		layer.msg(info.msg,{icon: 2,time:1000});
+			    	else		    		
+			    		$("#"+id+"tr").css('display','none');
+			    },	
+			});
+			layer.closeAll();
+		}, function(){
 
-            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
-        </form>
-        <button class="submit-btn" id="sbm" >发布</button>
+		});
+	};
+	function test(type){
+	    $.ajax({
+	        url: "<?php echo url('showAll'); ?>",
+	        type: 'POST',
+	        data: {
+	        	'type': type,
+	        },
+
+	    }).done(function(res) {
+	        console.log(res);
+	    }).fail(function(res) {});
+
+	};
+ </script>
+ <style type="text/css">
+ 	.form-group{
+ 		height: 40px;
+ 		margin-top: 5px;
+ 	}
+ </style>
+ <p>项目列表</p>
+ <table class="table table-striped table-borderless table-vcenter">
+ <thead>
+     <tr>
+         <th>项目名称</th>
+         <th class="hidden-sm hidden-xs">缩略图</th>
+         <th class="hidden-sm hidden-xs">详情图</th>
+         <th class="hidden-sm hidden-xs">Status</th>
+         <th style="width: 80px;" class="text-center"><i class="fa fa-flash"></i></th>
+     </tr>
+ </thead>
+ <img src="" id='big' style="display: none;">
+ <tbody>
+     <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+         <tr id="<?php echo $vo['id']; ?>tr">
+             <td><strong><?php echo $vo['title']; ?></strong></td>
+             <td class="hidden-xs"><img src="<?php echo $vo['cover_img_url']; ?>" style="width:50px;height:50px;border-radius:50px;" onclick="img('<?php echo $vo['cover_img_url']; ?>')"></td>
+             <td class="hidden-xs"><img src="<?php echo $vo['detail_img_url']; ?>" style="width:50px;height:50px;border-radius:50px;" onclick="img_detail('<?php echo $vo['detail_img_url']; ?>')"></td>
+             <?php if(($vo['status'] == 1)): ?> 
+                 <td class="hidden-sm hidden-xs"><a href="javascript:void(0)" class="label label-success">启用</a></td>
+             <?php else: ?> 
+                 <td class="hidden-sm hidden-xs"><a href="javascript:void(0)" class="label label-danger">禁用</a></td>
+             <?php endif; ?>
+             
+             <td class="text-center">
+                 <a href="javascript:void(0)" onclick="change('<?php echo $vo['id']; ?>','<?php echo $vo['title']; ?>','<?php echo $vo['cover_img_url']; ?>','<?php echo $vo['detail_img_url']; ?>','<?php echo $vo['status']; ?>')" data-toggle="modal" title="Edit User" class="btn btn-effect-ripple btn-xs btn-success" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                 <a href="javascript:void(0)" onclick="del('<?php echo $vo['id']; ?>')"data-toggle="tooltip" title="Delete User" class="btn btn-effect-ripple btn-xs btn-danger"><i class="fa fa-times"></i></a>
+             </td>
+         </tr>
+     <?php endforeach; endif; else: echo "" ;endif; ?>
+ </tbody>
+ <!-- Button trigger modal -->
+ <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="display: none;" id="button">
+ </button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加 导航</h4>
+      </div>
+      <div class="modal-body">
+	   	<form action="page_forms_components.html" method="post" class="form-horizontal form-bordered" id="uploadForm" onsubmit="return false;">
+
+	   	    <div class="form-group">
+	   	        <label class="col-md-3 control-label" for="state-normal">项目名称：</label>
+	   	        <div class="col-md-6">
+	   	        	<input type="text" id="pro_id" name="id" class="form-control" style="display: none;" ">
+	   	            <input type="text" id="title" name="title" class="form-control" placeholder="...">
+	   	        </div>
+	   	    </div>
+
+	   	    <div class="form-group">
+	   	        <label class="col-md-3 control-label" for="state-normal">缩略图：</label>
+	   	        <div class="col-md-9">
+	   	            
+	   	            <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview('example-file-input','inp-img');" type="file" id="example-file-input" name="cover_img" >
+	   	            <img id="inp-img" src="" style="max-height: 150px;max-width: 250px;margin-top: 10px;">
+	   	        </div>
+	   	    </div>
+
+	   	    <div class="form-group">
+	   	        <label class="col-md-3 control-label" for="state-normal">详情图：</label>
+	   	        <div class="col-md-9">
+	   	            <img id="inp-img" src="">
+	   	            <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview('example-file-input1','inp-img1');" type="file" id="example-file-input1" name="detail_img" >
+	   	            <img id="inp-img1" src="" style="max-width: 250px;min-height: 400px ;margin-top: 10px;">
+	   	        </div>
+	   	    </div>
+	   	    <div class="form-group">
+	   	        <label class="col-md-3 control-label" for="state-normal">启用：</label>
+	   	        <div class="col-md-9">
+	   	            <label class="radio-inline" for="example-inline-radio1">
+	   	                <input type="radio" id="radio1" name="example-inline-radios" value="1"> 启用
+	   	            </label>
+	   	            <label class="radio-inline" for="example-inline-radio2">
+	   	                <input type="radio" id="radio2" name="example-inline-radios" value="0"> 禁用
+	   	            </label>
+
+	   	        </div>
+	   	    </div>
+	   	</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="save()">Save changes</button>
+      </div>
     </div>
+  </div>
+</div> 
 
             </div>
 
@@ -698,97 +795,6 @@
 </div>
 
     <script type="text/javascript">
-
-        var ue = UE.getEditor('editor');
-        var infoData =  {
-            "code":2,
-            "msg":"success",
-            "data":{
-
-            }
-        };
-
-        /**
-         * 调用获取要编辑的新闻，
-         **/
-        getEditorNews() ;
-
-        /**
-         * 异步获取新闻
-         **/
-        function getEditorNews() {
-            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId=<?php echo $id; ?>',function (response) {
-                var jsObj = JSON.parse(response);
-
-                if (jsObj.code == 1){
-
-                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
-                    document.getElementById('file_div').children[0].innerHTML = "";
-                    $("#title").val(jsObj.data.title);
-                    $("#author").val(jsObj.data.writer);
-                    $("#path").val(jsObj.data.url);
-
-                    ue.setContent(jsObj.data.content);
-                }
-            })
-        }
-        
-        $(function(){
-            $("#file").change(function(e){
-                var div = document.getElementById('file_div');
-                if ($("#file").val()){
-                    div.children[0].innerHTML="";
-                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
-                }else {
-                    div.style.backgroundImage = "";
-                }
-            });
-        });
-
-
-        $("#sbm").click(function () {
-            $("#content").val(ue.getContent());
-            if (check()){
-                $("#f").submit();
-            }
-        });
-
-
-        /**
-         * 检查输入是否为空
-         * @returns {boolean}
-         */
-        function check() {
-            var file = $("#file").val();
-            var author = $("#author").val();
-            var title = $("#title").val();
-            var content = $("#content").val();
-            console.log(file);
-            var div = document.getElementById('file_div');
-
-            if (!file && div.style.backgroundImage == ""){
-                infoData.msg = "请封面上传哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (author == undefined || author == ""){
-
-                infoData.msg = "要记得填写作者哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (title == undefined || title == ""){
-                infoData.msg = "为啥不写标题";
-                showInfo(infoData);
-                return false;
-            }
-            if (content == "" || content == undefined){
-                infoData.msg = "特么文章没有文字";
-                showInfo(infoData);
-                return false;
-            }
-            return true;
-        }
     </script>
 
 <script type="text/javascript">

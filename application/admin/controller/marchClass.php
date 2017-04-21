@@ -6,14 +6,14 @@
  * Time: 下午5:47
  */
 namespace app\admin\controller;
-use think\controller;
+use think\Controller;
 use think\Db;
 use app\admin\model\TypeModel;
 use app\admin\model\ClassModel;
 use app\admin\model\ClassTypeModel;
 use app\admin\model\ImgModel;
 
-class marchClass extends Controller {
+class Marchclass extends Controller {
     /**
      * 后台课程管理页面
      * @param
@@ -65,7 +65,7 @@ class marchClass extends Controller {
     }
 
     public function classType(){
-        $allType = TypeModel::field('march_type.type,march_class_type.class_id')->join('march_class_type','march_type.type_id=march_class_type.type_id','left')
+        $allType = TypeModel::field('march_type.id,march_type.type,march_class_type.class_id')->join('march_class_type','march_type.type_id=march_class_type.type_id','left')
             ->group('march_type.type')
             ->select();
         $this->assign('allType',$allType);
@@ -233,6 +233,82 @@ class marchClass extends Controller {
     }
 
     /**
+     * 编辑类型的方法
+     * @param $id 要编辑类型的ID  $newType 新的类型名
+     *  @return
+     */
+    public function changeType($id,$newType){
+        $id = input('id','');
+        $newType = input('newType','');
+        $type = TypeModel::get($id);
+        $type->type = $newType;
+        if($type->save()){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'修改成功',
+                'data'=>[]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'修改出错',
+                'data'=>[]
+            ]);
+        }
+    }
+
+    /**
+     * 删除类型的方法
+     * @param $id 要删除类型的ID
+     *  @return 删除成功的信息
+     */
+    public function deleteType($id){
+        $id = input('id','');
+        $type = new TypeModel;
+        $deleteCount = $type->where('id',$id)->delete();
+        if($deleteCount==1){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'删除成功',
+                'data'=>[]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'删除出错',
+                'data'=>[]
+            ]);
+        }
+    }
+
+    /**
+     * 添加一个新类型的方法
+     * @param $addType 要添加的类型名
+     *  @return 添加成功的信息
+     */
+    public function addType($addType){
+        $addType = input('addType','');
+        $type = new TypeModel;
+        $time = request()->time();
+        $newTypeid = $time.rand(100000,999999);
+        $data = ['type_id'=>$newTypeid,'type'=>$addType,'created_at'=>$time];
+        $addId = $type->insertGetId($data);
+        if($addId){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'添加成功',
+                'data'=>['id'=>$addId]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'添加出错',
+                'data'=>[]
+            ]);
+        }
+    }
+
+    /**
      * 获取所有已有类型ID的方法
      * @param $typeArr 已有类型的数组
      *  @return $typeIdArr 获取到的已有类型的ID的数组
@@ -287,13 +363,12 @@ class marchClass extends Controller {
         if($isindex=='0'){
             $allClass = $baseClass->join('march_imgs','march_class.cover_img_id = march_imgs.img_id')
                 ->where('march_class.created_at','between',[$upLimit,$lowLimit])
-                ->field('march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
+                ->field('march_class.id,march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
                 ->order('march_class.page_views desc')
                 ->select();
-
         }else if($isindex=='1'){
             $allClass = $baseClass->join('march_imgs','march_class.cover_img_id = march_imgs.img_id')
-                ->field('march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
+                    ->field('march_class.id,march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
                 ->order('march_class.created_at desc')->limit($num)
                 ->select();
         }
@@ -315,7 +390,7 @@ class marchClass extends Controller {
 
     /**
      * 三月课堂筛选接口
-     * @param $isindex 是否为显示前$num条(0为显示全部,1为显示前$num条)
+     * @param
      *  @return
      */
     public function screenInterface(){
@@ -373,7 +448,7 @@ class marchClass extends Controller {
             }
             $returnData = [
                 'code'=>1,
-                'msg'=>'请选择一个年份',
+                'msg'=>'请求成功',
                 'data'=>$list
             ];
             return json_encode($returnData);
@@ -426,5 +501,29 @@ class marchClass extends Controller {
             ];
         }
         return json_encode($returnData);
+    }
+
+    /**
+     * 三月课堂浏览量增加接口
+     * @param $id增加浏览量的课程ID
+     *  @return
+     */
+    public function pageViewUp($id){
+        $id = input('id','');
+        $class = new ClassModel;
+        $data = $class->where('id',$id)->setInc('page_views');
+        if($data){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'浏览量增加成功',
+                'data'=>[]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'浏览量增加失败',
+                'data'=>[]
+            ]);
+        }
     }
 }

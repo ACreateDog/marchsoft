@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/all.html";i:1492743548;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492675468;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/all.html";i:1492752812;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -206,7 +206,7 @@
                             <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">前台功能</span></a>
                             <ul>
                                 <li>
-                                    <a href="">导航栏</a>
+                                    <a id="show" href="<?php echo url('nav/show'); ?>">导航栏</a>
                                 </li>
                                 <li>
 
@@ -277,16 +277,16 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
                                     <ul>
                                         <li>
-                                            <a id="level-addclass" href="/marchsoft/admin/marchClass/addclass">新课程</a>
+                                            <a id="level-addclass" href="<?php echo url('Marchclass/addclass'); ?>">新课程</a>
                                         </li>
                                         <li>
-                                            <a id="level-marchclass" href="/marchsoft/admin/marchClass/marchclass">课程表</a>
+                                            <a id="level-marchclass" href="<?php echo url('Marchclass/marchclass'); ?>">课程表</a>
                                         </li>
                                         <li>
-                                            <a id="level-deletedClass" href="/marchsoft/admin/marchClass/deletedClass">旧课程篓</a>
+                                            <a id="level-deletedClass" href="<?php echo url('Marchclass/deletedClass'); ?>">旧课程篓</a>
                                         </li>
                                         <li>
-                                            <a id="level-classType" href="/marchsoft/admin/marchClass/classType">类型管理</a>
+                                            <a id="level-classType" href="<?php echo url('Marchclass/classType'); ?>">类型管理</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -294,10 +294,10 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>项目管理</a>
                                     <ul>
                                         <li>
-                                            <a href="">添加项目</a>
+                                            <a id="level-index" href="<?php echo url('project/index'); ?>">添加项目</a>
                                         </li>
                                         <li>
-                                            <a href="">所有项目</a>
+                                            <a id="level-all" href="<?php echo url('project/all'); ?>">所有项目</a>
                                         </li>
                                     </ul>
                                 </li>                                
@@ -599,28 +599,7 @@
         </div>
         <div class="table-responsive">
             <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
-                <!--<div class="row">-->
-                    <!--<div class="col-sm-6 col-xs-5">-->
-                        <!--div class="dataTables_length" id="example-datatable_length">-->
-                        <!--<label>-->
-                            <!--&lt;!&ndash;<select name="example-datatable_length" aria-controls="example-datatable" class="form-control">&ndash;&gt;-->
-                                <!--&lt;!&ndash;<option value="5">5</option>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<option value="10">10</option>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<option value="20">20</option>&ndash;&gt;-->
-                            <!--&lt;!&ndash;</select>&ndash;&gt;-->
-                        <!--</label>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-6 col-xs-7">-->
-                    <!--<div id="example-datatable_filter" class="dataTables_filter">-->
-                        <!--<label>-->
-                            <!--<div class="input-group">-->
-                            <!--<input type="search" class="form-control" placeholder="Search" aria-controls="example-datatable">-->
-                                <!--<span class="input-group-addon"><i class="fa fa-search"></i></span>-->
-                            <!--</div>-->
-                        <!--</label>-->
-                    <!--</div>-->
-                <!--</div>-->
+
             </div>
             <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer" role="grid" aria-describedby="example-datatable_info">
                 <thead>

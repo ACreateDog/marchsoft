@@ -1,4 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/add.html";i:1492675468;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492752496;}*/ ?>
+<<<<<<< HEAD:runtime/temp/7d29aa78ddff9181a69cbd1755380390.php
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/news/all.html";i:1492743548;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492675468;}*/ ?>
+=======
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:69:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\news\all.html";i:1492744406;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
+>>>>>>> a3354f9b1a000dbe2f26992e702b7f83e40fb41f:runtime/temp/0e7c1e58f1441983f686fc9b76d14c80.php
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,80 +67,7 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-
-    <style type="text/css">
-
-        .all{
-            border-top: none;
-            border-left: none ;
-            border-right: none;
-            border-bottom:1px solid #5ccdde;
-            height: 45px;
-            font-size: 15px;
-            padding-left: 10px;
-            border-radius: 3px;
-            text-align: center;
-            z-index: 10;
-        }
-        .title{
-
-            width: 400px;
-        }
-        .author{
-            margin-left: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 150px;
-        }
-        .submit-btn{
-            margin-left: 851px;
-            margin-top: 20px;
-            background-color: #5ccdde;
-            border: none;
-            margin-bottom: 34px;
-            width: 80px;
-            height: 34px;
-            border-radius: 3px;
-            color: white;
-            outline: none;
-        }
-
-        #file{
-            margin: 0px;
-            z-index:100;
-
-            font-size:60px;opacity:0;
-            filter:alpha(opacity=10);
-
-            width: 100px;
-            height: 100px;
-        }
-        .uploda_img{
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-            background-color: #ffffff;
-            border:1px #5ccdde solid;
-            margin-left: -240px;
-            margin-top: 0px;
-            border-radius: 3px;
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-
-        }
-        .uploda_img span{
-            position: absolute;
-            display: inline-block;
-            font-size: 15px;
-            text-align: center;
-            width: 100px;
-            margin-left: -51px;
-            margin-top: 36px;
-            color: gray;
-        }
-    </style>
-
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -654,7 +585,6 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    
     <div id="info_alert" class="all-alert" style="background-color: #5cafde">
         <h4><strong>提示</strong></h4>
         <p></p>
@@ -667,26 +597,87 @@
         <h4><strong>出错了！</strong></h4>
         <p></p>
     </div>
-
-    <div>
-        <form id="f" action="__ROOT__/admin/news/save" method="post" enctype="multipart/form-data">
-
-            <div style="width: 880px;margin-left:50px;text-align: center" >
-                    <div id="file_div" class="uploda_img">
-                        <span>上传封面</span>
-                        <input id="file" type="file" name="photo">
-                    </div>
-
-                <input id="title" class="all title" placeholder="标题" type="text" name="title"><br/>
-                <input id="author" class="all author" placeholder="作者" type="text" name="author">
-                <input type="hidden" value="<?php echo $id; ?>" name="id">
-                <input id="path" type="hidden" name="path" value="">
-                <input id="content" type="hidden" name="content">
+    <div class="block full">
+        <div class="block-title">
+            <h2>全部新闻</h2>
+        </div>
+        <div class="table-responsive">
+            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <!--<div class="row">-->
+                    <!--<div class="col-sm-6 col-xs-5">-->
+                        <!--div class="dataTables_length" id="example-datatable_length">-->
+                        <!--<label>-->
+                            <!--&lt;!&ndash;<select name="example-datatable_length" aria-controls="example-datatable" class="form-control">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="5">5</option>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="10">10</option>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="20">20</option>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</select>&ndash;&gt;-->
+                        <!--</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 col-xs-7">-->
+                    <!--<div id="example-datatable_filter" class="dataTables_filter">-->
+                        <!--<label>-->
+                            <!--<div class="input-group">-->
+                            <!--<input type="search" class="form-control" placeholder="Search" aria-controls="example-datatable">-->
+                                <!--<span class="input-group-addon"><i class="fa fa-search"></i></span>-->
+                            <!--</div>-->
+                        <!--</label>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
+            <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer" role="grid" aria-describedby="example-datatable_info">
+                <thead>
+                    <tr role="row">
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 100px;">封面</th>
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="User: activate to sort column ascending" style="width: 399px;">标题</th>
+                        <th  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 178px;">作者</th>
+                        <th class="text-center" style="width: 100px;" tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="ID: activate to sort column descending" aria-sort="ascending">时间</th>
+                        <th style="width: 40px;"  tabindex="0" aria-controls="example-datatable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">状态</th>
+                        <th class="text-center sorting_disabled" style="width: 100px;" rowspan="1" colspan="1" aria-label=""><i class="fa fa-flash"><strong>操作</strong></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php if(is_array($content) || $content instanceof \think\Collection || $content instanceof \think\Paginator): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$line): $mod = ($i % 2 );++$i;?>
+                    <tr role="row" class="odd">
+                        <!--<td><img class="img_cover" id="img_<?php echo $line['id']; ?>" src="" alt="<?php echo $line['title']; ?>"></td>-->
+                        <td>
+                            <a href="" id="a_<?php echo $line['id']; ?>" data-toggle="lightbox-image" title="Image Info">
+                                <img src="" id="img_<?php echo $line['id']; ?>" alt="<?php echo $line['title']; ?>">
+                            </a>
+                        </td>
+                        <td class="text-center sorting_1"><strong><?php echo $line['title']; ?></strong></td>
+                        <td><?php echo $line['writer']; ?></td>
+                        <td><?php echo date("Y-m-d",$line['created_at'] ); ?></td>
+                        <td>
+                            <?php if($line->status == '1'): ?>
+                                <span class="label label-success">正常</span>
+                            <?php endif; if($line->status == '0'): ?>
+                                <span class="label label-warning">已禁用</span>
+                            <?php endif; ?>
+                        </td>
+                        <td class="text-center">
 
-            <div id="editor" name="content" style="margin-left: 50px;width:880px;height:500px;z-index: 10" ></div>
-        </form>
-        <button class="submit-btn" id="sbm" >发布</button>
+                            <a href="__ROOT__/admin/news/editor?id=<?php echo $line['id']; ?>" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-success" style="overflow: hidden; position: relative;" data-original-title="编辑"><i class="fa fa-pencil">编辑</i></a>
+                            <a id="<?php echo $line['id']; ?>" onclick="putDown(this);" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="下架"><i class="fa fa-times">下架</i></a>
+                        </td>
+                    </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+
+                </tbody>
+            </table>
+                <div class="row">
+
+                    <div class="col-sm-7 col-xs-12 clearfix">
+                        <div class="dataTables_paginate paging_bootstrap" id="example-datatable_paginate">
+                            <ul class="pagination pagination-sm remove-margin">
+                                <?php echo $page; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
             </div>
@@ -699,95 +690,46 @@
 
     <script type="text/javascript">
 
-        var ue = UE.getEditor('editor');
-        var infoData =  {
-            "code":2,
-            "msg":"success",
-            "data":{
+        function putDown(ele) {
+            var putDownId = ele.id;
 
-            }
-        };
-
-        /**
-         * 调用获取要编辑的新闻，
-         **/
-        getEditorNews() ;
-
-        /**
-         * 异步获取新闻
-         **/
-        function getEditorNews() {
-            sendGetAjax('__ROOT__/admin/news/getnewsbyid?newsId=<?php echo $id; ?>',function (response) {
+            sendGetAjax("__ROOT__/admin/news/putdown?id="+putDownId,function (response) {
                 var jsObj = JSON.parse(response);
-
+                console.log(jsObj.data)
                 if (jsObj.code == 1){
-
-                    document.getElementById('file_div').style.backgroundImage="url("+jsObj.data.url +")";
-                    document.getElementById('file_div').children[0].innerHTML = "";
-                    $("#title").val(jsObj.data.title);
-                    $("#author").val(jsObj.data.writer);
-                    $("#path").val(jsObj.data.url);
-
-                    ue.setContent(jsObj.data.content);
-                }
-            })
-        }
-        
-        $(function(){
-            $("#file").change(function(e){
-                var div = document.getElementById('file_div');
-                if ($("#file").val()){
-                    div.children[0].innerHTML="";
-                    div.style.backgroundImage = "url(__APP_IMG__/right.png)";
+                    var tbody = ele.parentNode.parentNode.parentNode;
+                    var tr = ele.parentNode.parentNode;
+                    tr.style.backgroundColor = "#5cafde";
+                    setTimeout(function () {
+                        tbody.removeChild(tr);
+                        showInfo(jsObj);
+                    },500);
                 }else {
-                    div.style.backgroundImage = "";
+                    showInfo(jsObj);
                 }
             });
-        });
+        }
+        setImage();
+        function setImage() {
+           var page = getQueryString("page");
 
+           if (page == null){
+                page = 1;
+           }
 
-        $("#sbm").click(function () {
-            $("#content").val(ue.getContent());
-            if (check()){
-                $("#f").submit();
-            }
-        });
+           sendGetAjax('__ROOT__/admin/news/getimage?page='+page+'&status=1',function (response) {
+               var jsObj = JSON.parse(response);
 
+                var imgUrlarr = jsObj.data.data;
 
-        /**
-         * 检查输入是否为空
-         * @returns {boolean}
-         */
-        function check() {
-            var file = $("#file").val();
-            var author = $("#author").val();
-            var title = $("#title").val();
-            var content = $("#content").val();
-            console.log(file);
-            var div = document.getElementById('file_div');
-
-            if (!file && div.style.backgroundImage == ""){
-                infoData.msg = "请封面上传哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (author == undefined || author == ""){
-
-                infoData.msg = "要记得填写作者哦";
-                showInfo(infoData);
-                return false;
-            }
-            if (title == undefined || title == ""){
-                infoData.msg = "为啥不写标题";
-                showInfo(infoData);
-                return false;
-            }
-            if (content == "" || content == undefined){
-                infoData.msg = "特么文章没有文字";
-                showInfo(infoData);
-                return false;
-            }
-            return true;
+                for (var i = 0;i<imgUrlarr.length;i++){
+                    var aid = 'a_' + imgUrlarr[i].id;
+                    var id = 'img_'+imgUrlarr[i].id;
+                    var imgURL = imgUrlarr[i].url;
+                    document.getElementById(id).src=imgURL;
+                    document.getElementById(aid).href = imgURL;
+                }
+           });
         }
     </script>
 
