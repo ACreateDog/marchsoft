@@ -14,6 +14,8 @@ class ErrorPage
 {
     static public $errorData = [];
     static public $view      = null;
+
+
     static public function addMsg($key,$value){
         if (empty(self::$view))
             self::$view = new  View('error');

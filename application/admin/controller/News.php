@@ -17,6 +17,7 @@ use think\Request;
 
 class News{
 
+    use ImgUrl;
     /**
      *  请求方法：get
      *  请求参数：id  int  必须
@@ -128,6 +129,8 @@ class News{
 
         $newsNum = \request()->get('num');
 
+
+
         if (is_numeric($newsNum) || empty($newsNum) || intval($newsNum) < 0){
 
             return json_encode($returnData = [
@@ -228,7 +231,7 @@ class News{
                     'writer' => $writer,
                     'title' =>$title,
                     'content' =>$content,
-                    'url' =>$url
+                    'url' =>$this->getImageUrl($url)
                     ]
             ));
         }
@@ -334,6 +337,7 @@ class News{
      */
     public function allnews()
     {
+
         $news = new NewsModel();
         $list = $news->field('march_news.id,title,writer,march_news.created_at,page_views,status')
                     ->where('status',1)
@@ -387,6 +391,7 @@ class News{
      * 异步获取图片
      * @return string
      */
+
     public function getImage(){
         $news = new NewsModel();
         $status =  intval(\request()->get('status'));
@@ -395,6 +400,10 @@ class News{
             ->where('status',$status)
             ->join('march_imgs','cover_img_id = march_imgs.img_id')
             ->paginate(10)->toArray();
+
+        foreach ($list['data'] as $key => $value){
+            $list['data'][$key]['url'] = $this->getImageUrl($list['data'][$key]['url']);
+        }
 
         return json_encode(array(
             'code'=>1,
@@ -529,6 +538,8 @@ class News{
         }catch (Exception $exception){
             Db::rollback();
         }
+
+        url();
         return redirect('/marchsoft/admin/news/allnews');
     }
 
