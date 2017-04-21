@@ -57,8 +57,10 @@ class Nav extends Controller
 			if(input('param.icon_id')!=''){
 				$icon_id = input('param.icon_id');
 				//删除老图片
-				if($result['url']!='')
+				if($result['url']!=''){
 					unlink(ROOT_PATH.'..\\'.$result['url']);
+					Db::table('march_imgs')->where('img_id',input('param.icon_id'))->delete();
+				}
 
 			}else
 				$icon_id = $result['icon_id'];

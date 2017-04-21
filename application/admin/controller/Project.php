@@ -65,7 +65,6 @@ class Project extends Controller
 	            // 上传失败获取错误信息
 	            echo $file->getError();
 	        }
- 
 	    }
 	    $data = $arrayName = array(
 	    	'title' => input('param.title'),
@@ -80,7 +79,10 @@ class Project extends Controller
 	    else
 	    	$this->error('发生未知错误，请联系我!');
 	}
-
+	/**
+	 * 修改项目图片标题
+	 * @return [type] [description]
+	 */
 	public function change(){
 
 		//判断项目名称是否设置
@@ -88,7 +90,7 @@ class Project extends Controller
 			$this->error('名称不能为空');
 		$id = $_POST['id'];
 		$pro = Db::table('march_project')->where('id',$id)->find();
-
+		//从数据库中读出原来的文件路劲，若上传就覆盖掉。
 		$cover_img_id = $pro['cover_img_id'];
 		$detail_img_id = $pro['detail_img_id'];
 
@@ -105,6 +107,7 @@ class Project extends Controller
 	    		$time = request()->time();
 	    		$cover_img_id = $time.rand(100000,999999); 
 
+
 	    		$data = $arrayName = array(
 	    			'img_id' => $cover_img_id,
 	    			'url' =>  '/marchsoft/public/upload/project/'.str_replace("\\","/",$info->getSaveName()),
@@ -112,6 +115,10 @@ class Project extends Controller
 	    			);
 	    		//把上传文件信息写入数据库
 	    		Db::table('march_imgs')->insert($data);
+	    		$old_img_info = Db::table('march_imgs')->where('img_id',$pro['cover_img_id'])->find();
+	    		if($old_img_info!=null)
+	    			unlink(ROOT_PATH.'..\\'.$old_img_info['url']);
+	    		Db::table('march_imgs')->where('img_id',$pro['cover_img_id'])->delete();
 	    	}else{
 	    	    // 上传失败获取错误信息
 	    	    echo $file->getError();
@@ -122,16 +129,18 @@ class Project extends Controller
 	    	$info = $detail_img->move(ROOT_PATH . 'public' . DS . 'upload'. DS .'project');
 	    	
 	    	if($info){
-	    		$time = request()->time();
-	    		$detail_img_id = $time.rand(100000,999999); 
+	    		$time2 = request()->time();
+	    		$detail_img_id = $time2.rand(100000,999999); 
 
 	    		$data = $arrayName = array(
-	    			'img_id' => $cover_img_id,
+	    			'img_id' => $detail_img_id,
 	    			'url' =>  '/marchsoft/public/upload/project/'.str_replace("\\","/",$info->getSaveName()),
-	    			'created_at' => $time,
+	    			'created_at' => $time2,
 	    			);
 	    		//把上传文件信息写入数据库
 	    		Db::table('march_imgs')->insert($data);
+
+	    		Db::table('march_imgs')->where('img_id',$pro['detail_img_id'])->delete();
 	    	}else{
 	    	    // 上传失败获取错误信息
 	    	    echo $file->getError();
