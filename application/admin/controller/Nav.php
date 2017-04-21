@@ -118,6 +118,7 @@ class Nav extends Controller
 				'id' => $img_id, 
 				'url' =>'public\\upload\\nav\\'.$info->getSaveName(),
 				);
+
 			//返回文件上传的信息
 			$this->success($data);
 

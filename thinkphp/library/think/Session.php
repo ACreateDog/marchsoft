@@ -98,7 +98,7 @@ class Session
 
             // 检查驱动类
             if (!class_exists($class) || !session_set_save_handler(new $class($config))) {
-                throw new ClassNotFoundException('error session handler:' . $class, $class);
+                throw new ClassNotFoundException('errorpage session handler:' . $class, $class);
             }
         }
         if ($isDoStart) {

@@ -79,7 +79,7 @@ abstract class Rest
             return App::invokeMethod([$this, $fun]);
         } else {
             // 抛出异常
-            throw new \Exception('error action :' . $method);
+            throw new \Exception('errorpage action :' . $method);
         }
     }
 

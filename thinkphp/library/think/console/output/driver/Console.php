@@ -96,10 +96,10 @@ class Console
             }
 
             $messages   = ['', ''];
-            $messages[] = $emptyLine = sprintf('<error>%s</error>', str_repeat(' ', $len));
-            $messages[] = sprintf('<error>%s%s</error>', $title, str_repeat(' ', max(0, $len - $this->stringWidth($title))));
+            $messages[] = $emptyLine = sprintf('<errorpage>%s</errorpage>', str_repeat(' ', $len));
+            $messages[] = sprintf('<errorpage>%s%s</errorpage>', $title, str_repeat(' ', max(0, $len - $this->stringWidth($title))));
             foreach ($lines as $line) {
-                $messages[] = sprintf('<error>  %s  %s</error>', $line[0], str_repeat(' ', $len - $line[1]));
+                $messages[] = sprintf('<errorpage>  %s  %s</errorpage>', $line[0], str_repeat(' ', $len - $line[1]));
             }
             $messages[] = $emptyLine;
             $messages[] = '';

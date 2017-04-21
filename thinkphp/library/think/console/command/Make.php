@@ -39,7 +39,7 @@ abstract class Make extends Command
         $pathname = $this->getPathName($classname);
 
         if (is_file($pathname)) {
-            $output->writeln('<error>' . $this->type . ' already exists!</error>');
+            $output->writeln('<errorpage>' . $this->type . ' already exists!</errorpage>');
             return false;
         }
 

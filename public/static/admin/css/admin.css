@@ -1,0 +1,13 @@
+/*#info_alert ,success_alert,error_alert{*/
+
+/*}*/
+.all-alert{
+    position: fixed;
+    right: 5px;
+    height: 101px;
+    width: 141px;
+    z-index: 99999;
+    background-color: #00a0e9;
+    text-align: center;
+    display: none;
+}

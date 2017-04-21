@@ -73,7 +73,7 @@ class Process
      */
     public static $exitCodes = [
         0   => 'OK',
-        1   => 'General error',
+        1   => 'General errorpage',
         2   => 'Misuse of shell builtins',
         126 => 'Invoked command cannot execute',
         127 => 'Command not found',
@@ -85,7 +85,7 @@ class Process
         132 => 'Illegal instruction',
         133 => 'Trace/breakpoint trap',
         134 => 'Process aborted',
-        135 => 'Bus error: "access to undefined portion of memory object"',
+        135 => 'Bus errorpage: "access to undefined portion of memory object"',
         136 => 'Floating point exception: "erroneous arithmetic operation"',
         137 => 'Kill (terminate immediately)',
         138 => 'User-defined 1',
@@ -493,7 +493,7 @@ class Process
             return;
         }
 
-        return isset(self::$exitCodes[$exitcode]) ? self::$exitCodes[$exitcode] : 'Unknown error';
+        return isset(self::$exitCodes[$exitcode]) ? self::$exitCodes[$exitcode] : 'Unknown errorpage';
     }
 
     /**
