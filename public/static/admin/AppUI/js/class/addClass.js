@@ -92,7 +92,6 @@ $(function () {
                 $("#new-type-ul ul").prepend(newli);
                 $("#new-type-input input").val('');
             }
-
         }
     });
 

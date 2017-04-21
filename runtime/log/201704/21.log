@@ -1,0 +1,2239 @@
+[ 2017-04-21T08:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.232924s][吞吐率：4.29req/s] [内存消耗：3,379.93kb] [文件加载：61]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071093s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.059919s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.058262s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:17:01+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：1.172247s][吞吐率：0.85req/s] [内存消耗：3,145.27kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.046498s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.053836s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.044355s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:20:56+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.241477s][吞吐率：4.14req/s] [内存消耗：3,145.27kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106718s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.050316s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.042521s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:21:06+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/deleteType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/deleteType [运行时间：0.034090s][吞吐率：29.33req/s] [内存消耗：2,064.20kb] [文件加载：50]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'deleteType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test1',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[/Library/WebServer/Documents/marchsoft/thinkphp/library/think/App.php:294]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:21:21+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/deleteType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/deleteType [运行时间：0.029176s][吞吐率：34.27req/s] [内存消耗：2,064.20kb] [文件加载：50]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'deleteType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test1',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[/Library/WebServer/Documents/marchsoft/thinkphp/library/think/App.php:294]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:21:27+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.198510s][吞吐率：5.04req/s] [内存消耗：3,145.27kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067084s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044113s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.043502s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:21:35+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.224624s][吞吐率：4.45req/s] [内存消耗：2,986.55kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test1',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069308s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.047814s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test1') [ RunTime:0.047319s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:21:52+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.186478s][吞吐率：5.36req/s] [内存消耗：3,146.62kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064522s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.040947s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.042295s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:22:16+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.276521s][吞吐率：3.62req/s] [内存消耗：3,146.62kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108176s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.049440s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.071073s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:22:20+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.197729s][吞吐率：5.06req/s] [内存消耗：2,986.55kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063622s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.041897s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test3') [ RunTime:0.050369s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:22:28+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.206205s][吞吐率：4.85req/s] [内存消耗：2,986.55kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075803s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.050174s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test3') [ RunTime:0.049688s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:22:36+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.193802s][吞吐率：5.16req/s] [内存消耗：3,151.88kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075004s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.047898s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.047516s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:22:47+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.332151s][吞吐率：3.01req/s] [内存消耗：2,986.55kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.212391s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044805s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test3') [ RunTime:0.049640s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:22:55+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.192609s][吞吐率：5.19req/s] [内存消耗：3,151.88kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071223s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.041219s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.041001s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:28:00+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.613215s][吞吐率：1.63req/s] [内存消耗：3,151.68kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.503256s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.047270s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.040117s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:28:04+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.196252s][吞吐率：5.10req/s] [内存消耗：3,027.57kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test4',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074298s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044481s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test4') [ RunTime:0.046841s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:293]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:28:06+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.175418s][吞吐率：5.70req/s] [内存消耗：3,027.57kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test4',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062444s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044393s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test4') [ RunTime:0.044057s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:293]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:28:15+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.198623s][吞吐率：5.03req/s] [内存消耗：3,027.57kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test4',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065576s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.043726s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test4') [ RunTime:0.053552s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:293]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:31:46+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.276358s][吞吐率：3.62req/s] [内存消耗：3,027.51kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test4',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145249s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.038978s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test4') [ RunTime:0.039421s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:293]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:32:08+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.200976s][吞吐率：4.98req/s] [内存消耗：3,152.96kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066827s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.055519s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.043633s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:32:43+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.234797s][吞吐率：4.26req/s] [内存消耗：3,027.51kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test5',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072156s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.050528s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type`) VALUES ('test5') [ RunTime:0.050160s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:293]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:33:09+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.647060s][吞吐率：1.55req/s] [内存消耗：3,154.60kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.507757s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.046879s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.047962s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:33:17+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/deleteType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/deleteType [运行时间：0.170791s][吞吐率：5.86req/s] [内存消耗：2,986.28kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'deleteType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '56',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->deleteType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062529s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.041524s ]
+[ sql ] [ SQL ] DELETE FROM `march_type`    WHERE  `id` = 56 [ RunTime:0.042578s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:33:19+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.173396s][吞吐率：5.77req/s] [内存消耗：3,152.96kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063747s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.042940s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.041354s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:35:24+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.210416s][吞吐率：4.75req/s] [内存消耗：3,143.88kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072925s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.055745s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.055259s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:36:15+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.639235s][吞吐率：1.56req/s] [内存消耗：3,144.13kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.516765s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.047813s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.048503s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:36:30+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.217476s][吞吐率：4.60req/s] [内存消耗：3,028.84kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test1',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075841s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.052983s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type` , `created_at`) VALUES ('test1' , 1492734990) [ RunTime:0.049474s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:294]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:37:04+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.204231s][吞吐率：4.90req/s] [内存消耗：3,028.91kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test1',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075140s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.043625s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type` , `created_at`) VALUES ('test1' , 1492735023) [ RunTime:0.043918s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:294]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:37:20+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.212875s][吞吐率：4.70req/s] [内存消耗：3,028.59kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test1',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071003s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044701s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type` , `created_at`) VALUES ('test1' , 1492735040) [ RunTime:0.044747s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:294]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:37:26+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.199497s][吞吐率：5.01req/s] [内存消耗：3,145.21kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068238s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.050703s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.045304s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:37:49+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.199887s][吞吐率：5.00req/s] [内存消耗：3,028.59kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test2',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072411s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044368s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type` , `created_at`) VALUES ('test2' , 1492735069) [ RunTime:0.042879s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:294]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:37:52+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.191610s][吞吐率：5.22req/s] [内存消耗：3,146.55kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064612s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.042229s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.043122s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:38:01+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.207329s][吞吐率：4.82req/s] [内存消耗：3,028.59kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070835s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044803s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type` , `created_at`) VALUES ('test3' , 1492735081) [ RunTime:0.053050s ]
+[ error ] [0]致命错误: Call to a member function getLastInsID() on integer[/Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php:294]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:38:37+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.254669s][吞吐率：3.93req/s] [内存消耗：3,151.70kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075685s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.046735s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.053941s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:38:49+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.207693s][吞吐率：4.81req/s] [内存消耗：3,151.70kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073161s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.048596s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.044758s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:40:23+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.638484s][吞吐率：1.57req/s] [内存消耗：3,144.21kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.482310s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.048983s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.045243s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:40:31+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.411485s][吞吐率：2.43req/s] [内存消耗：2,988.73kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '12',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067184s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.043248s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type_id` , `type` , `created_at`) VALUES ('1492735230320852' , 'test' , 1492735230) [ RunTime:0.260959s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:41:02+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.179210s][吞吐率：5.58req/s] [内存消耗：3,145.54kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061368s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.039863s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.041910s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:43:06+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.176672s][吞吐率：5.66req/s] [内存消耗：3,145.54kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063643s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.038437s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.038329s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:43:13+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.204518s][吞吐率：4.89req/s] [内存消耗：2,988.73kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test1',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072376s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.049560s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type_id` , `type` , `created_at`) VALUES ('1492735393710418' , 'test1' , 1492735393) [ RunTime:0.049246s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:44:22+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.628172s][吞吐率：1.59req/s] [内存消耗：3,146.88kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.475614s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.046296s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.052637s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:45:25+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.189082s][吞吐率：5.29req/s] [内存消耗：3,146.88kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067946s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.048390s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.041370s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:45:31+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.176219s][吞吐率：5.67req/s] [内存消耗：2,988.73kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test2',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066774s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.039912s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type_id` , `type` , `created_at`) VALUES ('1492735531198177' , 'test2' , 1492735531) [ RunTime:0.040291s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:46:37+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.643403s][吞吐率：1.55req/s] [内存消耗：3,152.15kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.515172s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.047414s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.054693s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:04+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.179401s][吞吐率：5.57req/s] [内存消耗：3,152.15kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063298s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.042848s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.041478s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:10+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.187335s][吞吐率：5.34req/s] [内存消耗：3,152.15kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/marchclass',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071500s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.044657s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.048296s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:15+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/addType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/addType [运行时间：0.221599s][吞吐率：4.51req/s] [内存消耗：2,988.73kb] [文件加载：57]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'addType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'addType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->addType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084101s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.057085s ]
+[ sql ] [ SQL ] INSERT INTO `march_type` (`type_id` , `type` , `created_at`) VALUES ('1492735635512686' , 'test3' , 1492735635) [ RunTime:0.052827s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:15+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.219942s][吞吐率：4.55req/s] [内存消耗：3,153.49kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083167s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.057296s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.055931s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:27+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.202977s][吞吐率：4.93req/s] [内存消耗：3,097.31kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '19',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '65',
+  'newType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078085s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.050730s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.050539s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:46+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.191473s][吞吐率：5.22req/s] [内存消耗：3,097.31kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '19',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '65',
+  'newType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076887s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.048863s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.041653s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:46+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.187278s][吞吐率：5.34req/s] [内存消耗：3,097.31kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '19',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '65',
+  'newType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078465s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.043450s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.041704s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:46+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.197248s][吞吐率：5.07req/s] [内存消耗：3,097.31kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '19',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '65',
+  'newType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073952s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.052820s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.046317s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:47:55+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.258981s][吞吐率：3.86req/s] [内存消耗：3,097.31kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '19',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '65',
+  'newType' => 'test3',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122582s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.053207s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.043511s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:49:12+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.226662s][吞吐率：4.41req/s] [内存消耗：3,391.59kb] [文件加载：61]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065999s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.067201s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.055264s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:50:05+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：1.103091s][吞吐率：0.91req/s] [内存消耗：3,391.59kb] [文件加载：61]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.972557s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.053522s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.050587s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:52:43+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.577916s][吞吐率：1.73req/s] [内存消耗：3,391.59kb] [文件加载：61]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.456009s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.045594s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.050117s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:52:46+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.201011s][吞吐率：4.97req/s] [内存消耗：3,097.31kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '62',
+  'newType' => 'test',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076396s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.045773s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.049400s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:52:54+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.191639s][吞吐率：5.22req/s] [内存消耗：3,097.31kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '62',
+  'newType' => 'test',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071211s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.045219s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.049217s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:52:59+08:00 ] 127.0.0.1 127.0.0.1 POST /marchsoft/admin/marchClass/changeType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/changeType [运行时间：0.243261s][吞吐率：4.11req/s] [内存消耗：3,060.07kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'changeType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'content-length' => '22',
+  'accept' => '*/*',
+  'origin' => 'http://marchsoft:85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '62',
+  'newType' => 'testtest',
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->changeType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070943s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.049687s ]
+[ sql ] [ SQL ] SELECT * FROM `march_type` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.048984s ]
+[ sql ] [ SQL ] UPDATE `march_type`  SET `type`='testtest'  WHERE  `id` = 62 [ RunTime:0.049325s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T08:53:04+08:00 ] 127.0.0.1 127.0.0.1 GET /marchsoft/admin/marchClass/classType
+[ log ] marchsoft:85/marchsoft/admin/marchClass/classType [运行时间：0.176864s][吞吐率：5.65req/s] [内存消耗：3,153.51kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/marchsoft/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'marchClass',
+    2 => 'classType',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'marchsoft:85',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://marchsoft:85/marchsoft/admin/marchClass/classType',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\marchClass->classType[ /Library/WebServer/Documents/marchsoft/application/admin/controller/Marchclass.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html [ array (
+  0 => 'allType',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062232s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_type` [ RunTime:0.041812s ]
+[ sql ] [ SQL ] SELECT `march_type`.`id`,`march_type`.`type`,`march_class_type`.`class_id` FROM `march_type` LEFT JOIN `march_class_type` `march_class_type` ON `march_type`.`type_id`=`march_class_type`.`type_id` GROUP BY march_type.type [ RunTime:0.041417s ]
+
+---------------------------------------------------------------

@@ -233,6 +233,82 @@ class marchClass extends Controller {
     }
 
     /**
+     * 编辑类型的方法
+     * @param $id 要编辑类型的ID  $newType 新的类型名
+     *  @return
+     */
+    public function changeType($id,$newType){
+        $id = input('id','');
+        $newType = input('newType','');
+        $type = TypeModel::get($id);
+        $type->type = $newType;
+        if($type->save()){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'修改成功',
+                'data'=>[]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'修改出错',
+                'data'=>[]
+            ]);
+        }
+    }
+
+    /**
+     * 删除类型的方法
+     * @param $id 要删除类型的ID
+     *  @return 删除成功的信息
+     */
+    public function deleteType($id){
+        $id = input('id','');
+        $type = new TypeModel;
+        $deleteCount = $type->where('id',$id)->delete();
+        if($deleteCount==1){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'删除成功',
+                'data'=>[]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'删除出错',
+                'data'=>[]
+            ]);
+        }
+    }
+
+    /**
+     * 添加一个新类型的方法
+     * @param $addType 要添加的类型名
+     *  @return 添加成功的信息
+     */
+    public function addType($addType){
+        $addType = input('addType','');
+        $type = new TypeModel;
+        $time = request()->time();
+        $newTypeid = $time.rand(100000,999999);
+        $data = ['type_id'=>$newTypeid,'type'=>$addType,'created_at'=>$time];
+        $addId = $type->insertGetId($data);
+        if($addId){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'添加成功',
+                'data'=>['id'=>$addId]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'添加出错',
+                'data'=>[]
+            ]);
+        }
+    }
+
+    /**
      * 获取所有已有类型ID的方法
      * @param $typeArr 已有类型的数组
      *  @return $typeIdArr 获取到的已有类型的ID的数组

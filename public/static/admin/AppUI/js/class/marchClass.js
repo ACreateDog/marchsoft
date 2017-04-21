@@ -11,6 +11,10 @@ $(function () {
         $("#tip-box,#cover-box").css('display','block');
         $("#class-title-tip").html($title);
     });
+    
+    $("#cover-box").click(function () {
+        $("#tip-box,#cover-box").css('display','none');
+    });
 
     $(".cance-btn,#cance-btn").click(function () {
         $("#tip-box,#cover-box").css('display','none');

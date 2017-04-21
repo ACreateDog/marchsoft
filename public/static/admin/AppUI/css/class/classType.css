@@ -11,14 +11,36 @@
     padding: 0;
 }
 
-/*#all-types-label>span{*/
-    /*margin: 2px 6px;*/
-/*}*/
-
 .delete-type{
-    position: relative;
-    top: -9px;
-    left: -8px;
+    top: -20px;
+    left: -10px;
     font-size: 12px;
     color: #0a2b1d;
+}
+
+#all-types-label{
+    padding-left: 40px;
+}
+
+#all-types-label>span,#all-types-label>strong{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#warning-box{
+    position: fixed;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+    display: none;
+}
+
+#delete-type-name{
+    font-size: 15px;
+    color: #000;
+}
+
+#warning-tip{
+    color: #ff182a;
 }

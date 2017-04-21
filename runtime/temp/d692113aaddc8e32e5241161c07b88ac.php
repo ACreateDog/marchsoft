@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html";i:1492735818;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:86:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/addclass.html";i:1492582271;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -55,8 +55,7 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
 
     
-    <link rel="stylesheet" href="__CSS__/class/classType.css">
-    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
+    <link rel="stylesheet" href="__CSS__/class/addClass.css">
 
 </head>
 <body>
@@ -560,64 +559,97 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <div id="type-content">
-        <form class="form-horizontal form-bordered" onsubmit="return check()">
+    <div id="addClass-content">
+        <form id="add-myForm" action="/marchsoft/admin/marchClass/upClass" onsubmit="return check()" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
             <div class="form-group">
-                <label class="col-md-4 control-label">添加一个新类型:</label>
-                <div class="col-md-8">
-                    <input type="text" id="add-type" required class="form-control" placeholder="输入一个新的课程类型">
+                <label class="col-md-3 control-label">课程题目:</label>
+                <div class="col-md-6">
+                    <input type="text" name="title" id="class-title" required maxlength="200" class="form-control" placeholder="">
                 </div>
             </div>
-            <div class="form-group form-actions" style="background: #ebeef2;">
+            <div class="form-group">
+                <label class="col-md-3 control-label">授课人:</label>
+                <div class="col-md-6">
+                    <input type="text" name="lecturer" id="class-lecturer" required maxlength="300" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div id="old-img" class="form-group">
+                <label class="col-md-3 control-label">封面图片:</label>
+                <div class="col-md-6">
+                    <img src="" alt="">
+                    <input id="img-url" type="hidden" name="imgUrl">
+                </div>
+            </div>
+            <div id="upload-img" class="form-group">
+                <label class="col-md-3 control-label" for="example-file-multiple-input">上传图片:</label>
+                <div class="col-md-9">
+                    <input required type="file" id="example-file-multiple-input" name="image">
+                </div>
+            </div>
+            <div id="upload-newimg" class="form-group">
+                <label class="col-md-3 control-label" for="example-file-multiple-input">上传新图片(非必选):</label>
+                <div class="col-md-9">
+                    <input type="file" name="image">
+                </div>
+            </div>
+            <div id="class-type-list" class="form-group">
+                <label class="col-md-3 control-label">选择课程类型:</label>
+                <div class="col-md-5">
+                    <select class="select-chosen" data-placeholder="Choose a Type.." style="width: 250px; display: none;" multiple="">
+                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
+                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+                <a id="none-type">没有?</a>
+            </div>
+            <div id="class-have-type" class="form-group">
+                <label class="col-md-3 control-label">课程类型:</label>
+                <div class="col-md-5">
+                    <select class="select-chosen" data-placeholder="Choose" style="width: 250px; display: none;" multiple="">
+                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
+                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+            </div>
+            <div id="new-type-input" class="form-group">
+                <label class="col-md-3 control-label">新的类型:</label>
+                <div class="col-md-6">
+                    <input type="text" maxlength="100" class="form-control" placeholder="填写一个新的类型,回车键确认(可以为空)">
+                </div>
+            </div>
+            <div id="new-type-ul">
+                <ul></ul>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">视频链接:</label>
+                <div class="col-md-6">
+                    <input type="text" name="link" id="video-link" maxlength="1000" required class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">课程描述:</label>
+                <div class="col-md-9">
+                    <textarea id="classDesc" name="desc" required rows="7" class="form-control" placeholder="Description.."></textarea>
+                </div>
+            </div>
+            <input type="hidden" name="type" id="class-types">
+            <input type="hidden" name="newType" id="class-new-types">
+            <div id="add-action-group" class="form-group form-actions" style="background: #ebeef2;">
                 <div class="col-md-9 col-md-offset-3">
-                    <button type="submit" id="submitnew-type" class="btn btn-effect-ripple btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                    <button type="reset" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">Reset</button>
+                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">Submit</button>
+                </div>
+            </div>
+            <div id="change-action-group" class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button id="cance-return" type="button" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">取消</button>
+                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">提交</button>
                 </div>
             </div>
         </form>
-        <div id="all-types-label">
-            <label class="col-md-3 control-label block-label">已有类型:</label>
-            <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
-                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-warning btn-sm unuse-type">
-                        <?php echo $type['type']; ?>
-                    </span>
-                    <strong data="<?php echo $type['id']; ?>" class="delete-type">×</strong>
-                    <?php else: ?>
-                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-success btn-sm use-type"><?php echo $type['type']; ?></span>
-                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
-        </div>
     </div>
-    <div id="cover-box"></div>
-    <div id="tip-box" class="col-sm-6 col-lg-3">
-        <!-- Info Alert -->
-        <div class="alert alert-info">
-            <span class="cance-btn">×</span>
-            <h4><strong>编辑类型</strong></h4>
-            <input id="change-type-input" type="text" class="form-control" placeholder="输入一个新的课程类型">
-            <p id="warning-tip"></p>
-            <div>
-                <a href="javascript:void(0)" id="cance-btn" class="btn btn-primary btn-sm">取消</a>
-                <a href="javascript:void(0)" id="sure-btn" class="btn btn-primary btn-sm">确定</a>
-            </div>
-
-        </div>
-        <!-- END Info Alert -->
-    </div>
-    <div id="warning-box" class="col-sm-6 col-lg-3">
-        <!-- Info Alert -->
-        <div class="alert alert-info">
-            <span class="cance-btn">×</span>
-            <h4><strong>删除类型</strong></h4>
-            <h4>是否确定删除<span id="delete-type-name"></span>类型标签?</h4>
-            <div>
-                <a href="javascript:void(0)" id="cance-delete-btn" class="btn btn-primary btn-sm">取消</a>
-                <a href="javascript:void(0)" id="sure-delete-btn" class="btn btn-primary btn-sm">确定</a>
-            </div>
-
-        </div>
-        <!-- END Info Alert -->
-    </div>
-
 
             </div>
 
@@ -627,7 +659,7 @@
     <!-- END Page Container -->
 </div>
 
-    <script type="text/javascript" src="__JS__/class/classType.js"></script>
+    <script type="text/javascript" src="__JS__/class/addClass.js"></script>
 
 <script type="text/javascript">
     $url = window.location.href;
