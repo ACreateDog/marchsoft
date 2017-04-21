@@ -363,13 +363,12 @@ class marchClass extends Controller {
         if($isindex=='0'){
             $allClass = $baseClass->join('march_imgs','march_class.cover_img_id = march_imgs.img_id')
                 ->where('march_class.created_at','between',[$upLimit,$lowLimit])
-                ->field('march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
+                ->field('march_class.id,march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
                 ->order('march_class.page_views desc')
                 ->select();
-
         }else if($isindex=='1'){
             $allClass = $baseClass->join('march_imgs','march_class.cover_img_id = march_imgs.img_id')
-                ->field('march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
+                    ->field('march_class.id,march_class.title,march_class.lecturer,march_class.video_link,march_class.description,march_class.page_views,march_class.description,march_imgs.url')
                 ->order('march_class.created_at desc')->limit($num)
                 ->select();
         }
@@ -391,7 +390,7 @@ class marchClass extends Controller {
 
     /**
      * 三月课堂筛选接口
-     * @param $isindex 是否为显示前$num条(0为显示全部,1为显示前$num条)
+     * @param
      *  @return
      */
     public function screenInterface(){
@@ -449,7 +448,7 @@ class marchClass extends Controller {
             }
             $returnData = [
                 'code'=>1,
-                'msg'=>'请选择一个年份',
+                'msg'=>'请求成功',
                 'data'=>$list
             ];
             return json_encode($returnData);
@@ -502,5 +501,29 @@ class marchClass extends Controller {
             ];
         }
         return json_encode($returnData);
+    }
+
+    /**
+     * 三月课堂浏览量增加接口
+     * @param $id增加浏览量的课程ID
+     *  @return
+     */
+    public function pageViewUp($id){
+        $id = input('id','');
+        $class = new ClassModel;
+        $data = $class->where('id',$id)->setInc('page_views');
+        if($data){
+            return json_encode([
+                'code'=>1,
+                'msg'=>'浏览量增加成功',
+                'data'=>[]
+            ]);
+        }else{
+            return json_encode([
+                'code'=>0,
+                'msg'=>'浏览量增加失败',
+                'data'=>[]
+            ]);
+        }
     }
 }
