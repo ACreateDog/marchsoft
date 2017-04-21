@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c525a9a9-48cd-494d-8b2f-666df633e1bc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/admin/controller/Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/0005ffb119dcdbea028f1d4d11e9e055.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/4ddc8249ea0e576745a2241ae64869f3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/5211402fccc6928f7114cafa43745d3e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/57948c810eed6945dd1fa1fec4a34737.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/63751e9d7bec201ba6de0050fa675f95.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/66324e80a9ef9148b002034d90236ed1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/6a2520c282109d2bab6dd45b4cb89be6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/7d29aa78ddff9181a69cbd1755380390.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/89eb195ba4ee7f01f59dfcda6ccfa7c4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/c48b7b34a3be950a008b01c586b1fe10.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/edaa0f5e9f352aa2f5f8e2838d6a30ee.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/controller/Base.php" afterPath="$PROJECT_DIR$/application/admin/controller/Base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/controller/ErrorPage.php" afterPath="$PROJECT_DIR$/application/admin/controller/ErrorPage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/controller/News.php" afterPath="$PROJECT_DIR$/application/admin/controller/News.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/news/all.html" afterPath="$PROJECT_DIR$/application/admin/view/news/all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/log/201704/21.log" afterPath="$PROJECT_DIR$/runtime/log/201704/21.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +17,8 @@
       <file leaf-file-name="News.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/News.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="410" column="25" lean-forward="true" selection-start-line="410" selection-start-column="25" selection-end-line="410" selection-end-column="25" />
+            <state relative-caret-position="73">
+              <caret line="391" column="13" lean-forward="false" selection-start-line="391" selection-start-column="13" selection-end-line="391" selection-end-column="13" />
               <folding>
                 <element signature="e#124#154#0#PHP" expanded="true" />
                 <element signature="e#368#1551#0#PHP" expanded="false" />
@@ -175,7 +159,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="runtime" />
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marchsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marchsoft" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,7 +277,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11987000" />
+    <option name="totallyTimeSpent" value="12134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-20" y="23" width="1440" height="807" extended-state="0" />
@@ -702,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/News.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="410" column="25" lean-forward="true" selection-start-line="410" selection-start-column="25" selection-end-line="410" selection-end-column="25" />
+        <state relative-caret-position="73">
+          <caret line="391" column="13" lean-forward="false" selection-start-line="391" selection-start-column="13" selection-end-line="391" selection-end-column="13" />
           <folding>
             <element signature="e#124#154#0#PHP" expanded="true" />
             <element signature="e#368#1551#0#PHP" expanded="false" />
