@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:89:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/banner/change.html";i:1492609856;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492610079;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:86:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/addclass.html";i:1492582271;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -37,7 +37,6 @@
 
     <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
     <link rel="stylesheet" href="__CSS__/themes.css">
-    <link rel="stylesheet" href="__ADMIN_CSS__">
     <!-- END Stylesheets -->
 
     <!-- Modernizr (browser feature detection library) -->
@@ -47,23 +46,16 @@
     <script src="__JS__/pages/readyDashboard.js"></script>
     <script src="__JS__/plugins.js"></script>
     <script src="__JS__/app.js"></script>
-
-    <script src="__LAYER__/layer.js"></script>
-
-    <script src="__JS__/jquery.form.js"></script>
-
     <script type="text/javascript" src="__JS__/banner/banner.js"></script>
-
 
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/ueditor.all.min.js"> </script>
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-    <link rel="stylesheet" href="__CSS__/banner/banner.css">
+    <link rel="stylesheet" href="__CSS__/class/addClass.css">
 
 </head>
 <body>
@@ -210,7 +202,6 @@
                                     <a href="">导航栏</a>
                                 </li>
                                 <li>
-
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>banner</a>
                                     <ul>
                                         <li>
@@ -303,27 +294,13 @@
                                     </ul>
                                 </li>                                
                                 <li>
-                                    <a id="news" href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>新闻管理</a>
+                                    <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>新闻管理</a>
                                     <ul>
                                         <li>
-                                            <a id="level-addnews" href="__ROOT__/admin/news/addnews">添加新闻</a>
+                                            <a href="">添加新闻</a>
                                         </li>
                                         <li>
-                                            <a id="level-allnews" href="__ROOT__/admin/news/allnews">所有新闻</a>
-                                        </li>
-                                        <li>
-                                            <a id="level-alreadydown" href="__ROOT__/admin/news/alreadydown">已下架</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" id="manager" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>管理员</a>
-                                    <ul>
-                                        <li>
-                                            <a id="level-addmanager" href="__ROOT__/admin/manager/addmanager">添加管理员</a>
-                                        </li>
-                                        <li>
-                                            <a id="level-allmanager" href="__ROOT__/admin/manager/allmanager">所有管理员</a>
+                                            <a href="">所有新闻</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -582,88 +559,96 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <div class="block full">
-        <div class="table-responsive">
-            <div id="example-datatable_wrapper" class="dataTables_wrapper form-inline no-footer">
-                <table id="example-datatable" class="table table-striped table-bordered table-vcenter dataTable no-footer">
-                    <thead>
-                    <tr role="row">
-                        <th class="text-center" style="width: 49px;" tabindex="0">ID</th>
-                        <th class="" tabindex="0" style="width: 147px;">图片</th>
-                        <th class="" tabindex="0" style="width: 150px;">创建时间</th>
-                        <th style="width: 80px;">Status</th>
-                        <th class="text-center" style="width: 100px;"><i class="fa fa-flash"></i></th></tr>
-                    </thead>
-                    <tbody>
-                    <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$banner): $mod = ($i % 2 );++$i;?>
-                        <tr role="row" class="odd">
-                            <td class="text-center sorting_1"><?php echo $banner['id']; ?></td>
-                            <td>
-                                <div style="width: 150px;height: 80px;" class="gallery-image-container animation-fadeInQuick2" data-category="travel">
-                                    <img src="<?php echo $banner['url']; ?>" alt="" style="width: 100%;height: 100%;">
-                                    <a href="<?php echo $banner['url']; ?>" class="gallery-image-options" data-toggle="lightbox-image" title="">
-                                        <i class="fa fa-search-plus fa-3x text-light"></i>
-                                    </a>
-                                </div>
-                            </td>
-                            <td><?php echo $banner['created_at']; ?></td>
-                            <td>
-                                <?php if($banner['status'] == 1): ?>
-                                    <span class="label label-info">已启用</span>
-                                    <?php else: ?><span class="label label-danger">已禁用</span>
-                                <?php endif; if($banner['is_top'] == 1): ?>
-                                    <span class="label label-success">已置顶</span>
-                                <?php endif; ?>
-                            </td>
-                            <td class="text-center">
-                                <?php if($banner['status'] == 1): ?>
-                                    <a data="<?php echo $banner['img_link']; ?>" data-id="<?php echo $banner['id']; ?>" data-imgid="<?php echo $banner['img_id']; ?>" data-toggle="modal" data-target="#mymodal-data" title="编辑图片和链接" class="btn btn-effect-ripple btn-xs btn-success edit-banner" style="overflow: hidden; position: relative;padding: 5px 10px;">
-                                        <i class="fa fa-pencil"></i>
-                                    </a>
-                                    <a href="/marchsoft/admin/banner/changeStatus?id=<?php echo $banner['id']; ?>&bannerStatus=1" type="button" class="btn btn-effect-ripple btn-danger btn-sm" style="overflow: hidden; position: relative;">
-                                        <span class="btn-ripple animate" style="height: 71px; width: 71px; top: -10.5px; left: 9.5px;"></span>
-                                        禁用
-                                    </a>
-                                    <?php if($banner['is_top'] != 1): ?>
-                                        <a href="/marchsoft/admin/banner/setTop?id=<?php echo $banner['id']; ?>" class="btn btn-primary btn-sm set-top">置顶</a>
-                                    <?php endif; else: ?><a href="/marchsoft/admin/banner/changeStatus?id=<?php echo $banner['id']; ?>&bannerStatus=0" class="btn btn-info btn-sm">启用</a>
-                                <?php endif; ?>
-                                <!--<a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-effect-ripple btn-xs btn-danger" style="overflow: hidden; position: relative;" data-original-title="Delete User"><i class="fa fa-times"></i></a>-->
-                            </td>
-                        </tr>
-                    <?php endforeach; endif; else: echo "" ;endif; ?>
-                    </tbody>
-                </table>
-                <div><?php echo $list->render(); ?></div>
-            </div>
-        </div>
-    </div>
-    <!-- 模态弹出窗内容 -->
-    <div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title">修改banner信息</h4>
+    <div id="addClass-content">
+        <form id="add-myForm" action="/marchsoft/admin/marchClass/upClass" onsubmit="return check()" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
+            <div class="form-group">
+                <label class="col-md-3 control-label">课程题目:</label>
+                <div class="col-md-6">
+                    <input type="text" name="title" id="class-title" required maxlength="200" class="form-control" placeholder="">
                 </div>
-                <form action="/marchsoft/admin/banner/upload" enctype="multipart/form-data" method="post">
-                    <div class="modal-body">
-                        <div id="mymodel-form">
-                            <input id="temp-input-bannerid" type="text" name="bannerId">
-                            <input id="temp-input-imgid" type="text" name="imgId">
-                            <span>修改链接:</span>
-                            <input required id="img-link-input" name="imgLink" type="text">
-                            <span>上传新图片:</span>
-                            <input required type="file" id="example-file-multiple-input" style="cursor: pointer;" name="image">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="submit" class="btn btn-primary">保存</button>
-                    </div>
-                </form>
             </div>
-        </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">授课人:</label>
+                <div class="col-md-6">
+                    <input type="text" name="lecturer" id="class-lecturer" required maxlength="300" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div id="old-img" class="form-group">
+                <label class="col-md-3 control-label">封面图片:</label>
+                <div class="col-md-6">
+                    <img src="" alt="">
+                    <input id="img-url" type="hidden" name="imgUrl">
+                </div>
+            </div>
+            <div id="upload-img" class="form-group">
+                <label class="col-md-3 control-label" for="example-file-multiple-input">上传图片:</label>
+                <div class="col-md-9">
+                    <input required type="file" id="example-file-multiple-input" name="image">
+                </div>
+            </div>
+            <div id="upload-newimg" class="form-group">
+                <label class="col-md-3 control-label" for="example-file-multiple-input">上传新图片(非必选):</label>
+                <div class="col-md-9">
+                    <input type="file" name="image">
+                </div>
+            </div>
+            <div id="class-type-list" class="form-group">
+                <label class="col-md-3 control-label">选择课程类型:</label>
+                <div class="col-md-5">
+                    <select class="select-chosen" data-placeholder="Choose a Type.." style="width: 250px; display: none;" multiple="">
+                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
+                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+                <a id="none-type">没有?</a>
+            </div>
+            <div id="class-have-type" class="form-group">
+                <label class="col-md-3 control-label">课程类型:</label>
+                <div class="col-md-5">
+                    <select class="select-chosen" data-placeholder="Choose" style="width: 250px; display: none;" multiple="">
+                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
+                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+            </div>
+            <div id="new-type-input" class="form-group">
+                <label class="col-md-3 control-label">新的类型:</label>
+                <div class="col-md-6">
+                    <input type="text" maxlength="100" class="form-control" placeholder="填写一个新的类型,回车键确认(可以为空)">
+                </div>
+            </div>
+            <div id="new-type-ul">
+                <ul></ul>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">视频链接:</label>
+                <div class="col-md-6">
+                    <input type="text" name="link" id="video-link" maxlength="1000" required class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">课程描述:</label>
+                <div class="col-md-9">
+                    <textarea id="classDesc" name="desc" required rows="7" class="form-control" placeholder="Description.."></textarea>
+                </div>
+            </div>
+            <input type="hidden" name="type" id="class-types">
+            <input type="hidden" name="newType" id="class-new-types">
+            <div id="add-action-group" class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="reset" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">Reset</button>
+                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">Submit</button>
+                </div>
+            </div>
+            <div id="change-action-group" class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button id="cance-return" type="button" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">取消</button>
+                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">提交</button>
+                </div>
+            </div>
+        </form>
     </div>
 
             </div>
@@ -674,8 +659,7 @@
     <!-- END Page Container -->
 </div>
 
-    <script type="text/javascript">
-    </script>
+    <script type="text/javascript" src="__JS__/class/addClass.js"></script>
 
 <script type="text/javascript">
     $url = window.location.href;

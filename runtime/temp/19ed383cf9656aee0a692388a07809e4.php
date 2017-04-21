@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\marchclass\classtype.html";i:1492744406;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492745829;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\marchclass\classtype.html";i:1492746644;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,7 +63,9 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-    
+    <link rel="stylesheet" href="__CSS__/class/classType.css">
+    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
+
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -206,7 +208,7 @@
                             <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">前台功能</span></a>
                             <ul>
                                 <li>
-                                    <a id="index" href="<?php echo url('nav/index'); ?>">导航栏</a>
+                                    <a id="show" href="<?php echo url('nav/show'); ?>">导航栏</a>
                                 </li>
                                 <li>
 
@@ -294,10 +296,10 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>项目管理</a>
                                     <ul>
                                         <li>
-                                            <a href="<?php echo url('project/index'); ?>">添加项目</a>
+                                            <a id="level-index" href="<?php echo url('project/index'); ?>">添加项目</a>
                                         </li>
                                         <li>
-                                            <a href="<?php echo url('project/all'); ?>">所有项目</a>
+                                            <a id="level-all" href="<?php echo url('project/all'); ?>">所有项目</a>
                                         </li>
                                     </ul>
                                 </li>                                
@@ -581,10 +583,64 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
-            <span class="label label-warning"><?php echo $type['type']; ?>(未使用)</span>
-            <?php else: ?><span class="label label-success"><?php echo $type['type']; ?></span>
-        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+    <div id="type-content">
+        <form class="form-horizontal form-bordered" onsubmit="return check()">
+            <div class="form-group">
+                <label class="col-md-4 control-label">添加一个新类型:</label>
+                <div class="col-md-8">
+                    <input type="text" id="add-type" required class="form-control" placeholder="输入一个新的课程类型">
+                </div>
+            </div>
+            <div class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="submit" id="submitnew-type" class="btn btn-effect-ripple btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                </div>
+            </div>
+        </form>
+        <div id="all-types-label">
+            <label class="col-md-3 control-label block-label">已有类型:</label>
+            <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
+                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-warning btn-sm unuse-type">
+                        <?php echo $type['type']; ?>
+                    </span>
+                    <strong data="<?php echo $type['id']; ?>" class="delete-type">×</strong>
+                    <?php else: ?>
+                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-success btn-sm use-type"><?php echo $type['type']; ?></span>
+                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+        </div>
+    </div>
+    <div id="cover-box"></div>
+    <div id="tip-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>编辑类型</strong></h4>
+            <input id="change-type-input" type="text" class="form-control" placeholder="输入一个新的课程类型">
+            <p id="warning-tip"></p>
+            <div>
+                <a href="javascript:void(0)" id="cance-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-btn" class="btn btn-primary btn-sm">确定</a>
+            </div>
+
+        </div>
+        <!-- END Info Alert -->
+    </div>
+    <div id="warning-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>删除类型</strong></h4>
+            <h4>是否确定删除<span id="delete-type-name"></span>类型标签?</h4>
+            <div>
+                <a href="javascript:void(0)" id="cance-delete-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-delete-btn" class="btn btn-primary btn-sm">确定</a>
+            </div>
+
+        </div>
+        <!-- END Info Alert -->
+    </div>
+
 
             </div>
 

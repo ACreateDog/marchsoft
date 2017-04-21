@@ -20,7 +20,7 @@
     z-index: 1000;
 }
 
-#tip-box>div>div{
+#tip-box>div>div,#warning-box>div>div{
     text-align: right;
 }
 

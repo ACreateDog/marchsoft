@@ -11,7 +11,7 @@ class Nav extends Controller
 
 /*	----------------- 后台管理 -----------------*/
 
-	public function index()
+	public function show()
 	{
 		$list = $this->navTable();
 		$this->assign('list',$list);

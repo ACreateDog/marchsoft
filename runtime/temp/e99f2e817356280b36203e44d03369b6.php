@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:95:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/marchclass/addclass.html";i:1492609856;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1492656039;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:69:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\nav\show.html";i:1492746465;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,8 +63,7 @@
     <script type="text/javascript" charset="utf-8" src="__ADMIN_JS__"></script>
 
     
-    <link rel="stylesheet" href="__CSS__/class/addClass.css">
-
+    
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -207,7 +206,7 @@
                             <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">前台功能</span></a>
                             <ul>
                                 <li>
-                                    <a href="">导航栏</a>
+                                    <a id="show" href="<?php echo url('nav/show'); ?>">导航栏</a>
                                 </li>
                                 <li>
 
@@ -278,16 +277,16 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
                                     <ul>
                                         <li>
-                                            <a id="level-addclass" href="/marchsoft/admin/marchClass/addclass">新课程</a>
+                                            <a id="level-addclass" href="<?php echo url('Marchclass/addclass'); ?>">新课程</a>
                                         </li>
                                         <li>
-                                            <a id="level-marchclass" href="/marchsoft/admin/marchClass/marchclass">课程表</a>
+                                            <a id="level-marchclass" href="<?php echo url('Marchclass/marchclass'); ?>">课程表</a>
                                         </li>
                                         <li>
-                                            <a id="level-deletedClass" href="/marchsoft/admin/marchClass/deletedClass">旧课程篓</a>
+                                            <a id="level-deletedClass" href="<?php echo url('Marchclass/deletedClass'); ?>">旧课程篓</a>
                                         </li>
                                         <li>
-                                            <a id="level-classType" href="/marchsoft/admin/marchClass/classType">类型管理</a>
+                                            <a id="level-classType" href="<?php echo url('Marchclass/classType'); ?>">类型管理</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -295,10 +294,10 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>项目管理</a>
                                     <ul>
                                         <li>
-                                            <a href="">添加项目</a>
+                                            <a id="level-index" href="<?php echo url('project/index'); ?>">添加项目</a>
                                         </li>
                                         <li>
-                                            <a href="">所有项目</a>
+                                            <a id="level-all" href="<?php echo url('project/all'); ?>">所有项目</a>
                                         </li>
                                     </ul>
                                 </li>                                
@@ -582,97 +581,182 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
-    <div id="addClass-content">
-        <form id="add-myForm" action="/marchsoft/admin/marchClass/upClass" onsubmit="return check()" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
+<script type="text/javascript">
+
+    var nav_id; //判断是添加还是修改。
+    var img_change = false; //是否替换导航图片
+    function s(id,title,link,icon,status){
+        img_change = false;
+        nav_id = id;
+        console.log(nav_id);
+        $('#inp-title').val(title);
+        $('#inp-link').val(link);
+        $('#inp-img').attr('src',icon); 
+        $('#myModalLabel').html("修改 导航");
+        if(status==1){
+            $('#radio1').prop('checked', 'true');
+        }
+        else{
+            $('#radio2').prop('checked', 'true');
+        }
+        $('#button').click();
+    };
+    function add(){
+        img_change = false;
+        nav_id = 0;
+        $('#inp-title').val("");
+        $('#inp-link').val("");
+
+        $('#myModalLabel').html("添加 导航");
+        $('#radio1').prop('checked', 'true');
+        $('#button').click();
+    };
+    function save(){
+        //判断是否上传图片
+            $s=nav_id;
+            $.ajax({
+                url: "<?php echo url('myUpload'); ?>",
+                type: 'POST',
+                cache: false,
+                data: new FormData($('#uploadForm')[0]),
+                processData: false,
+                contentType: false,
+                success : function(info){
+                    $.ajax({
+                        type:"POST",
+                        url:"<?php echo url('nav/change'); ?>",
+                        dataType: "json",
+                        data:{
+                            "id": nav_id,
+                            "title": $('#inp-title').val(),
+                            "nav_link": $('#inp-link').val(),
+                            "icon_id" : info.msg.id,
+                            "icon_url" : info.msg.url,
+                            "status": ($('#radio1:checked').val()=='option1')?1:0
+                        },
+                        success: function(info){
+                             if(info.code==0){
+                              layer.msg(info.msg, {icon: 2});
+                             }else{  
+                                layer.msg('保存成功', {icon: 1},function(){ window.location.reload();});  
+                             }
+                        },
+                        error: function(){
+                          layer.msg('出错了！');
+                        }
+                     });
+                },
+                error : function(){
+                }
+            })
+
+    };
+
+    function ss(){
+        $.ajax({
+            url: "<?php echo url('navInterface'); ?>",
+            type: 'POST',
+
+        }).done(function(res) {
+            console.log(res);
+        }).fail(function(res) {});
+
+    };
+
+    function setImagePreview(avalue) {
+        img_change = true;
+        var docObj=document.getElementById("example-file-input");
+        var imgObjPreview=document.getElementById("inp-img");
+        imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+    };
+</script>
+
+    <button id="button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="display: none;"></button> 
+    <button onclick="add()" type="button" class="btn btn-primary" >添加导航</button>
+   <table class="table table-striped table-borderless table-vcenter">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="hidden-xs">Link</th>
+            <th class="hidden-sm hidden-xs">图标</th>
+            <th class="hidden-sm hidden-xs">Status</th>
+            <th style="width: 80px;" class="text-center"><i class="fa fa-flash"></i></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+            <tr>
+                <td><strong><?php echo $vo['title']; ?></strong></td>
+                <td class="hidden-xs"><?php echo $vo['nav_link']; ?></td>
+                <td class="hidden-xs"><img src="<?php echo $vo['url']; ?>" style="width:50px;height:50px;border-radius:50px;"></td>
+                <?php if(($vo['status'] == 1)): ?> 
+                    <td class="hidden-sm hidden-xs"><a href="javascript:void(0)" class="label label-success">启用</a></td>
+                <?php else: ?> 
+                    <td class="hidden-sm hidden-xs"><a href="javascript:void(0)" class="label label-danger">禁用</a></td>
+                <?php endif; ?>
+                
+                <td class="text-center">
+                    <a href="javascript:s('<?php echo $vo['nav_id']; ?>','<?php echo $vo['title']; ?>','<?php echo $vo['nav_link']; ?>','<?php echo $vo['url']; ?>',<?php echo $vo['status']; ?>);" data-toggle="modal" title="Edit User" class="btn btn-effect-ripple btn-xs btn-success" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                </td>
+            </tr>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+    </tbody>
+</table>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加 导航</h4>
+      </div>
+      <div class="modal-body">
+        <form action="page_forms_components.html"  id="uploadForm" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered" >
             <div class="form-group">
-                <label class="col-md-3 control-label">课程题目:</label>
+                <label class="col-md-3 control-label" for="state-normal">名称：</label>
                 <div class="col-md-6">
-                    <input type="text" name="title" id="class-title" required maxlength="200" class="form-control" placeholder="">
+                    <input type="text" id="inp-title" name="state-normal" class="form-control" placeholder="..." required="required">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-md-3 control-label">授课人:</label>
+                <label class="col-md-3 control-label" for="state-normal">地址：</label>
                 <div class="col-md-6">
-                    <input type="text" name="lecturer" id="class-lecturer" required maxlength="300" class="form-control" placeholder="">
+                    <input type="text" id="inp-link" name="state-normal" class="form-control" placeholder="..." required="required">
                 </div>
             </div>
-            <div id="old-img" class="form-group">
-                <label class="col-md-3 control-label">封面图片:</label>
-                <div class="col-md-6">
-                    <img src="" alt="">
-                    <input id="img-url" type="hidden" name="imgUrl">
-                </div>
-            </div>
-            <div id="upload-img" class="form-group">
-                <label class="col-md-3 control-label" for="example-file-multiple-input">上传图片:</label>
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="state-normal">启用：</label>
                 <div class="col-md-9">
-                    <input required type="file" id="example-file-multiple-input" name="image">
-                </div>
-            </div>
-            <div id="upload-newimg" class="form-group">
-                <label class="col-md-3 control-label" for="example-file-multiple-input">上传新图片(非必选):</label>
-                <div class="col-md-9">
-                    <input type="file" name="image">
-                </div>
-            </div>
-            <div id="class-type-list" class="form-group">
-                <label class="col-md-3 control-label">选择课程类型:</label>
-                <div class="col-md-5">
-                    <select class="select-chosen" data-placeholder="Choose a Type.." style="width: 250px; display: none;" multiple="">
-                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
-                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                    </select>
-                </div>
-                <a id="none-type">没有?</a>
-            </div>
-            <div id="class-have-type" class="form-group">
-                <label class="col-md-3 control-label">课程类型:</label>
-                <div class="col-md-5">
-                    <select class="select-chosen" data-placeholder="Choose" style="width: 250px; display: none;" multiple="">
-                        <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?>
-                            <option value="<?php echo $type['type_id']; ?>"><?php echo $type['type']; ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                    </select>
-                </div>
-            </div>
-            <div id="new-type-input" class="form-group">
-                <label class="col-md-3 control-label">新的类型:</label>
-                <div class="col-md-6">
-                    <input type="text" maxlength="100" class="form-control" placeholder="填写一个新的类型,回车键确认(可以为空)">
-                </div>
-            </div>
-            <div id="new-type-ul">
-                <ul></ul>
-            </div>
-            <div class="form-group">
-                <label class="col-md-3 control-label">视频链接:</label>
-                <div class="col-md-6">
-                    <input type="text" name="link" id="video-link" maxlength="1000" required class="form-control" placeholder="">
+                    <label class="radio-inline" for="example-inline-radio1">
+                        <input type="radio" id="radio1" name="example-inline-radios" value="option1"> 启用
+                    </label>
+                    <label class="radio-inline" for="example-inline-radio2">
+                        <input type="radio" id="radio2" name="example-inline-radios" value="option2"> 禁用
+                    </label>
+
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-md-3 control-label">课程描述:</label>
+                <label class="col-md-3 control-label" for="state-normal">图标：</label>
                 <div class="col-md-9">
-                    <textarea id="classDesc" name="desc" required rows="7" class="form-control" placeholder="Description.."></textarea>
+                    <img id="inp-img" src="" style="display:inline-block;margin-right:10px;width:50px;height:50px;border-radius:50px;">
+                    <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview();" type="file" style="display: inline-block;" id="example-file-input" name="image" >
                 </div>
             </div>
-            <input type="hidden" name="type" id="class-types">
-            <input type="hidden" name="newType" id="class-new-types">
-            <div id="add-action-group" class="form-group form-actions" style="background: #ebeef2;">
-                <div class="col-md-9 col-md-offset-3">
-                    <button type="reset" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">Reset</button>
-                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">Submit</button>
-                </div>
-            </div>
-            <div id="change-action-group" class="form-group form-actions" style="background: #ebeef2;">
-                <div class="col-md-9 col-md-offset-3">
-                    <button id="cance-return" type="button" class="btn btn-effect-ripple btn-danger" style="overflow: hidden; position: relative;">取消</button>
-                    <button type="submit" class="btn btn-effect-ripple btn-primary" style="overflow: hidden; position: relative;">提交</button>
-                </div>
-            </div>
+
         </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="save()">Save changes</button>
+      </div>
     </div>
+  </div>
+</div> 
 
             </div>
 
@@ -682,7 +766,8 @@
     <!-- END Page Container -->
 </div>
 
-    <script type="text/javascript" src="__JS__/class/addClass.js"></script>
+    <script type="text/javascript">
+    </script>
 
 <script type="text/javascript">
     $url = window.location.href;

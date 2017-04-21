@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:runtime/temp/7ff932af3286e315d773a7165608aea6.php
 <<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
 <?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/index/index.html";i:1491974932;s:85:"/Applications/XAMPP/xamppfiles/htdocs/marchsoft/application/admin/view/base/base.html";i:1491975056;}*/ ?>
@@ -7,6 +8,9 @@
 =======
 <?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html";i:1492606101;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
 >>>>>>> e8c34815b5851e374c6ace654f309059b4b55637:runtime/temp/4ddc8249ea0e576745a2241ae64869f3.php
+=======
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/Library/WebServer/Documents/marchsoft/application/admin/view/marchclass/classtype.html";i:1492735818;s:76:"/Library/WebServer/Documents/marchsoft/application/admin/view/base/base.html";i:1492584657;}*/ ?>
+>>>>>>> 04b34469ff32b2e9efbcf43f2ecc9b401390393c
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -63,7 +67,9 @@
     <script type="text/javascript" charset="utf-8" src="__UEDITOR__/lang/zh-cn/zh-cn.js"></script>
 
     
-    
+    <link rel="stylesheet" href="__CSS__/class/classType.css">
+    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
+
 </head>
 <body>
 <!-- Page Wrapper -->
@@ -577,6 +583,7 @@
             <!-- END Header -->
             <div id="page-content" style="min-height: 150px;">
                 
+<<<<<<< HEAD
 <<<<<<< HEAD:runtime/temp/7ff932af3286e315d773a7165608aea6.php
 <<<<<<< HEAD:runtime/temp/43e0e6e1e5d9fb9b7a670649dc918804.php
     <p style="color: black">index Controller UIs我的分支小测试</p>
@@ -643,6 +650,33 @@
                 </table>
                 <div><?php echo $list->render(); ?></div>
             </div>
+=======
+    <div id="type-content">
+        <form class="form-horizontal form-bordered" onsubmit="return check()">
+            <div class="form-group">
+                <label class="col-md-4 control-label">添加一个新类型:</label>
+                <div class="col-md-8">
+                    <input type="text" id="add-type" required class="form-control" placeholder="输入一个新的课程类型">
+                </div>
+            </div>
+            <div class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="submit" id="submitnew-type" class="btn btn-effect-ripple btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                </div>
+            </div>
+        </form>
+        <div id="all-types-label">
+            <label class="col-md-3 control-label block-label">已有类型:</label>
+            <?php if(is_array($allType) || $allType instanceof \think\Collection || $allType instanceof \think\Paginator): $i = 0; $__LIST__ = $allType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;if($type['class_id'] == ''): ?>
+                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-warning btn-sm unuse-type">
+                        <?php echo $type['type']; ?>
+                    </span>
+                    <strong data="<?php echo $type['id']; ?>" class="delete-type">×</strong>
+                    <?php else: ?>
+                    <span data="<?php echo $type['id']; ?>" class="btn-effect-ripple btn-success btn-sm use-type"><?php echo $type['type']; ?></span>
+                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+>>>>>>> 04b34469ff32b2e9efbcf43f2ecc9b401390393c
         </div>
     </div>
     <div id="cover-box"></div>
@@ -650,8 +684,14 @@
         <!-- Info Alert -->
         <div class="alert alert-info">
             <span class="cance-btn">×</span>
+<<<<<<< HEAD
             <h4><strong>提示</strong></h4>
             <p>将删除课程<span id="class-title-tip"></span>,被删除的课程可<a href="/marchsoft/admin/marchClass/deletedClass">前往旧课程篓</a>查看,是否要删除?</p>
+=======
+            <h4><strong>编辑类型</strong></h4>
+            <input id="change-type-input" type="text" class="form-control" placeholder="输入一个新的课程类型">
+            <p id="warning-tip"></p>
+>>>>>>> 04b34469ff32b2e9efbcf43f2ecc9b401390393c
             <div>
                 <a href="javascript:void(0)" id="cance-btn" class="btn btn-primary btn-sm">取消</a>
                 <a href="javascript:void(0)" id="sure-btn" class="btn btn-primary btn-sm">确定</a>
@@ -659,6 +699,7 @@
 
         </div>
         <!-- END Info Alert -->
+<<<<<<< HEAD
 >>>>>>> d0ce737b50da32c611bb427c7cb530a1ebf608cb:runtime/temp/7ff932af3286e315d773a7165608aea6.php
     </div>
 =======
@@ -667,6 +708,24 @@
             <?php else: ?><span class="label label-success"><?php echo $type['type']; ?></span>
         <?php endif; endforeach; endif; else: echo "" ;endif; ?>
 >>>>>>> e8c34815b5851e374c6ace654f309059b4b55637:runtime/temp/4ddc8249ea0e576745a2241ae64869f3.php
+=======
+    </div>
+    <div id="warning-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>删除类型</strong></h4>
+            <h4>是否确定删除<span id="delete-type-name"></span>类型标签?</h4>
+            <div>
+                <a href="javascript:void(0)" id="cance-delete-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-delete-btn" class="btn btn-primary btn-sm">确定</a>
+            </div>
+
+        </div>
+        <!-- END Info Alert -->
+    </div>
+
+>>>>>>> 04b34469ff32b2e9efbcf43f2ecc9b401390393c
 
             </div>
 

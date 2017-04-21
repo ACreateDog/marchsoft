@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\project\index.html";i:1492579946;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492744407;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\project\index.html";i:1492579946;s:70:"G:\AMP\Apache24\htdocs\marchsoft/application/admin\view\base\base.html";i:1492746439;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -206,7 +206,7 @@
                             <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">前台功能</span></a>
                             <ul>
                                 <li>
-                                    <a href="<?php echo url('nav/index'); ?>">导航栏</a>
+                                    <a id="show" href="<?php echo url('nav/show'); ?>">导航栏</a>
                                 </li>
                                 <li>
 
@@ -277,16 +277,16 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>三月课堂</a>
                                     <ul>
                                         <li>
-                                            <a id="level-addclass" href="/marchsoft/admin/marchClass/addclass">新课程</a>
+                                            <a id="level-addclass" href="<?php echo url('Marchclass/addclass'); ?>">新课程</a>
                                         </li>
                                         <li>
-                                            <a id="level-marchclass" href="/marchsoft/admin/marchClass/marchclass">课程表</a>
+                                            <a id="level-marchclass" href="<?php echo url('Marchclass/marchclass'); ?>">课程表</a>
                                         </li>
                                         <li>
-                                            <a id="level-deletedClass" href="/marchsoft/admin/marchClass/deletedClass">旧课程篓</a>
+                                            <a id="level-deletedClass" href="<?php echo url('Marchclass/deletedClass'); ?>">旧课程篓</a>
                                         </li>
                                         <li>
-                                            <a id="level-classType" href="/marchsoft/admin/marchClass/classType">类型管理</a>
+                                            <a id="level-classType" href="<?php echo url('Marchclass/classType'); ?>">类型管理</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -294,10 +294,10 @@
                                     <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>项目管理</a>
                                     <ul>
                                         <li>
-                                            <a href="<?php echo url('project/index'); ?>">添加项目</a>
+                                            <a id="level-index" href="<?php echo url('project/index'); ?>">添加项目</a>
                                         </li>
                                         <li>
-                                            <a href="<?php echo url('project/all'); ?>">所有项目</a>
+                                            <a id="level-all" href="<?php echo url('project/all'); ?>">所有项目</a>
                                         </li>
                                     </ul>
                                 </li>                                
