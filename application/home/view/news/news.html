@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻动态</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="__CSS__/news.css">
+</head>
+<body>
+	<section id="classSource">
+		<nav id="class-menu">
+			<ul id="class-menu-ul">
+				<li id="news-date"><input id="select-date" name="" value="" style="display: none;" />时间</li>
+				<li @click="showInfo(2)">最新</li>
+			</ul>
+		</nav>
+
+		<!-- 时间 -->
+		<div id="date-select">
+			<div id="date-show">
+				
+			</div>
+		</div>
+
+		<div id="news-list">
+			<div class="dataDiv" v-for = "item in items">
+				<div class="dataDiv-img">
+					<img v-bind:src="item.img" alt="">
+				</div>
+                <div class="dataDiv-content">
+                    <h3>{{ item.title }}</h3>              
+					<p class="news-info"><span>发布时间:{{ item.timer }}</span><span>阅读量:{{ item.amount }}</span></p>
+                </div>
+            </div>
+		</div>
+	</section>
+
+	<script src="__VUE__"></script>
+	<script>
+	var vm = new Vue({
+		el: '#news-list',
+        data: {
+            items: [
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82},
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82},
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82},
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82},
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82},
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82},
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82},
+                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
+                    timer: '2017-04-15', amount: 82}
+            ],
+        },
+		methods: {
+				       
+		}
+	})
+	Vue.component('',{
+
+	})
+	</script>
+</body>
+</html>

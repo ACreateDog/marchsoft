@@ -4,7 +4,11 @@ return [
     'view_replace_str'  =>  [
         '__PUBLIC__'=>'/public/',
         '__ROOT__' => '/',
-        '__VUE__' =>'/marchsoft/public/static/home/vue.js',
+        '__VUE__' =>'/marchsoft/public/static/home/js/vue.js',
+        '__CSS__' =>'/marchsoft/public/static/home/css',
+        '__ASSETS__' =>'/marchsoft/public/static/home/assets',
+        '__JS__' =>'/marchsoft/public/static/home/js',
+        '__IMG__' =>'/marchsoft/public/static/home/image',
     ],
 
     'template'   => [
