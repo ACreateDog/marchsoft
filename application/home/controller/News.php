@@ -10,5 +10,5 @@ class News{
     public function detail(){
     	return view('detail');
     }
-
+    
 }

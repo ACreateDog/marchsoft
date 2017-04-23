@@ -24,8 +24,12 @@ return [
     'home'     => [
         '__file__'   => ['common.php'],
         '__dir__'    => ['behavior', 'controller', 'model', 'view'],
-        'controller' => ['Index','News'],
+        'controller' => ['Index','News','Project'],
         'model'      => ['User'],
-        'view'       => ['index/index','base/base','news/news'],
+        'view'       => [   'index/index',
+                            'base/base',
+                            'news/news',
+                            'project/project',                           
+                        ],
     ],
 ];
