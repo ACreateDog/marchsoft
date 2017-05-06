@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>新闻动态</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="__CSS__/news.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="__CSS__/news-project.css">
 </head>
 <body>
 	<section id="classSource">
@@ -16,48 +16,45 @@
 		</nav>		
 
 		<div id="news-list">
-			<div class="dataDiv" v-for = "item in items">
+			<div class="dataDiv" v-for="item in data">			
 				<div class="dataDiv-img">
-					<img v-bind:src="item.img" alt="">
+					<img v-binf:src="" id="{{item.id}}" alt="{{item.title}}">
 				</div>
-                <div class="dataDiv-content">
-                    <h3>{{ item.title }}</h3>              
-					<p class="news-info"><span>发布时间:{{ item.timer }}</span><span>阅读量:{{ item.amount }}</span></p>
-                </div>
+	            <div class="dataDiv-content">
+	                <h3 v-text="item.title"></h3>              
+					<p class="news-info"><span v-text="">发布时间:{{item.created_at}}</span><span>阅读量:{{item.page_views}}</span></p>
+				</div>            	
             </div>
 		</div>
 	</section>
 
 	<script src="__VUE__"></script>
+	<script src="__JS__/vue-resource.js"></script>
 	<script src="__JS__/datePicker.js"></script>
+	<script src="__JS__/jquery-1.9.1.js"></script>
+
 	<script>
 	var vm = new Vue({
-		el: '#news-list',
-        data: {
-            items: [
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82},
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82},
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82},
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82},
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82},
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82},
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82},
-                {title: '不一样的五龙山一日游 ', img: '__IMG__/slide-1.jpg',
-                    timer: '2017-04-15', amount: 82}
-            ],
+        el:'#news-list',
+        data:{
+        	data:""
         },
-		methods: {
-				       
-		}
-	})
+        created:function(){
+            var url="{:url('admin/news/getNewsList')}";
+         //    var _self = this;
+         //    $.get(url,function(data){
+         //  		_self.data=eval("(" + data +")");
+        	// })
+            this.$http.get(url).then(function(data){
+            	var json = data.body;
+            this.data=eval("(" + json +")");
+            },function(response){
+            	console.info(response);
+        	})
+        }
+    });
 	</script>
+
 	<script>
 	var calendar = new datePicker();
 		calendar.init({

@@ -1,0 +1,1206 @@
+[ 2017-04-30T08:52:57+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.114752s][吞吐率：8.71req/s] [内存消耗：2,074.67kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:02+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.054519s][吞吐率：18.34req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:03+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.037993s][吞吐率：26.32req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:03+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.032183s][吞吐率：31.07req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:03+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.031012s][吞吐率：32.25req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:04+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.033123s][吞吐率：30.19req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:04+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.033562s][吞吐率：29.80req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:04+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.031305s][吞吐率：31.94req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:05+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.035106s][吞吐率：28.49req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:05+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.033689s][吞吐率：29.68req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:05+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.037753s][吞吐率：26.49req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:06+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.039129s][吞吐率：25.56req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:06+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.032140s][吞吐率：31.11req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:06+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.029916s][吞吐率：33.43req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:07+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.038289s][吞吐率：26.12req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:07+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.041215s][吞吐率：24.26req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:08+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.030958s][吞吐率：32.30req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:09+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.038953s][吞吐率：25.67req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:09+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.040770s][吞吐率：24.53req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:10+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.029488s][吞吐率：33.91req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:10+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.029964s][吞吐率：33.37req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:10+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.030484s][吞吐率：32.80req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:11+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.031052s][吞吐率：32.20req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:11+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.048323s][吞吐率：20.69req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:53:11+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.030396s][吞吐率：32.90req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:37+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.047704s][吞吐率：20.96req/s] [内存消耗：2,074.77kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:37+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.036084s][吞吐率：27.71req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:38+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.059106s][吞吐率：16.92req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:38+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.058037s][吞吐率：17.23req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:38+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.035054s][吞吐率：28.53req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:38+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.038783s][吞吐率：25.78req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:39+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.032319s][吞吐率：30.94req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:39+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.032715s][吞吐率：30.57req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:54:39+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.038023s][吞吐率：26.30req/s] [内存消耗：1,898.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T08:56:19+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.402484s][吞吐率：2.48req/s] [内存消耗：2,908.06kb] [文件加载：61]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+  0 => 'content',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132979s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_news` [ RunTime:0.117649s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `march_news` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.035674s ]
+[ sql ] [ SQL ] SELECT `march_news`.`id`,`title`,`writer`,`march_news`.`created_at`,`page_views`,`status` FROM `march_news` WHERE  `status` = 1 LIMIT 0,10 [ RunTime:0.035665s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T08:56:19+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.226758s][吞吐率：4.41req/s] [内存消耗：2,711.30kb] [文件加载：57]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+  0 => 'content',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054722s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_news` [ RunTime:0.036011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `march_news` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.035274s ]
+[ sql ] [ SQL ] SELECT `march_news`.`id`,`title`,`writer`,`march_news`.`created_at`,`page_views`,`status` FROM `march_news` WHERE  `status` = 1 LIMIT 0,10 [ RunTime:0.035669s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T08:56:42+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.270882s][吞吐率：3.69req/s] [内存消耗：2,908.06kb] [文件加载：61]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+  0 => 'content',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068749s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_news` [ RunTime:0.043162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `march_news` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.043036s ]
+[ sql ] [ SQL ] SELECT `march_news`.`id`,`title`,`writer`,`march_news`.`created_at`,`page_views`,`status` FROM `march_news` WHERE  `status` = 1 LIMIT 0,10 [ RunTime:0.043223s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T08:56:43+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.245020s][吞吐率：4.08req/s] [内存消耗：2,711.30kb] [文件加载：57]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+  0 => 'content',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066987s ] mysql:dbname=marchsoft;host=feiyueweb.cn;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `march_news` [ RunTime:0.039060s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `march_news` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.038638s ]
+[ sql ] [ SQL ] SELECT `march_news`.`id`,`title`,`writer`,`march_news`.`created_at`,`page_views`,`status` FROM `march_news` WHERE  `status` = 1 LIMIT 0,10 [ RunTime:0.038190s ]
+
+---------------------------------------------------------------

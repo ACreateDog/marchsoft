@@ -1,0 +1,3859 @@
+[ 2017-04-24T16:30:59+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.150846s][吞吐率：6.63req/s] [内存消耗：2,074.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/marchsoft/home/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T16:31:06+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.113975s][吞吐率：8.77req/s] [内存消耗：1,896.98kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/marchsoft/home/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T16:44:36+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.099585s][吞吐率：10.04req/s] [内存消耗：1,897.69kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T17:07:51+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.073889s][吞吐率：13.53req/s] [内存消耗：1,897.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T17:07:51+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065804s][吞吐率：15.20req/s] [内存消耗：2,057.44kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T17:07:57+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.074796s][吞吐率：13.37req/s] [内存消耗：1,896.51kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T17:14:29+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.081845s][吞吐率：12.22req/s] [内存消耗：1,897.49kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T17:14:29+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.056981s][吞吐率：17.55req/s] [内存消耗：1,897.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T18:20:47+08:00 ] ::1 ::1 GET /marchsoft/home/project/project
+[ log ] localhost/marchsoft/home/project/project [运行时间：0.106596s][吞吐率：9.38req/s] [内存消耗：2,053.65kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Project->project[ D:\PHP\www\marchsoft\application\home\controller\Project.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\project\project.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T18:21:57+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.074227s][吞吐率：13.47req/s] [内存消耗：1,896.51kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T18:22:08+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.045006s][吞吐率：22.22req/s] [内存消耗：2,059.58kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T18:23:14+08:00 ] ::1 ::1 GET /marchsoft/home/project/project
+[ log ] localhost/marchsoft/home/project/project [运行时间：0.045495s][吞吐率：21.98req/s] [内存消耗：1,897.89kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Project->project[ D:\PHP\www\marchsoft\application\home\controller\Project.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\project\project.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T18:23:58+08:00 ] ::1 ::1 GET /marchsoft/home/project/project
+[ log ] localhost/marchsoft/home/project/project [运行时间：0.047240s][吞吐率：21.17req/s] [内存消耗：2,054.98kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Project->project[ D:\PHP\www\marchsoft\application\home\controller\Project.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\project\project.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T19:53:13+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.120046s][吞吐率：8.33req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T19:53:26+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.053341s][吞吐率：18.75req/s] [内存消耗：1,898.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T19:58:44+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.050942s][吞吐率：19.63req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T19:58:46+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.039788s][吞吐率：25.13req/s] [内存消耗：1,898.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T19:59:05+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.039489s][吞吐率：25.32req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T19:59:11+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.036081s][吞吐率：27.72req/s] [内存消耗：1,898.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T19:59:37+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.046605s][吞吐率：21.46req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:00:45+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.054018s][吞吐率：18.51req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:01:06+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.049092s][吞吐率：20.37req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:01:10+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.035287s][吞吐率：28.34req/s] [内存消耗：1,898.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:04:05+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.048709s][吞吐率：20.53req/s] [内存消耗：1,897.49kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:05:48+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.064276s][吞吐率：15.56req/s] [内存消耗：1,898.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:10:47+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065140s][吞吐率：15.35req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:10:49+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.076617s][吞吐率：13.05req/s] [内存消耗：1,898.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:10:54+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.077539s][吞吐率：12.90req/s] [内存消耗：2,068.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:30:02+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.072325s][吞吐率：13.83req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:30:04+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.079229s][吞吐率：12.62req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:30:30+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.079892s][吞吐率：12.52req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:30:33+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.067920s][吞吐率：14.72req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:32:02+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.073346s][吞吐率：13.63req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:32:07+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.057074s][吞吐率：17.52req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:41:15+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.080167s][吞吐率：12.47req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=1|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:41:17+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.068148s][吞吐率：14.67req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=1|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:43:20+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.076034s][吞吐率：13.15req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:46:55+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.067882s][吞吐率：14.73req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:50:00+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.075160s][吞吐率：13.30req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:50:01+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.074100s][吞吐率：13.50req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:50:17+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.061624s][吞吐率：16.23req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:50:43+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065913s][吞吐率：15.17req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:50:50+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065905s][吞吐率：15.17req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:52:36+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.081154s][吞吐率：12.32req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:52:57+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.059634s][吞吐率：16.77req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:08:15+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.061846s][吞吐率：16.17req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:08:46+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.055437s][吞吐率：18.04req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:09:13+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.052159s][吞吐率：19.17req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:16:37+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.053111s][吞吐率：18.83req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:17:32+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.042715s][吞吐率：23.41req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:17:33+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.040215s][吞吐率：24.87req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:22:12+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.071607s][吞吐率：13.97req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:22:33+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.051656s][吞吐率：19.36req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:23:46+08:00 ] ::1 ::1 GET /marchsoft/home/index/index
+[ log ] localhost/marchsoft/home/index/index [运行时间：0.042010s][吞吐率：23.80req/s] [内存消耗：1,897.34kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:25:03+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.057065s][吞吐率：17.52req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:25:06+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.039905s][吞吐率：25.06req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:25:07+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.051908s][吞吐率：19.26req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:25:07+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.039976s][吞吐率：25.01req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:25:08+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.042097s][吞吐率：23.75req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:26:56+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.043519s][吞吐率：22.98req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:27:52+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.090875s][吞吐率：11.00req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:27:54+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065014s][吞吐率：15.38req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:29:01+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.059651s][吞吐率：16.76req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:29:02+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.059962s][吞吐率：16.68req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:29:03+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.059723s][吞吐率：16.74req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:29:03+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.052700s][吞吐率：18.98req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:29:33+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.073045s][吞吐率：13.69req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:30:29+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.056435s][吞吐率：17.72req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:30:30+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.064233s][吞吐率：15.57req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:31:47+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.057132s][吞吐率：17.50req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:31:51+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.061916s][吞吐率：16.15req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:32:32+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.062238s][吞吐率：16.07req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:33:51+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.060219s][吞吐率：16.61req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:33:51+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.061142s][吞吐率：16.36req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:34:31+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.046484s][吞吐率：21.51req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:35:03+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.051075s][吞吐率：19.58req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:35:56+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.058605s][吞吐率：17.06req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:36:10+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.073156s][吞吐率：13.67req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:36:46+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.040916s][吞吐率：24.44req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:36:51+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.056777s][吞吐率：17.61req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:37:06+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.063422s][吞吐率：15.77req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:37:12+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.066986s][吞吐率：14.93req/s] [内存消耗：2,068.59kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:37:24+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065234s][吞吐率：15.33req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:37:24+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.072762s][吞吐率：13.74req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:38:04+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.049998s][吞吐率：20.00req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:38:04+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.042325s][吞吐率：23.63req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:39:11+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.047340s][吞吐率：21.12req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:39:11+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.048857s][吞吐率：20.47req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:40:08+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.060913s][吞吐率：16.42req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:40:08+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.066074s][吞吐率：15.13req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:40:41+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065028s][吞吐率：15.38req/s] [内存消耗：1,898.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:40:42+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.088002s][吞吐率：11.36req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:41:53+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.074300s][吞吐率：13.46req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:41:53+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.086240s][吞吐率：11.60req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:42:29+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.080961s][吞吐率：12.35req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:42:29+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.086610s][吞吐率：11.55req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:43:41+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.081100s][吞吐率：12.33req/s] [内存消耗：2,068.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:43:41+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.074228s][吞吐率：13.47req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:48:34+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.055901s][吞吐率：17.89req/s] [内存消耗：1,897.59kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:48:34+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.072755s][吞吐率：13.74req/s] [内存消耗：1,843.52kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:48:49+08:00 ] ::1 ::1 GET /marchsoft/
+[ log ] localhost/marchsoft/ [运行时间：0.047497s][吞吐率：21.05req/s] [内存消耗：1,584.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\PHP\www\marchsoft\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T21:56:08+08:00 ] ::1 ::1 GET /marchsoft/home/project/project
+[ log ] localhost/marchsoft/home/project/project [运行时间：0.071897s][吞吐率：13.91req/s] [内存消耗：2,054.60kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|1; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Project->project[ D:\PHP\www\marchsoft\application\home\controller\Project.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\project\project.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:01:06+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.071545s][吞吐率：13.98req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:01:07+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.073679s][吞吐率：13.57req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:01:49+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.073849s][吞吐率：13.54req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:01:50+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.079767s][吞吐率：12.54req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:37:05+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.097908s][吞吐率：10.21req/s] [内存消耗：1,898.37kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:37:05+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.082707s][吞吐率：12.09req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:42:55+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.065958s][吞吐率：15.16req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:42:55+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.076416s][吞吐率：13.09req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:43:40+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.082043s][吞吐率：12.19req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:43:41+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.087873s][吞吐率：11.38req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:44:18+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.063900s][吞吐率：15.65req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:44:19+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.077875s][吞吐率：12.84req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:44:29+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.072756s][吞吐率：13.74req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:44:29+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.072829s][吞吐率：13.73req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:45:09+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.088787s][吞吐率：11.26req/s] [内存消耗：1,898.37kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:45:09+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.078415s][吞吐率：12.75req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:45:38+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.084743s][吞吐率：11.80req/s] [内存消耗：1,898.37kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:45:38+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.072207s][吞吐率：13.85req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:47:58+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.083052s][吞吐率：12.04req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:48:17+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.088733s][吞吐率：11.27req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:48:17+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.076051s][吞吐率：13.15req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:51:07+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.138474s][吞吐率：7.22req/s] [内存消耗：2,068.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T22:51:07+08:00 ] ::1 ::1 GET /marchsoft/home/news/news
+[ log ] localhost/marchsoft/home/news/news [运行时间：0.094540s][吞吐率：10.58req/s] [内存消耗：1,843.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'news',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://localhost/marchsoft/home/news/news',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\News->news[ D:\PHP\www\marchsoft\application\home\controller\News.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\news\news.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

@@ -1,0 +1,31 @@
+[ 2017-05-06T18:29:40+08:00 ] ::1 ::1 GET /marchsoft/
+[ log ] localhost/marchsoft/ [运行时间：0.184941s][吞吐率：5.41req/s] [内存消耗：1,897.20kb] [文件加载：51]
+[ info ] [ LANG ] D:\PHP\www\marchsoft\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=1835683840; PHPSESSID=1370fns46u4a2uk7c9hfpu3uqu; pgv_si=s4256506880; BJYADMIN=laj2ql36hl6lslgnmtnsh4biln; Webstorm-25d9cf4c=1d305cc8-9a30-46e5-bd33-f804d67b9b2f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\PHP\www\marchsoft\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHP\www\marchsoft/application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

@@ -1,0 +1,46 @@
+
+
+#type-content{
+    margin:auto;
+    width: 50%;
+}
+
+.block-label{
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.delete-type{
+    top: -20px;
+    left: -10px;
+    font-size: 12px;
+    color: #0a2b1d;
+}
+
+#all-types-label{
+    padding-left: 40px;
+}
+
+#all-types-label>span,#all-types-label>strong{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#warning-box{
+    position: fixed;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+    display: none;
+}
+
+#delete-type-name{
+    font-size: 15px;
+    color: #000;
+}
+
+#warning-tip{
+    color: #ff182a;
+}

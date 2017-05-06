@@ -32,7 +32,7 @@ use think\console\output\question\Confirmation;
  * @method string fetch()
  *
  * @method void info($message)
- * @method void error($message)
+ * @method void errorpage($message)
  * @method void comment($message)
  * @method void warning($message)
  * @method void highlight($message)

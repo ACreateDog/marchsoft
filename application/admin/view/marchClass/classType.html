@@ -1,0 +1,70 @@
+<extend name="base/base"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS__/class/classType.css">
+    <link rel="stylesheet" href="__CSS__/class/marchClass.css">
+</block>
+<block name="content">
+    <div id="type-content">
+        <form class="form-horizontal form-bordered" onsubmit="return check()">
+            <div class="form-group">
+                <label class="col-md-4 control-label">添加一个新类型:</label>
+                <div class="col-md-8">
+                    <input type="text" id="add-type" required class="form-control" placeholder="输入一个新的课程类型">
+                </div>
+            </div>
+            <div class="form-group form-actions" style="background: #ebeef2;">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="submit" id="submitnew-type" class="btn btn-effect-ripple btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                </div>
+            </div>
+        </form>
+        <div id="all-types-label">
+            <label class="col-md-3 control-label block-label">已有类型:</label>
+            <volist name="allType" id="type">
+                <if condition="$type.class_id eq ''">
+                    <span data="{$type.id}" class="btn-effect-ripple btn-warning btn-sm unuse-type">
+                        {$type.type}
+                    </span>
+                    <strong data="{$type.id}" class="delete-type">×</strong>
+                    <else/>
+                    <span data="{$type.id}" class="btn-effect-ripple btn-success btn-sm use-type">{$type.type}</span>
+                </if>
+            </volist>
+        </div>
+    </div>
+    <div id="cover-box"></div>
+    <div id="tip-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>编辑类型</strong></h4>
+            <input id="change-type-input" type="text" class="form-control" placeholder="输入一个新的课程类型">
+            <p id="warning-tip"></p>
+            <div>
+                <a href="javascript:void(0)" id="cance-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-btn" class="btn btn-primary btn-sm">确定</a>
+            </div>
+
+        </div>
+        <!-- END Info Alert -->
+    </div>
+    <div id="warning-box" class="col-sm-6 col-lg-3">
+        <!-- Info Alert -->
+        <div class="alert alert-info">
+            <span class="cance-btn">×</span>
+            <h4><strong>删除类型</strong></h4>
+            <h4>是否确定删除<span id="delete-type-name"></span>类型标签?</h4>
+            <div>
+                <a href="javascript:void(0)" id="cance-delete-btn" class="btn btn-primary btn-sm">取消</a>
+                <a href="javascript:void(0)" id="sure-delete-btn" class="btn btn-primary btn-sm">确定</a>
+            </div>
+
+        </div>
+        <!-- END Info Alert -->
+    </div>
+
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS__/class/classType.js"></script>
+</block>

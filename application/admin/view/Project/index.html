@@ -1,0 +1,83 @@
+<extend name="base/base"/>
+
+<block name="content">
+<script type="text/javascript">
+
+	function setImagePreview(input,img) {
+	    var docObj=document.getElementById(input);
+	    var imgObjPreview=document.getElementById(img);
+	    imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+	};
+
+	function upload(){
+		$.ajax({
+		    url: "{:url('upload')}",
+		    type: 'POST',
+		    cache: false,
+		    data: new FormData($('#uploadForm')[0]),
+		    processData: false,
+		    contentType: false,
+		    success : function(info){
+		    	if(info.code==0)
+		    		layer.msg(info.msg,{icon: 2,time:1000});
+		    	else
+		    		layer.msg('保存成功', {icon: 1},function(){ window.location.reload();});  
+		    },	
+		});
+	};
+
+</script>
+	<div class="block" style="margin: 0 auto;width: 70%;">
+	    <!-- Input States Title -->
+	    <div class="block-title">
+	        <div class="block-options pull-right">
+	        </div>
+	        <h2>添加项目</h2>
+	    </div>
+	    <!-- END Input States Title -->
+
+	    <!-- Input States Content -->
+	    <form action="page_forms_components.html" method="post" class="form-horizontal form-bordered" id="uploadForm" onsubmit="return false;">
+
+	        <div class="form-group">
+	            <label class="col-md-3 control-label" for="state-normal">项目名称：</label>
+	            <div class="col-md-6">
+	                <input type="text" id="title" name="title" class="form-control" placeholder="...">
+	            </div>
+	        </div>
+
+	        <div class="form-group">
+	            <label class="col-md-3 control-label" for="state-normal">缩略图：</label>
+	            <div class="col-md-9">
+	                
+	                <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview('example-file-input','inp-img');" type="file" id="example-file-input" name="image[]" >
+	                <img id="inp-img" src="" style="max-height: 200px;max-width: 350px;margin-top: 10px;">
+	            </div>
+	        </div>
+
+	        <div class="form-group">
+	            <label class="col-md-3 control-label" for="state-normal">详情图：</label>
+	            <div class="col-md-9">
+	                <img id="inp-img" src="">
+	                <input accept="image/jpeg,image/png" onchange="javascript:setImagePreview('example-file-input1','inp-img1');" type="file" id="example-file-input1" name="image[]" >
+	                <img id="inp-img1" src="" style="max-width: 320px;min-height: 400px ;margin-top: 10px;">
+	            </div>
+	        </div>
+
+	        <div class="form-group form-actions">
+	            <div class="col-md-9 col-md-offset-3">
+	                <button type="submit" class="btn btn-effect-ripple btn-primary" onclick="upload()">Submit</button>
+	                <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+	            </div>
+	        </div>
+
+
+	    </form>
+	    <!-- END Input States Content -->
+	</div>
+
+
+
+
+ 
+</block>

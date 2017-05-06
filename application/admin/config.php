@@ -4,12 +4,17 @@ return [
     'view_replace_str'  =>  [
         '__PUBLIC__'=>'/public/',
         '__ROOT__' => '/marchsoft',
+        '__HOST__'=>$_SERVER['HTTP_HOST'],
         '__JS__' =>'/marchsoft/public/static/admin/AppUI/js',
         '__CSS__' =>'/marchsoft/public/static/admin/AppUI/css',
         '__IMG__'=>'/marchsoft/public/static/admin/AppUI/img',
+        '__APP_IMG__'=>'/marchsoft/public/static/admin/img',
         '__UEDITOR__'=>'/marchsoft/public/static/admin/UEditor',
-    ],
+        '__LAYER__'=>'/marchsoft/public/static/admin/layer',
+        '__ADMIN_CSS__'=>'/marchsoft/public/static/admin/css/admin.css',
+        '__ADMIN_JS__'=>'/marchsoft/public/static/admin/js/admin.js',
 
+    ],
 
     'template'   => [
         // 模板引擎类型 支持 php think 支持扩展
@@ -21,9 +26,9 @@ return [
         // 模板文件名分隔符
         'view_depr'    => DS,
         // 模板引擎普通标签开始标记
-        'tpl_begin'    => '<',
+        'tpl_begin'    => '{',
         // 模板引擎普通标签结束标记
-        'tpl_end'      => '>',
+        'tpl_end'      => '}',
         // 标签库标签开始标记
         'taglib_begin' => '<',
         // 标签库标签结束标记
@@ -37,5 +42,7 @@ return [
     //SMTP主机
     'email_host'=>'smtp.qq.com',
     //发送者姓名
-    'from_name' => '三月软件'
+    'from_name' => '三月软件',
+    'app_trace' => false,
+    'upload_path'=>'/marchsoft/public/upload/image'
 ];

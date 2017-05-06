@@ -15,14 +15,12 @@
 <body>
     <div class="container">
         <div id="slides">
-            <div v-for="image in images"><a href=""><img v-bind:src="image.img"></a></div>
+            <div v-for="image in images"><a href=""><img v-bind:src="image.url"></a></div>
         </div>
     </div>
 
     <!-- 主体内容 -->
     <block name="main"></block>
-    
-    <footer>三月</footer>
 
     <script src="__VUE__"></script>
     <script src="__JS__/jquery-1.9.1.js"></script>
@@ -43,30 +41,42 @@
         });
     });
     </script>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: "#slides",
+            data: {
+                images:"" 
+            },
+            methods: {
+                getBanner: function() {
+                    $.ajax({
+                        type: "get",
+                        url: "{:url('admin/banner/bannerInterface')}",
+                        async: true,
+                        success: function(data) {
+                            vm.images = data.images;
+                                                        
+                        },
+                    });
+                }
+            }
+        })
+    </script>
     <script>
-    var image = new Vue({
-        el:'#slides',
+    var imgData={
+        url: "{:url('admin/banner/bannerInterface')}",
+    }
+    var vm=new Vue({
+        el: '#slides',
         data: {
-            images: [
-                {img:'__IMG__/slide-1.jpg'},
-                {img:'__IMG__/slide-2.jpg'},
-                {img:'__IMG__/slide-3.jpg'},
-                {img:'__IMG__/slide-4.jpg'},
-                {img:'__IMG__/slide-5.jpg'}
-            ]
+            images: []
         },
-        // methods: {
-        //     showData: function () {
-        //         var _self = this;
-        //             $.ajax({
-        //                 type: 'GET',
-        //                 url: '',
-        //                 success:function(data) {
-        //                     
-        //                 }
-        //             });
-        //         }
-        // }
+        ready: function(){
+            this.$http.get(imgData.url).then(function(response){
+                this.images=response.data;
+                console.log(images);
+            })
+        }
     })
     </script>
     <!-- js -->

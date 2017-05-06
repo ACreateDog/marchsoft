@@ -17,9 +17,11 @@ return [
     'admin'     => [
         '__file__'   => ['common.php'],
         '__dir__'    => ['behavior', 'controller', 'model', 'view'],
-        'controller' => ['Index'],
-        'model'      => ['User'],
-        'view'       => ['index/index','base/base','base2/base2'],
+
+        'controller' => ['Index','Manager'],
+        'model'      => ['User','NewsModel'],
+        'view'       => ['index/index','base/base','manager/all','news/add','news/all','error/error'],
+
     ],
     'home'     => [
         '__file__'   => ['common.php'],

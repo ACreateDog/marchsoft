@@ -1,0 +1,35 @@
+#cover-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #999;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+#tip-box,
+#cover-box{
+    display: none;
+}
+#tip-box{
+    position: fixed;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+}
+
+#tip-box>div>div,#warning-box>div>div{
+    text-align: right;
+}
+
+.cance-btn{
+    float: right;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#class-title-tip{
+    color: #ffd056;
+}

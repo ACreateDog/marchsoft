@@ -197,7 +197,7 @@ class Response
             '__toString',
         ])
         ) {
-            throw new \InvalidArgumentException(sprintf('variable type error： %s', gettype($content)));
+            throw new \InvalidArgumentException(sprintf('variable type errorpage： %s', gettype($content)));
         }
 
         $this->content = (string) $content;
@@ -309,7 +309,7 @@ class Response
                 '__toString',
             ])
             ) {
-                throw new \InvalidArgumentException(sprintf('variable type error： %s', gettype($content)));
+                throw new \InvalidArgumentException(sprintf('variable type errorpage： %s', gettype($content)));
             }
 
             $this->content = (string) $content;

@@ -1,0 +1,152 @@
+#class-menu,#project-menu{
+	width: 100%;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+#class-menu-ul,#project-menu-ul{
+	margin: 0;
+	padding: 0;
+}
+
+#class-menu-ul>li,#project-menu-ul>li{	
+	float: left;
+	list-style: none;
+	width: 49%;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 8px 0;
+}
+
+#class-menu-ul>li:hover,#project-menu-ul>li:hover{
+	color: #fd9855;
+	border-bottom: 2px solid #fd9855;
+}
+
+/* #class-menu-ul>li:first-child,#project-menu-ul>li:first-child{
+	color: #fd9855;
+} */
+
+#class-menu-ul>li:nth-child(2n),#project-menu-ul>li:nth-child(2n){
+	border-left: 2px solid #e3e3e3;
+
+}
+#class-menu-ul:after,#project-menu-ul:after{
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+}
+
+#classSource,#projectSource{
+	background-color: #fff;
+}
+
+#classSource div>p,#projectSource div>p {
+	padding-left: 0%;
+}
+
+/* 课程列表样式 */
+.dataDiv{
+	/*border: 1px solid salmon;*/
+	margin: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.dataDiv-img{
+	width: 38%;
+	margin-top: 2%;
+	overflow: hidden;
+	float: left;
+	/*border: 1px solid rebeccapurple;*/
+}
+
+.dataDiv-img img{
+	padding-left: 5%;
+	width: 90%;
+}
+
+@media screen and (min-width: 320px){
+	#classSource div>p {
+		font-size: 12px;
+	}
+}
+
+/* @media (min-width: 360px) and (max-width: 720px){
+	.news-info {
+		font-size: 18px;
+	}	
+} */
+
+@media screen and (min-width: 740px){
+	#class-menu-ul>li{
+		font-size: 2.1em;
+	}
+	.dataDiv {
+		padding: 5px;
+	}
+	.dataDiv-img {
+		width: 39%;
+		margin-top: 0;
+		/*overflow: hidden;*/
+		/*float: left;*/
+	}
+	.dataDiv-img img {
+		padding-left: 12%;
+		width: 88%;
+	}
+	#classSource div>p {
+		font-size: 2.1em;
+	}	
+}
+
+.dataDiv-content{
+	/*border: 1px solid blue;*/
+    float: right;;
+    width: 62%;
+	font-size: 14px;
+}
+
+@media screen and (min-width: 740px) {
+	.dataDiv-content {
+		float: right;
+		width: 52%;
+		font-size: 27px;
+	}
+}
+
+.news-abstract {
+	margin: 5px 0;
+	color: #9E9E9E;
+}
+/* .lesson-info>span:nth-child(2n+1){
+	color: #FF9800;
+} */
+.news-info>span:nth-child(2n){
+	float: right;
+	padding-right: 5px;
+	color: #9E9E9E;
+}
+
+.dataDiv:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+
+/* 新闻详情 */
+.detail {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 320px){
+	.news-infomation {
+		width: 100%;
+
+	}
+	.news-datail-info {
+		float: right;
+		padding-right: 5px;
+		color: #9E9E9E;
+	}
+}

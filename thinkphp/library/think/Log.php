@@ -18,7 +18,7 @@ use think\exception\ClassNotFoundException;
  * @package think
  *
  * @method void log($msg) static
- * @method void error($msg) static
+ * @method void errorpage($msg) static
  * @method void info($msg) static
  * @method void sql($msg) static
  * @method void notice($msg) static
