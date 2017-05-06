@@ -29,7 +29,7 @@ class Base extends Controller{
             $url = explode('/',$img->url);
             $img_name = explode('.',$url[count($url)-1]);
             $banner->img_link = $img_link;
-            unlink(ROOT_PATH . 'public' . DS . 'upload'. DS . 'image'.DS.$url[count($url)-2].DS.$img_name[0].'.'.$img_name[1]);
+//            unlink(ROOT_PATH . 'public' . DS . 'upload'. DS . 'image'.DS.$url[count($url)-2].DS.$img_name[0].'.'.$img_name[1]);
             $info = $file->validate(['ext'=>'jpg,png,gif,jpeg'])->move(ROOT_PATH . 'public' . DS . 'upload'. DS . 'image',$url[count($url)-2].DS.$img_name[0]);
             if($info){
                 return redirect(url('admin/banner/change'));
